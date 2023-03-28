@@ -1,0 +1,23 @@
+======= CLEOPATRA Software Repository =======
+
+MILESTONE M5.2 / {{:open:wp5:etransfer-0.1.tar.gz|Prototype software}} (WP5.3)
+
+
+The post-detection streaming software is modelled after the well-known client/server architecture, albeit with a twist. Building on previous experiences gained in the FP6/EXPReS and FP7/NEXPReS projects an elaboration of this classical model was envisaged: the client program can coordinate not just transfers between itself and a remote server but also, transparently, between two remote servers. This allows for moving data between two remote storage facilities, as viewed from the client's computer. The added benefits of this architecture are:
+
+  - the initiating user does not need access to the storage server, just enough privilege to instruct the server running there to initiate the transfer
+  - data can be moved between two remote facilities directly, without the data passing through the client's hardware, i.e. enabling the use of a fat pipe between facilities directly rather than going through the client's slow link.
+
+
+The software presented in this milestone implements a fully working prototype according to the sketched architecture. Other features that are already investigated and exploited are:
+
+  - multithreaded design
+  - full separation of command- and data path; they may even be different protocols
+  - access-control list ready; the ACL is not filled from a server configuration but limits access to "/tmp/*". The ACL *is* consulted on each file/directory access though
+  - infrastructure for user authentication is scheduled but not implemented yet as it does not affect the architecture of the software
+  - files can be "pushed" from the source to the destination or "pulled" from the source by the destination; this allows easy transfers into a client's machine w/o having to run a server and may also be useful in case one of the remote servers is firewalled for incoming connections
+  - the server is written to be able to handle multiple file transfers at the same time as well as multiple network streams for the same file; the client does not exploit this yet though
+
+
+The fact that it is a working prototype shows that file transfers can be made to work in the envisaged scheme.
+As such it is expected that translating the tool from the 'slow' interpreted Python language to high-performance compiled C++ is feasible.

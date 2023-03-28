@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html xml:lang="en-gb" lang="en-gb" dir="ltr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+      <base href="" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="keywords" content="Astronomy &amp; Astrophysics, A&amp;A, ESO, EDP Sciences" />
+  <meta name="robots" content="index, follow, noarchive" />
+  <meta name="description" content="Astronomy &amp; Astrophysics (A&amp;A) is an international journal which publishes papers on all aspects of astronomy and astrophysics" />
+  <title>Hierarchical progressive surveys - Multi-resolution HEALPix data structures for astronomical images, catalogues, and 3-dimensional data cubes | Astronomy &amp; Astrophysics (A&amp;A)</title>
+  <link rel="stylesheet" href="https://www.aanda.org/libraries/jquery/jquery.multiselect.css" type="text/css" />
+  <link rel="stylesheet" href="https://www.aanda.org/libraries/jquery/jquery.qtip/jquery.qtip.min.css" type="text/css" />
+  <link rel="stylesheet" href="https://www.aanda.org/libraries/jquery/jquery.magnific-popup.css" type="text/css" />
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/themes/smoothness/jquery-ui.css" type="text/css" />
+  <link rel="stylesheet" href="https://www.aanda.org/templates/template1/css/com_article.css" type="text/css" />
+  <link rel="stylesheet" href="https://www.aanda.org/templates/template1/css/mod_article_bookmarking.css" type="text/css" />
+  <link rel="stylesheet" href="https://www.aanda.org/templates/template1/css/mod_article_purchase.css" type="text/css" />
+  <link rel="stylesheet" href="https://www.aanda.org/templates/template1/css/mod_solr.css" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://www.aanda.org/plugins/system/jqueryeasy/jquerynoconflict.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="https://www.aanda.org/libraries/jquery/jquery.multiselect.min.js" type="text/javascript"></script>
+  <script src="https://www.aanda.org/libraries/jquery/jquery.magnific-popup.min.js" type="text/javascript"></script>
+  <script src="https://www.aanda.org/libraries/jquery/jquery.qtip/jquery.qtip.min.js" type="text/javascript"></script>
+  <script src="https://www.aanda.org/components/com_article/assets/js/article.js" type="text/javascript"></script>
+  <script src="https://www.aanda.org/modules/mod_article_bookmarking/assets/js/bookmarking.js" type="text/javascript"></script>
+  <script src="https://www.aanda.org/libraries/jquery/jquery.autocomplete.js" type="text/javascript"></script>
+  <script type="text/javascript">
+var ARTICLE_CLICK_VIEW = "Click to view fullscreen";
+var ARTICLE_CLICK_HIDE = "Click anywhere to hide the fullscreen overlay";
+var ARTICLE_CLICK_MOVIE = "Click to play the movie";
+
+  </script>
+  <link title="schema(PRISM)" rel="schema.prism" href="http://prismstandard.org/namespaces/1.2/basic/">
+  <meta name="citation_journal_title" content="Astronomy &amp; Astrophysics">
+  <meta name="citation_journal_abbrev" content="A&amp;A">
+  <meta name="citation_publisher" content="EDP Sciences">
+  <meta name="citation_author" content="P. Fernique">
+  <meta name="citation_author_institution" content="Observatoire Astronomique de Strasbourg, Université de Strasbourg, UMR 7550, 11 rue de l’Université, 67000 Strasbourg, France">
+  <meta name="citation_author" content="M. G. Allen">
+  <meta name="citation_author_institution" content="Observatoire Astronomique de Strasbourg, Université de Strasbourg, UMR 7550, 11 rue de l’Université, 67000 Strasbourg, France">
+  <meta name="citation_author" content="T. Boch">
+  <meta name="citation_author_institution" content="Observatoire Astronomique de Strasbourg, Université de Strasbourg, UMR 7550, 11 rue de l’Université, 67000 Strasbourg, France">
+  <meta name="citation_author" content="A. Oberto">
+  <meta name="citation_author_institution" content="Observatoire Astronomique de Strasbourg, Université de Strasbourg, UMR 7550, 11 rue de l’Université, 67000 Strasbourg, France">
+  <meta name="citation_author" content="F-X. Pineau">
+  <meta name="citation_author_institution" content="Observatoire Astronomique de Strasbourg, Université de Strasbourg, UMR 7550, 11 rue de l’Université, 67000 Strasbourg, France">
+  <meta name="citation_author" content="D. Durand">
+  <meta name="citation_author_institution" content="National Research Council Canada, Canadian Astronomy Data Centre, 5071 W. Saanich Rd., Victoria, BC, Canada">
+  <meta name="citation_author" content="C. Bot">
+  <meta name="citation_author_institution" content="Observatoire Astronomique de Strasbourg, Université de Strasbourg, UMR 7550, 11 rue de l’Université, 67000 Strasbourg, France">
+  <meta name="citation_author" content="L. Cambrésy">
+  <meta name="citation_author_institution" content="Observatoire Astronomique de Strasbourg, Université de Strasbourg, UMR 7550, 11 rue de l’Université, 67000 Strasbourg, France">
+  <meta name="citation_author" content="S. Derriere">
+  <meta name="citation_author_institution" content="Observatoire Astronomique de Strasbourg, Université de Strasbourg, UMR 7550, 11 rue de l’Université, 67000 Strasbourg, France">
+  <meta name="citation_author" content="F. Genova">
+  <meta name="citation_author_institution" content="Observatoire Astronomique de Strasbourg, Université de Strasbourg, UMR 7550, 11 rue de l’Université, 67000 Strasbourg, France">
+  <meta name="citation_author" content="F. Bonnarel">
+  <meta name="citation_author_institution" content="Observatoire Astronomique de Strasbourg, Université de Strasbourg, UMR 7550, 11 rue de l’Université, 67000 Strasbourg, France">
+  <meta name="citation_title" content="Hierarchical progressive surveys - Multi-resolution HEALPix data structures for astronomical images, catalogues, and 3-dimensional data cubes">
+  <meta name="citation_online_date" content="2015/06/15">
+  <meta name="citation_publication_date" content="2015/06/01">
+  <meta name="citation_volume" content="578">
+  <meta name="citation_firstpage" content="A114">
+  <meta name="citation_doi" content="10.1051/0004-6361/201526075">
+  <meta name="citation_bibcode" content="2015A%26A...578A.114F">
+  <meta name="citation_abstract_html_url" content="https://www.aanda.org/articles/aa/abs/2015/06/aa26075-15/aa26075-15.html">
+  <meta name="citation_fulltext_html_url" content="https://www.aanda.org/articles/aa/full_html/2015/06/aa26075-15/aa26075-15.html">
+  <meta name="citation_pdf_url" content="https://www.aanda.org/articles/aa/pdf/2015/06/aa26075-15.pdf">
+  <meta name="citation_issn" content="0004-6361">
+  <meta name="citation_issn" content="1432-0746">
+  <meta name="citation_language" content="en">
+  <meta name="citation_keyword" content="surveys">
+  <meta name="citation_keyword" content="atlases">
+  <meta name="citation_keyword" content="astronomical databases: miscellaneous">
+  <meta name="citation_keyword" content="catalogs">
+  <meta name="citation_keyword" content="virtual observatory tools">
+  <meta name="citation_keyword" content="methods: statistical">
+  <meta name="citation_article_type" content="Research Article">
+  <meta name="citation_abstract" lang="en" content="&lt;i&gt;Context. &lt;i/&gt;Scientific exploitation of the ever increasing volumes of astronomical data requires efficient and practical methods for data access, visualisation, and analysis. Hierarchical sky tessellation techniques enable a multi-resolution approach to organising data on angular scales from the full sky down to the individual image pixels.&lt;i&gt;Aims. &lt;i/&gt;We aim to show that the hierarchical progressive survey (HiPS) scheme for describing astronomical images, source catalogues, and three-dimensional data cubes is a practical solution to managing large volumes of heterogeneous data and that it enables a new level of scientific interoperability across large collections of data of these different data types.&lt;i&gt;Methods. &lt;i/&gt;HiPS uses the HEALPix tessellation of the sphere to define a hierarchical tile and pixel structure to describe and organise astronomical data. HiPS is designed to conserve the scientific properties of the data alongside both visualisation considerations and emphasis on the ease of implementation. We describe the development of HiPS to manage a large number of diverse image surveys, as well as the extension of hierarchical image systems to cube and catalogue data. We demonstrate the interoperability of HiPS and multi-order coverage (MOC) maps and highlight the HiPS mechanism to provide links to the original data.&lt;i&gt;Results. &lt;i/&gt;Hierarchical progressive surveys have been generated by various data centres and groups for ∼200 data collections including many wide area sky surveys, and archives of pointed observations. These can be accessed and visualised in Aladin, Aladin Lite, and other applications. HiPS provides a basis for further innovations in the use of hierarchical data structures to facilitate the description and statistical analysis of large astronomical data sets.">
+  <meta name="citation_reference" content="citation_author=K. N. Abazajian;citation_author=J. K. Adelman-McCarthy;citation_author=M. A. Agüeros;citation_publication_date=2009;citation_journal_title=ApJS;citation_volume=182;citation_firstpage=543;">
+  <meta name="citation_reference" content="citation_author=J. E. Aguirre;citation_author=A. G. Ginsburg;citation_author=M. K. Dunham;citation_publication_date=2011;citation_journal_title=ApJS;citation_volume=192;citation_firstpage=4;">
+  <meta name="citation_reference" content="citation_author=C. P. Ahn;citation_author=R. Alexandroff;citation_author=C. Allen de Prieto;citation_publication_date=2012;citation_journal_title=ApJS;citation_volume=203;citation_firstpage=21;">
+  <meta name="citation_reference" content="citation_author=W. B. Atwood;citation_author=A. A. Abdo;citation_author=M. Ackermann;citation_publication_date=2009;citation_journal_title=ApJ;citation_volume=697;citation_firstpage=1071;">
+  <meta name="citation_reference" content="citation_author=R. A. Benjamin;citation_author=E. Churchwell;citation_author=B. L. Babler;citation_publication_date=2003;citation_journal_title=PASP;citation_volume=115;citation_firstpage=953;">
+  <meta name="citation_reference" content="citation_author=C. L. Bennett;citation_author=D. Larson;citation_author=J. L. Weiland;citation_publication_date=2013;citation_journal_title=ApJS;citation_volume=208;citation_firstpage=20;">
+  <meta name="citation_reference" content="citation_author=E. M. Berkhuijsen;citation_publication_date=1972;citation_journal_title=A&amp;AS;citation_volume=5;citation_firstpage=263;">
+  <meta name="citation_reference" content="citation_author=E. Bertin;citation_author=Y. Mellier;citation_author=M. Radovich;citation_publication_date=2002;citation_journal_title=Astronomical Data Analysis Software and Systems XI;citation_volume=281;citation_firstpage=228;">
+  <meta name="citation_reference" content="citation_author=T. Boch;citation_author=P. Fernique;citation_publication_date=2014;citation_journal_title=Astronomical Data Analysis Software and Systems XXIII;citation_volume=485;citation_firstpage=277;">
+  <meta name="citation_reference" content="citation_author=N. W. Boggess;citation_author=J. C. Mather;citation_author=R. Weiss;citation_publication_date=1992;citation_journal_title=ApJ;citation_volume=397;citation_firstpage=420;">
+  <meta name="citation_reference" content="citation_author=F. Bonnarel;citation_author=P. Fernique;citation_author=O. Bienaymé;citation_publication_date=2000;citation_journal_title=A&amp;AS;citation_volume=143;citation_firstpage=33;">
+  <meta name="citation_reference" content="citation_author=T. Budavári;citation_author=S. H. Lubow;citation_publication_date=2012;citation_journal_title=ApJ;citation_volume=761;citation_firstpage=188;">
+  <meta name="citation_reference" content="citation_author=M. R. Calabretta;citation_author=L. Staveley-Smith;citation_author=D. G. Barnes;citation_publication_date=2014;citation_journal_title=PASA;citation_volume=31;citation_firstpage=e007;">
+  <meta name="citation_reference" content="citation_author=E. Churchwell;citation_author=B. L. Babler;citation_author=M. R. Meade;citation_publication_date=2009;citation_journal_title=PASP;citation_volume=121;citation_firstpage=213;">
+  <meta name="citation_reference" content="citation_author=A. N. Cillis;citation_author=R. C. Hartman;citation_publication_date=2005;citation_journal_title=ApJ;citation_volume=621;citation_firstpage=291;">
+  <meta name="citation_reference" content="citation_author=J. J. Condon;citation_author=W. D. Cotton;citation_author=E. W. Greisen;citation_publication_date=1998;citation_journal_title=AJ;citation_volume=115;citation_firstpage=1693;">
+  <meta name="citation_reference" content="Cutri, R. M., Skrutskie, M. F., van Dyk, S., et al. 2003a, The IRSA 2MASS All-Sky Point Source Catalog">
+  <meta name="citation_reference" content="Cutri, R. M., Skrutskie, M. F., van Dyk, S., et al. 2003b, VizieR On-line Data Catalogue: II/246">
+  <meta name="citation_reference" content="Cutri, R. M., Wright, E. L., Conrow, T., et al. 2013, Explanatory Supplement to the AllWISE Data Release Products">
+  <meta name="citation_reference" content="citation_author=T. M. Dame;citation_author=D. Hartmann;citation_author=P. Thaddeus;citation_publication_date=2001;citation_journal_title=ApJ;citation_volume=547;citation_firstpage=792;">
+  <meta name="citation_reference" content="citation_author=J. T. Dempsey;citation_author=H. S. Thomas;citation_author=M. J. Currie;citation_publication_date=2013;citation_journal_title=ApJS;citation_volume=209;citation_firstpage=8;">
+  <meta name="citation_reference" content="citation_author=B. Dennison;citation_author=J. H. Simonetti;citation_author=G. A. Topasna;citation_publication_date=1999;citation_journal_title=BAAS;citation_volume=31;citation_firstpage=1455;">
+  <meta name="citation_reference" content="citation_author=J. Di Francesco;citation_author=D. Johnstone;citation_author=H. Kirk;citation_author=T. MacKenzie;citation_author=E. Ledwosinska;citation_publication_date=2008;citation_journal_title=ApJSS;citation_volume=175;citation_firstpage=277;">
+  <meta name="citation_reference" content="citation_author=I. N. Evans;citation_author=F. A. Primini;citation_author=K. J. Glotfelty;citation_publication_date=2010;citation_journal_title=ApJS;citation_volume=189;citation_firstpage=37;">
+  <meta name="citation_reference" content="citation_author=P. Fernique;citation_author=A. Oberto;citation_author=T. Boch;citation_author=F. Bonnarel;citation_publication_date=2010;citation_journal_title=Astronomical Data Analysis Software and Systems XIX;citation_volume=434;citation_firstpage=163;">
+  <meta name="citation_reference" content="Fernique, P., Boch, T., Donaldson, T., et al. 2014, IVOA Recommendation">
+  <meta name="citation_reference" content="citation_author=D. P. Finkbeiner;citation_publication_date=2003;citation_journal_title=ApJSS;citation_volume=146;citation_firstpage=407;">
+  <meta name="citation_reference" content="citation_author=R. García-Benito;citation_author=S. Zibetti;citation_author=S. F. Sánchez;citation_publication_date=2015;citation_journal_title=A&amp;A;citation_volume=576;citation_firstpage=A135;">
+  <meta name="citation_reference" content="citation_author=J. E. Gaustad;citation_author=P. R. McCullough;citation_author=W. Rosing;citation_author=D. Van Buren;citation_publication_date=2001;citation_journal_title=PASP;citation_volume=113;citation_firstpage=1326;">
+  <meta name="citation_reference" content="citation_author=M. Giavalisco;citation_author=H. C. Ferguson;citation_author=A. M. Koekemoer;citation_publication_date=2004;citation_journal_title=ApJ;citation_volume=600;citation_firstpage=L93;">
+  <meta name="citation_reference" content="citation_author=K. D. Gordon;citation_author=M. Meixner;citation_author=M. R. Meade;citation_publication_date=2011;citation_journal_title=AJ;citation_volume=142;citation_firstpage=102;">
+  <meta name="citation_reference" content="Górski, K. M., &amp; Hivon, E. 2011, Astrophysics Source Code Library [record ascl:1107.018]">
+  <meta name="citation_reference" content="citation_author=K. M. Górski;citation_author=E. Hivon;citation_author=A. J. Banday;citation_publication_date=2005;citation_journal_title=ApJ;citation_volume=622;citation_firstpage=759;">
+  <meta name="citation_reference" content="citation_author=C. G. T. Haslam;citation_author=C. J. Salter;citation_author=H. Stoffel;citation_author=W. E. Wilson;citation_publication_date=1982;citation_journal_title=A&amp;AS;citation_volume=47;citation_firstpage=1;">
+  <meta name="citation_reference" content="citation_author=A. Hassan;citation_author=C. J. Fluke;citation_publication_date=2011;citation_journal_title=PASA;citation_volume=28;citation_firstpage=150;">
+  <meta name="citation_reference" content="citation_author=E. Høg;citation_author=C. Fabricius;citation_author=V. V. Makarov;citation_publication_date=2000;citation_journal_title=A&amp;A;citation_volume=357;citation_firstpage=367;">
+  <meta name="citation_reference" content="citation_author=E. Høg;citation_author=C. Fabricius;citation_author=V. V. Makarov;citation_publication_date=2000;citation_journal_title=A&amp;A;citation_volume=355;citation_firstpage=L27;">
+  <meta name="citation_reference" content="Høg, E., Fabricius, C., Makarov, V. V., et al. 2000c, VizieR On-line Data Catalog: I/259">
+  <meta name="citation_reference" content="citation_author=W. S. Holland;citation_author=E. I. Robson;citation_author=W. K. Gear;citation_publication_date=1999;citation_journal_title=MNRAS;citation_volume=303;citation_firstpage=659;">
+  <meta name="citation_reference" content="citation_author=W. S. Holland;citation_author=D. Bintley;citation_author=E. L. Chapin;citation_publication_date=2013;citation_journal_title=MNRAS;citation_volume=430;citation_firstpage=2513;">
+  <meta name="citation_reference" content="citation_author=B. Husemann;citation_author=K. Jahnke;citation_author=S. F. Sánchez;citation_publication_date=2013;citation_journal_title=A&amp;A;citation_volume=549;citation_firstpage=A87;">
+  <meta name="citation_reference" content="citation_author=D. Ishihara;citation_author=T. Onaka;citation_author=H. Kataza;citation_publication_date=2010;citation_journal_title=A&amp;A;citation_volume=514;citation_firstpage=A1;">
+  <meta name="citation_reference" content="Ishihara, D., Onaka, T., Kataza, H., et al. 2010b, VizieR On-line Data Catalog: II/297">
+  <meta name="citation_reference" content="Ivezić, Ž., Tyson, J. A., Abel, B., et al. 2008 [arXiv:0805.2366]">
+  <meta name="citation_reference" content="Jacob, J. C., Katz, D. S., Berriman, G. B., et al. 2010, Astrophysics Source Code Library [record ascl:1010.036]">
+  <meta name="citation_reference" content="citation_author=R. C. J. Kennicutt;citation_author=L. Armus;citation_author=G. Bendo;citation_publication_date=2003;citation_journal_title=PASP;citation_volume=115;citation_firstpage=928;">
+  <meta name="citation_reference" content="citation_author=R. Krivonos;citation_author=S. Tsygankov;citation_author=A. Lutovinov;citation_publication_date=2012;citation_journal_title=A&amp;A;citation_volume=545;citation_firstpage=A27;">
+  <meta name="citation_reference" content="Kunszt, P. Z., Szalay, A. S., &amp; Thakar, A. R. 2001, in Mining the Sky: Proc. MPA/ESO/MPE Workshop Garching, 631">
+  <meta name="citation_reference" content="Lane, W. M., Cotton, W. D., Helmboldt, J. F., &amp; Kassim, N. E. 2012, Radio Science, 47, RS0K04">
+  <meta name="citation_reference" content="Malapert, J.-C., &amp; Marseille, M. 2011, Astrophysics Source Code Library [record ascl:1111.008]">
+  <meta name="citation_reference" content="citation_author=D. C. Martin;citation_author=J. Fanson;citation_author=D. Schiminovich;citation_publication_date=2005;citation_journal_title=ApJ;citation_volume=619;citation_firstpage=L1;">
+  <meta name="citation_reference" content="citation_author=T. Mauch;citation_author=T. Murphy;citation_author=H. J. Buttery;citation_publication_date=2003;citation_journal_title=MNRAS;citation_volume=342;citation_firstpage=1117;">
+  <meta name="citation_reference" content="citation_author=N. M. McClure-Griffiths;citation_author=D. J. Pisano;citation_author=M. R. Calabretta;citation_publication_date=2009;citation_journal_title=ApJS;citation_volume=181;citation_firstpage=398;">
+  <meta name="citation_reference" content="citation_author=H. J. McCracken;citation_author=B. Milvang-Jensen;citation_author=J. Dunlop;citation_publication_date=2012;citation_journal_title=A&amp;A;citation_volume=544;citation_firstpage=A156;">
+  <meta name="citation_reference" content="citation_author=J. D. McEwen;citation_author=Y. Wiaux;citation_author=D. M. Eyers;citation_publication_date=2011;citation_journal_title=A&amp;A;citation_volume=531;citation_firstpage=A98;">
+  <meta name="citation_reference" content="citation_author=A. M. Meisner;citation_author=D. P. Finkbeiner;citation_publication_date=2014;citation_journal_title=ApJ;citation_volume=781;citation_firstpage=5;">
+  <meta name="citation_reference" content="citation_author=M. Meixner;citation_publication_date=2008;citation_title=The Second Annual Spitzer Science Center Conference: Infrared Diagnostics of Galaxy Evolution;citation_journal_title=ASP Conf. Ser.;citation_volume=381;citation_firstpage=115;">
+  <meta name="citation_reference" content="citation_author=F. Mignard;citation_publication_date=2013;citation_journal_title=GAIA DPAC Newsletter;citation_volume=21;citation_firstpage=4;">
+  <meta name="citation_reference" content="citation_author=M.-A. Miville-Deschênes;citation_author=G. Lagache;citation_publication_date=2005;citation_journal_title=ApJSS;citation_volume=157;citation_firstpage=302;">
+  <meta name="citation_reference" content="citation_author=H. Murakami;citation_author=H. Baba;citation_author=P. Barthel;citation_publication_date=2007;citation_journal_title=Publ. Astron. Soc. Japan;citation_volume=59;citation_firstpage=369;">
+  <meta name="citation_reference" content="citation_author=T. Murphy;citation_author=T. Mauch;citation_author=A. Green;citation_publication_date=2007;citation_journal_title=MNRAS;citation_volume=382;citation_firstpage=382;">
+  <meta name="citation_reference" content="citation_author=F. Ochsenbein;citation_author=P. Bauer;citation_author=J. Marcout;citation_publication_date=2000;citation_journal_title=A&amp;AS;citation_volume=143;citation_firstpage=23;">
+  <meta name="citation_reference" content="Ochsenbein, F., Williams, R., Davenhall, C., et al. 2011, IVOA Recommendation [arXiv:1110.0524]">
+  <meta name="citation_reference" content="O’Mullane, W., Banday, A. J., Górski, K. M., Kunszt, P., &amp; Szalay, A. S. 2001, in Mining the Sky: Proc. MPA/ESO/MPE Workshop held at Garching, Astrophysics Division, Space Science Department of ESA, ESTEC, 638">
+  <meta name="citation_reference" content="citation_author=D. Paradis;citation_author=K. Dobashi;citation_author=T. Shimoikura;citation_publication_date=2012;citation_journal_title=A&amp;A;citation_volume=543;citation_firstpage=A103;">
+  <meta name="citation_reference" content="citation_author=Q. A. Parker;citation_author=S. Phillipps;citation_author=M. J. Pierce;citation_publication_date=2005;citation_journal_title=MNRAS;citation_volume=362;citation_firstpage=689;">
+  <meta name="citation_reference" content="citation_author=W. D. Pence;citation_author=L. Chiappetti;citation_author=C. G. Page;citation_author=R. A. Shaw;citation_author=E. Stobie;citation_publication_date=2010;citation_journal_title=A&amp;A;citation_volume=524;citation_firstpage=A42;">
+  <meta name="citation_reference" content="citation_author=M. A. C. Perryman;citation_author=K. S. de Boer;citation_author=G. Gilmore;citation_publication_date=2001;citation_journal_title=A&amp;A;citation_volume=369;citation_firstpage=339;">
+  <meta name="citation_reference" content="citation_publication_date=2014;citation_journal_title=A&amp;A;citation_volume=571;citation_firstpage=A1;">
+  <meta name="citation_reference" content="Pollo, A., Rybka, P., &amp; Takeuchi, T. T. 2010, VizieR On-line Data Catalog, J/A+A/514/3">
+  <meta name="citation_reference" content="Remazeilles, M., Dickinson, C., Banday, A. J., Bigot-Sazy, M. A., &amp; Ghosh, T. 2014, MNRAS, submitted [arXiv:1411.3628]">
+  <meta name="citation_reference" content="citation_author=R. B. Rengelink;citation_author=Y. Tang;citation_author=A. G. de Bruyn;citation_publication_date=1997;citation_journal_title=A&amp;ASS;citation_volume=124;citation_firstpage=259;">
+  <meta name="citation_reference" content="citation_author=A. C. Robin;citation_author=C. Reylé;citation_author=S. Derrière;citation_author=S. Picaud;citation_publication_date=2003;citation_journal_title=A&amp;A;citation_volume=409;citation_firstpage=523;">
+  <meta name="citation_reference" content="citation_author=A. C. Robin;citation_author=X. Luri;citation_author=C. Reylé;citation_publication_date=2012;citation_journal_title=A&amp;A;citation_volume=543;citation_firstpage=A100;">
+  <meta name="citation_reference" content="Robin, A. C., Luri, X., Reylé, C., et al. 2012b, VizieR On-line Data Catalog, J/A+A/543/100">
+  <meta name="citation_reference" content="Roeser, S., Schilbach, E., Schwan, H., et al. 2008, VizieR On-line Data Catalog: I/312">
+  <meta name="citation_reference" content="citation_author=S. Röser;citation_author=E. Schilbach;citation_author=H. Schwan;citation_publication_date=2008;citation_journal_title=A&amp;A;citation_volume=488;citation_firstpage=401;">
+  <meta name="citation_reference" content="Rots, A. H. 2011, IVOA Recommendation [arXiv:1110.0504]">
+  <meta name="citation_reference" content="citation_author=S. F. Sánchez;citation_author=R. C. Kennicutt;citation_author=A. Gil de Paz;citation_publication_date=2012;citation_journal_title=A&amp;A;citation_volume=538;citation_firstpage=A8;">
+  <meta name="citation_reference" content="citation_author=M. F. Skrutskie;citation_author=R. M. Cutri;citation_author=R. Stiening;citation_publication_date=2006;citation_journal_title=AJ;citation_volume=131;citation_firstpage=1163;">
+  <meta name="citation_reference" content="Smart, R. L. 2013, VizieR On-line Data Catalog: I/324">
+  <meta name="citation_reference" content="citation_author=R. L. Smart;citation_author=L. Nicastro;citation_publication_date=2014;citation_journal_title=A&amp;A;citation_volume=570;citation_firstpage=A87;">
+  <meta name="citation_reference" content="Spitzer Science Center. 2009, VizieR On-line Data Catalog: II/293">
+  <meta name="citation_reference" content="citation_author=J. M. Stil;citation_author=A. R. Taylor;citation_author=J. M. Dickey;citation_publication_date=2006;citation_journal_title=AJ;citation_volume=132;citation_firstpage=1158;">
+  <meta name="citation_reference" content="citation_author=A. R. Taylor;citation_author=S. J. Gibson;citation_author=M. Peracaula;citation_publication_date=2003;citation_journal_title=AJ;citation_volume=125;citation_firstpage=3145;">
+  <meta name="citation_reference" content="citation_author=M. P. van Haarlem;citation_author=M. W. Wise;citation_author=A. W. Gunst;citation_publication_date=2013;citation_journal_title=A&amp;A;citation_volume=556;citation_firstpage=A2;">
+  <meta name="citation_reference" content="citation_author=W. Voges;citation_publication_date=1992;citation_title=in Astronomy from Large Databases;citation_journal_title=Proc. ESO Conf.;citation_volume=43;citation_firstpage=139;">
+  <meta name="citation_reference" content="citation_author=M. Wenger;citation_author=F. Ochsenbein;citation_author=D. Egret;citation_publication_date=2000;citation_journal_title=A&amp;AS;citation_volume=143;citation_firstpage=9;">
+  <meta name="citation_reference" content="citation_author=M. W. Werner;citation_author=T. L. Roellig;citation_author=F. J. Low;citation_publication_date=2004;citation_journal_title=ApJSS;citation_volume=154;citation_firstpage=1;">
+  <meta name="citation_reference" content="citation_author=C. Winkler;citation_author=T. J. L. Courvoisier;citation_author=G. Di Cocco;citation_publication_date=2003;citation_journal_title=A&amp;A;citation_volume=411;citation_firstpage=L1;">
+  <meta name="citation_reference" content="citation_author=E. L. Wright;citation_author=P. R. M. Eisenhardt;citation_author=A. K. Mainzer;citation_publication_date=2010;citation_journal_title=AJ;citation_volume=140;citation_firstpage=1868;">
+  <meta name="prism.copyright" content="© ESO, 2015">
+  <meta name="prism.publicationName" content="Astronomy &amp; Astrophysics">
+  <meta name="prism.coverDisplayDate" content="June 2015">
+  <meta name="prism.volume" content="578">
+  <meta name="prism.section" content="Astronomical instrumentation">
+  <meta name="prism.startingPage" content="A114">
+  <meta name="prism.issn" content="0004-6361">
+  <meta name="prism.eIssn" content="1432-0746">
+  <meta name="prism.doi" content="10.1051/0004-6361/201526075">
+  <meta name="prism.keyword" content="surveys">
+  <meta name="prism.keyword" content="atlases">
+  <meta name="prism.keyword" content="astronomical databases: miscellaneous">
+  <meta name="prism.keyword" content="catalogs">
+  <meta name="prism.keyword" content="virtual observatory tools">
+  <meta name="prism.keyword" content="methods: statistical">
+  <meta name="prism.url" content="https://www.aanda.org/articles/aa/abs/2015/06/aa26075-15/aa26075-15.html">
+  <meta name="citation_fulltext_world_readable" content="">
+
+    <link href="https://www.aanda.org/templates/template1/images/aa/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link href="https://www.aanda.org/p/font.php/css?family=Open+Sans:400,600" rel="stylesheet">
+    <link href="https://www.aanda.org/p/font.php/css?family=Crimson+Text" rel="stylesheet">
+    <link href="https://www.aanda.org/templates/source/css/article.css" rel="stylesheet" type="text/css"/>
+    <link href="https://www.aanda.org/templates/template1/css/cookie.css" rel="stylesheet" type="text/css"/>
+    <link href="https://www.aanda.org/templates/template1/css/commun_v3.css" rel="stylesheet" type="text/css"/>
+    <link href="https://www.aanda.org/templates/template1/css/template1.css" rel="stylesheet" type="text/css"/>
+    <link href="https://www.aanda.org/templates/source/css/flags25.css" rel="stylesheet" type="text/css"/>    
+
+        <link href="https://www.aanda.org/templates/template1/css/aa.css" rel="stylesheet" type="text/css"/>
+        <link href="https://www.aanda.org/templates/source/js/mmenu2/dist/css/jquery.mmenu.all.css" rel="stylesheet" type="text/css"/>
+    <!--[if IE]>
+    <link rel="stylesheet" href="/templates/template1/css/ie.css" type="text/css" />
+    <script src="/templates/template1/html5-ie.js"></script>
+    <![endif]-->
+</head>
+<body id="com_article" class="aa marketing">
+    <div id="journal-webpage">
+        <header>
+                          <div class="header-edp">
+        <div class="wrap ">
+
+                        <div class="logo-edp">
+
+
+                
+                                              <a href="https://www.edpsciences.org" target="_blank"><img src="https://www.aanda.org/templates/source/images/logos/logo_edp_105.svg" alt="EDP Sciences logo"></a>
+                                                       </div>
+                                <nav class="edp-nav">
+                        <ul>
+                                <li><a href="https://publications.edpsciences.org/">Journals</a></li>
+                                <li><a href="https://www.edpsciences.org/en/books">Books</a></li>
+                                <li><a href="https://www.webofconferences.org/">Conferences</a></li>
+                        </ul>
+                </nav>
+                        
+
+
+                            <div class="header_cart">
+                <a href="./fetch.php%3Ftok=9a962e&amp;media=http:%252F%252Fwww.aanda.org%252Farticles%252Faa%252Fabs%252F2015%252F06%252Faa26075-15%252Faa26075-15.html#" class="cart-box" id="cart-info" title="Display your shopping cart">
+  <span class="ico ico-cart"></span> <span class="cart-counter hidden">0</span>
+</a>
+
+            </div>
+        
+                
+                                   <div class="reg_info auth">
+            <div class="btn-nav">
+            <span class="ico16 white subs"></span><span>Subscriber Authentication Point  </span>
+            <nav class="user">
+                <ul>
+                                            <li>
+                            <a href="https://www.aanda.org/component/authenticate/?task=login">
+                                Sign in with login/password
+                            </a>
+                        </li>
+                                        <li>
+                        <a href="https://www.aanda.org/component/authenticate/?task=access">
+                            Your subscription
+                        </a>
+                    </li>
+                                    </ul>
+            </nav>
+        </div>
+    </div>
+<div class="reg_info account">
+    <div class="btn-nav">
+                    <span class="ico16 white login"></span> <span class="reg_info-user">EDPS Account</span>
+                <nav class="user">
+                        <ul>
+                <li><a href="https://www.aanda.org/component/services/">Login</a></li>
+            </ul>
+                    </nav>
+    </div>
+</div>
+
+
+                
+                <div class="clear"></div>
+        </div>
+</div>
+
+
+                                                            
+
+	    
+
+            <div class="header-nav">
+
+              
+              <div class="wrap">
+                        
+                                <a href="https://www.aanda.org/" class="logo" title="Journal homepage"><img src="https://www.aanda.org/templates/template1/images/aa/logo_aa.svg" alt="Astronomy & Astrophysics (A&A)"></a>
+                
+                <nav class="menu">
+                  
+<ul class="menu">
+<li class="item-122"><a href="https://www.aanda.org/component/issues/?task=all&amp;Itemid=122" >All volumes</a></li><li class="item-443"><a href="https://www.aanda.org/for-authors" >For authors</a></li></ul>
+
+                </nav>
+
+
+                            
+                
+
+<div class="custom search default">
+<span class="ico ico-search" title="Display the search engine">Search</span>
+</div>
+
+
+                <a href="./fetch.php%3Ftok=9a962e&amp;media=http:%252F%252Fwww.aanda.org%252Farticles%252Faa%252Fabs%252F2015%252F06%252Faa26075-15%252Faa26075-15.html#menu-mobile" class="nav-mobile-link">Menu</a>
+                
+              </div>
+
+               
+            <nav id="menu-mobile">
+<ul class="menu">
+<li class="item-145 deeper parent"><span class="separator">About A&amp;A</span>
+<ul><li class="item-137"><a href="https://www.aanda.org/about-aa/aims-and-scope" >Aims and scope</a></li><li class="item-143"><a href="https://www.aanda.org/about-aa/history" >History</a></li><li class="item-136"><a href="https://www.aanda.org/about-aa/editors-of-aa" >Editors of A&amp;A</a></li><li class="item-140"><a href="https://www.aanda.org/about-aa/board-of-directors" >Board of Directors</a></li><li class="item-138"><a href="https://www.aanda.org/about-aa/indexed-in" >Indexed in</a></li><li class="item-139"><a href="https://www.aanda.org/about-aa/copyright" >Copyright</a></li><li class="item-162"><a href="https://www.aanda.org/images/stories/leaflet/aa_leaflet.pdf" target="_blank" >A&amp;A leaflet (PDF)</a></li><li class="item-197"><a href="https://www.aanda.org/about-aa/masthead" >Masthead</a></li></ul></li><li class="item-424 deeper parent"><span class="separator">Browse articles</span>
+<ul><li class="item-427"><a href="https://www.aanda.org/component/issues/?task=all" >All volumes</a></li><li class="item-429"><a href="https://www.aanda.org/component/list/?task=topic" >Special issues</a></li><li class="item-432"><a href="https://www.aanda.org/component/forthcoming/" >Forthcoming</a></li><li class="item-435"><a href="https://www.aanda.org/highlights" >Highlights</a></li><li class="item-221"><a href="https://www.aanda.org/2023-press-releases" >Press releases</a></li></ul></li><li class="item-396 deeper parent"><a href="https://www.aanda.org/for-authors" >For authors</a><ul><li class="item-161 deeper parent"><span class="separator">Author information</span>
+<ul><li class="item-186"><a href="https://www.aanda.org/for-authors/author-information/paper-organization" >Paper organization</a></li><li class="item-232"><a href="https://www.aanda.org/for-authors/author-information/news-from-the-editorial-office" >News from the Editorial Office</a></li><li class="item-192"><a href="https://www.aanda.org/for-authors/author-information/page-charges" >Page charges</a></li><li class="item-173"><a href="https://www.aanda.org/for-authors/author-information/acceptance-stage" >Acceptance stage</a></li><li class="item-159"><a href="https://www.aanda.org/for-authors/author-information/production-stage" >Production stage</a></li><li class="item-233"><a href="https://www.aanda.org/for-authors/author-information/copyright" >Copyright</a></li><li class="item-231"><a href="https://www.aanda.org/for-authors/author-information/open-access" >Open Access</a></li><li class="item-196"><a href="https://www.aanda.org/doc_journal/instructions/aadoc.pdf" target="_blank" >Author's guide (PDF)</a></li></ul></li><li class="item-189 deeper parent"><span class="separator">Language editing</span>
+<ul><li class="item-502"><a href="https://www.aanda.org/for-authors/language-editing/1-introduction" >1. Introduction</a></li><li class="item-472"><a href="https://www.aanda.org/for-authors/language-editing/2-main-guidelines" >2. Main guidelines for A&amp;A style</a></li><li class="item-475"><a href="https://www.aanda.org/for-authors/language-editing/3-general-structure" >3. General structure</a></li><li class="item-478"><a href="https://www.aanda.org/for-authors/language-editing/4-uk-versus-us-spelling-and-grammar" >4. UK versus US spelling and grammar</a></li><li class="item-481"><a href="https://www.aanda.org/for-authors/language-editing/5-punctuation-and-style-concerns-regarding-equations-figures-tables-and-footnotes" >5. Punctuation and style concerns regarding equations, figures, tables, and footnotes</a></li><li class="item-484"><a href="https://www.aanda.org/for-authors/language-editing/6-verb-tenses" >6. Verb tenses</a></li><li class="item-487"><a href="https://www.aanda.org/for-authors/language-editing/7-general-hyphenation-guide" >7. General hyphenation guide</a></li><li class="item-490"><a href="https://www.aanda.org/for-authors/language-editing/8-common-editing-issues" >8. Common editing issues</a></li><li class="item-493"><a href="https://www.aanda.org/for-authors/language-editing/9-measurements-and-their-descriptions" >9. Measurements and their descriptions</a></li><li class="item-496"><a href="https://www.aanda.org/for-authors/language-editing/10-suggested-resources-for-more-tips-on-language-editing-in-the-sciences" >10. Suggested resources for more tips on language editing in the sciences</a></li><li class="item-499"><a href="https://www.aanda.org/images/stories/author/EnglishGuide-2021.pdf" target="_blank" >Full Guide (PDF file)</a></li></ul></li><li class="item-178 deeper parent"><span class="separator">LaTeX issues</span>
+<ul><li class="item-370"><a href="https://www.aanda.org/for-authors/latex-issues/texnical-background-information" >TeXnical background information </a></li><li class="item-369"><a href="https://www.aanda.org/for-authors/latex-issues/the-preamble-of-your-tex-file" >The preamble of your TEX file</a></li><li class="item-371"><a href="https://www.aanda.org/for-authors/latex-issues/the-manuscript-header" >The manuscript header</a></li><li class="item-391"><a href="https://www.aanda.org/for-authors/latex-issues/including-author-names-using-non-roman-alphabets" >Including author names using non-Roman alphabets</a></li><li class="item-372"><a href="https://www.aanda.org/for-authors/latex-issues/the-main-text" >The main text</a></li><li class="item-373"><a href="https://www.aanda.org/for-authors/latex-issues/figures" >Figures</a></li><li class="item-374"><a href="https://www.aanda.org/for-authors/latex-issues/tables" >Tables</a></li><li class="item-375"><a href="https://www.aanda.org/for-authors/latex-issues/multi-media" >Multimedia </a></li><li class="item-376"><a href="https://www.aanda.org/for-authors/latex-issues/references" >References </a></li><li class="item-377"><a href="https://www.aanda.org/for-authors/latex-issues/typography" >Typography</a></li><li class="item-378"><a href="https://www.aanda.org/for-authors/latex-issues/appendices" >Appendices </a></li><li class="item-380"><a href="https://www.aanda.org/for-authors/latex-issues/astronomical-objects-linking-to-databases" >Astronomical objects: linking to databases </a></li><li class="item-381"><a href="https://www.aanda.org/for-authors/latex-issues/latex-examples" >LaTeX examples</a></li><li class="item-466"><a href="https://www.aanda.org/for-authors/latex-issues/information-files" >Information files</a></li></ul></li><li class="item-456"><a href="https://writingstudio.aws.edpsciences.org/login" target="_blank" >Writing studio</a></li><li class="item-459"><a href="https://www.aanda.org/for-authors/submit-an-article" >Submit an article</a></li></ul></li><li class="item-440"><a href="https://www.aanda.org/component/journal_price/" >Subscriber information</a></li><li class="item-514"><a href="https://www.aanda.org/subscribe-to-open-faqs" >Subscribe-to-Open (S2O) FAQs</a></li><li class="item-437"><a href="https://www.aanda.org/component/services/" >Reader's services</a></li><li class="item-127"><a href="https://www.aanda.org/news" >News</a></li></ul>
+</nav>
+            </div>
+
+            <div id="search" class="hidden">
+    <div class="wrap-search">
+        <form action="https://www.aanda.org/component/solr/?task=quick_search" method="post">
+            <div class="wrap">
+            <div class="inputs">
+                <input type="text" name="q" />
+                <button type="submit" value="search">
+                    <span class="ico ico-search" title="Search"></span>
+                </button>
+            </div> 
+                            <div class="s_volume_page">
+                    <a href="https://www.aanda.org/component/searcharticle/?by=vol-page">Access by volume/page</a>
+                </div>
+                        </div>
+
+            <div class="advanced"><a href="https://www.aanda.org/component/solr/">Advanced Search</a></div>
+        </form>
+    </div>
+</div>
+<script type="text/javascript">
+	jQuery(function ($) {
+	    var source = function (request, callback) {
+	        var term = request.term;
+            $.ajax({
+                url: '/index.php',
+                dataType: 'json',
+                method: 'GET',
+                data: {
+                    option: 'com_solr',
+                    task: 'auto_complete',
+                    query: term
+                },
+                success: function (data) {
+                    var suggestions = [];
+                    try {
+                        data.suggest.default[term].suggestions.forEach(function (s) { suggestions.push(s.term)}) } catch (e) {
+                    }
+
+                    callback(suggestions);
+                },
+                error: function (err) {
+                    callback([]);
+                }
+            });
+        };
+
+		$('#search').find('input[name=q]').autocomplete({
+			source: source
+		});
+	});
+</script>
+
+                          <div class="header-cover">
+                <div class="wrap">                                  </div>                  
+              </div>
+                    </header>
+
+        <main class="aa" id="main">
+
+            <!--div class="wrap">
+             <p>Message placeholder</p>
+            </div-->
+
+            
+            
+            
+              
+              
+            
+            
+            <div class="wrap" >
+                              
+<div class="breadcrumbs">
+
+
+
+<a href="https://www.aanda.org/" class="pathway">Home</a> <img src="https://www.aanda.org/media/system/images/arrow.png" alt=""  /> <a href="https://www.aanda.org/component/issues/" class="pathway">All issues</a> <img src="https://www.aanda.org/media/system/images/arrow.png" alt=""  /> <a href="https://www.aanda.org/articles/aa/abs/2015/06/contents/contents.html" class="pathway">Volume 578 (June 2015)</a> <img src="https://www.aanda.org/media/system/images/arrow.png" alt=""  /> <a href="./fetch.php%3Ftok=9a962e&amp;media=http:%252F%252Fwww.aanda.org%252Farticles%252Faa%252Fabs%252F2015%252F06%252Faa26075-15%252Faa26075-15.html" class="pathway">A&amp;A, 578 (2015) A114</a> <img src="https://www.aanda.org/media/system/images/arrow.png" alt=""  /> <span>Abstract</span></div>
+
+              
+                                                    <div id="content" class="id-101  full">
+                    <div>
+                                           
+                        <nav class="nav-article nav-buttons">
+                          
+<ul class="menu">
+<li class="item-145 deeper parent"><span class="separator">About A&amp;A</span>
+<ul><li class="item-137"><a href="https://www.aanda.org/about-aa/aims-and-scope" >Aims and scope</a></li><li class="item-143"><a href="https://www.aanda.org/about-aa/history" >History</a></li><li class="item-136"><a href="https://www.aanda.org/about-aa/editors-of-aa" >Editors of A&amp;A</a></li><li class="item-140"><a href="https://www.aanda.org/about-aa/board-of-directors" >Board of Directors</a></li><li class="item-138"><a href="https://www.aanda.org/about-aa/indexed-in" >Indexed in</a></li><li class="item-139"><a href="https://www.aanda.org/about-aa/copyright" >Copyright</a></li><li class="item-162"><a href="https://www.aanda.org/images/stories/leaflet/aa_leaflet.pdf" target="_blank" >A&amp;A leaflet (PDF)</a></li><li class="item-197"><a href="https://www.aanda.org/about-aa/masthead" >Masthead</a></li></ul></li><li class="item-424 deeper parent"><span class="separator">Browse articles</span>
+<ul><li class="item-427"><a href="https://www.aanda.org/component/issues/?task=all" >All volumes</a></li><li class="item-429"><a href="https://www.aanda.org/component/list/?task=topic" >Special issues</a></li><li class="item-432"><a href="https://www.aanda.org/component/forthcoming/" >Forthcoming</a></li><li class="item-435"><a href="https://www.aanda.org/highlights" >Highlights</a></li><li class="item-221"><a href="https://www.aanda.org/2023-press-releases" >Press releases</a></li></ul></li><li class="item-396 deeper parent"><a href="https://www.aanda.org/for-authors" >For authors</a><ul><li class="item-161 deeper parent"><span class="separator">Author information</span>
+<ul><li class="item-186"><a href="https://www.aanda.org/for-authors/author-information/paper-organization" >Paper organization</a></li><li class="item-232"><a href="https://www.aanda.org/for-authors/author-information/news-from-the-editorial-office" >News from the Editorial Office</a></li><li class="item-192"><a href="https://www.aanda.org/for-authors/author-information/page-charges" >Page charges</a></li><li class="item-173"><a href="https://www.aanda.org/for-authors/author-information/acceptance-stage" >Acceptance stage</a></li><li class="item-159"><a href="https://www.aanda.org/for-authors/author-information/production-stage" >Production stage</a></li><li class="item-233"><a href="https://www.aanda.org/for-authors/author-information/copyright" >Copyright</a></li><li class="item-231"><a href="https://www.aanda.org/for-authors/author-information/open-access" >Open Access</a></li><li class="item-196"><a href="https://www.aanda.org/doc_journal/instructions/aadoc.pdf" target="_blank" >Author's guide (PDF)</a></li></ul></li><li class="item-189 deeper parent"><span class="separator">Language editing</span>
+<ul><li class="item-502"><a href="https://www.aanda.org/for-authors/language-editing/1-introduction" >1. Introduction</a></li><li class="item-472"><a href="https://www.aanda.org/for-authors/language-editing/2-main-guidelines" >2. Main guidelines for A&amp;A style</a></li><li class="item-475"><a href="https://www.aanda.org/for-authors/language-editing/3-general-structure" >3. General structure</a></li><li class="item-478"><a href="https://www.aanda.org/for-authors/language-editing/4-uk-versus-us-spelling-and-grammar" >4. UK versus US spelling and grammar</a></li><li class="item-481"><a href="https://www.aanda.org/for-authors/language-editing/5-punctuation-and-style-concerns-regarding-equations-figures-tables-and-footnotes" >5. Punctuation and style concerns regarding equations, figures, tables, and footnotes</a></li><li class="item-484"><a href="https://www.aanda.org/for-authors/language-editing/6-verb-tenses" >6. Verb tenses</a></li><li class="item-487"><a href="https://www.aanda.org/for-authors/language-editing/7-general-hyphenation-guide" >7. General hyphenation guide</a></li><li class="item-490"><a href="https://www.aanda.org/for-authors/language-editing/8-common-editing-issues" >8. Common editing issues</a></li><li class="item-493"><a href="https://www.aanda.org/for-authors/language-editing/9-measurements-and-their-descriptions" >9. Measurements and their descriptions</a></li><li class="item-496"><a href="https://www.aanda.org/for-authors/language-editing/10-suggested-resources-for-more-tips-on-language-editing-in-the-sciences" >10. Suggested resources for more tips on language editing in the sciences</a></li><li class="item-499"><a href="https://www.aanda.org/images/stories/author/EnglishGuide-2021.pdf" target="_blank" >Full Guide (PDF file)</a></li></ul></li><li class="item-178 deeper parent"><span class="separator">LaTeX issues</span>
+<ul><li class="item-370"><a href="https://www.aanda.org/for-authors/latex-issues/texnical-background-information" >TeXnical background information </a></li><li class="item-369"><a href="https://www.aanda.org/for-authors/latex-issues/the-preamble-of-your-tex-file" >The preamble of your TEX file</a></li><li class="item-371"><a href="https://www.aanda.org/for-authors/latex-issues/the-manuscript-header" >The manuscript header</a></li><li class="item-391"><a href="https://www.aanda.org/for-authors/latex-issues/including-author-names-using-non-roman-alphabets" >Including author names using non-Roman alphabets</a></li><li class="item-372"><a href="https://www.aanda.org/for-authors/latex-issues/the-main-text" >The main text</a></li><li class="item-373"><a href="https://www.aanda.org/for-authors/latex-issues/figures" >Figures</a></li><li class="item-374"><a href="https://www.aanda.org/for-authors/latex-issues/tables" >Tables</a></li><li class="item-375"><a href="https://www.aanda.org/for-authors/latex-issues/multi-media" >Multimedia </a></li><li class="item-376"><a href="https://www.aanda.org/for-authors/latex-issues/references" >References </a></li><li class="item-377"><a href="https://www.aanda.org/for-authors/latex-issues/typography" >Typography</a></li><li class="item-378"><a href="https://www.aanda.org/for-authors/latex-issues/appendices" >Appendices </a></li><li class="item-380"><a href="https://www.aanda.org/for-authors/latex-issues/astronomical-objects-linking-to-databases" >Astronomical objects: linking to databases </a></li><li class="item-381"><a href="https://www.aanda.org/for-authors/latex-issues/latex-examples" >LaTeX examples</a></li><li class="item-466"><a href="https://www.aanda.org/for-authors/latex-issues/information-files" >Information files</a></li></ul></li><li class="item-456"><a href="https://writingstudio.aws.edpsciences.org/login" target="_blank" >Writing studio</a></li><li class="item-459"><a href="https://www.aanda.org/for-authors/submit-an-article" >Submit an article</a></li></ul></li><li class="item-440"><a href="https://www.aanda.org/component/journal_price/" >Subscriber information</a></li><li class="item-514"><a href="https://www.aanda.org/subscribe-to-open-faqs" >Subscribe-to-Open (S2O) FAQs</a></li><li class="item-437"><a href="https://www.aanda.org/component/services/" >Reader's services</a></li><li class="item-127"><a href="https://www.aanda.org/news" >News</a></li></ul>
+
+                        </nav>
+                                            
+                      
+<div id="system-message-container">
+</div>
+                      
+
+                      
+                                              <div class="flexme flexme-article">
+                        <div class="article-content">
+                                <div>
+    
+<div class="special_article"><a href="https://www.aanda.org/highlights/1117">Highlight</a></div><div class="special_article green">Free Access</div>
+    
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+ 
+    <div class="summary " >
+	<table>
+		
+	
+		<tr>
+		<th valign="top">
+							Issue
+					</th>
+		<td width="10"></td>
+		<td>
+							<div>
+											A&A
+									</div>
+										<div><strong>Volume </strong>578, June 2015				</div>
+				
+									</td>
+	<tr><td colspan="3" ></td></tr>
+	<tr><td colspan="3" class="sep_issue"></td></tr>
+	</tr>
+	
+						<tr>
+				<th>
+					Article Number
+					</th>
+				<td></td>
+				<td>A114</td>
+			</tr>
+							<tr>
+				<th>
+					Number of page(s)
+					</th>
+				<td></td>
+				<td>19</td>
+			</tr>
+				
+			<tr>
+			<th>Section</th>
+			<td></td>
+			<td>Astronomical instrumentation</td>
+		</tr>
+		
+			<tr>
+			<th>DOI</th>
+			<td></td>
+			<td>
+				<a href="https://doi.org/10.1051/0004-6361/201526075">
+					https://doi.org/10.1051/0004-6361/201526075
+				</a>
+			</td>
+		</tr>
+		
+			<tr>
+			<th>Published online</th>
+			<td></td>
+			<td>
+				15 June 2015
+			</td>
+		</tr>
+		
+		</table>
+</div>
+
+
+
+<div id="article">
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<div id="contenu-min">
+<div id="head">A&amp;A 578, A114 (2015)<h2 class="title">Hierarchical progressive surveys</h2>
+<h3 class="subtitle">Multi-resolution HEALPix data structures for astronomical images, catalogues, and 3-dimensional data cubes</h3>
+<div class="article-authors"><p class="bold"><span id="aa26075-15-author-1" data-url="/component/author/?dkey=10.1051/0004-6361/201526075&amp;n=1" class="author">P. Fernique</span><sup>1</sup>, <span id="aa26075-15-author-2" data-url="/component/author/?dkey=10.1051/0004-6361/201526075&amp;n=2" class="author">M. G. Allen</span><sup>1</sup>, <span id="aa26075-15-author-3" data-url="/component/author/?dkey=10.1051/0004-6361/201526075&amp;n=3" class="author">T. Boch</span><sup>1</sup>, <span id="aa26075-15-author-4" data-url="/component/author/?dkey=10.1051/0004-6361/201526075&amp;n=4" class="author">A. Oberto</span><sup>1</sup>, <span id="aa26075-15-author-5" data-url="/component/author/?dkey=10.1051/0004-6361/201526075&amp;n=5" class="author">F-X. Pineau</span><sup>1</sup>, <span id="aa26075-15-author-6" data-url="/component/author/?dkey=10.1051/0004-6361/201526075&amp;n=6" class="author">D. Durand</span><sup>2</sup>, <span id="aa26075-15-author-7" data-url="/component/author/?dkey=10.1051/0004-6361/201526075&amp;n=7" class="author">C. Bot</span><sup>1</sup>, <span id="aa26075-15-author-8" data-url="/component/author/?dkey=10.1051/0004-6361/201526075&amp;n=8" class="author">L. Cambr&#233;sy</span><sup>1</sup>, <span id="aa26075-15-author-9" data-url="/component/author/?dkey=10.1051/0004-6361/201526075&amp;n=9" class="author">S. Derriere</span><sup>1</sup>, <span id="aa26075-15-author-10" data-url="/component/author/?dkey=10.1051/0004-6361/201526075&amp;n=10" class="author">F. Genova</span><sup>1</sup> and <span id="aa26075-15-author-11" data-url="/component/author/?dkey=10.1051/0004-6361/201526075&amp;n=11" class="author">F. Bonnarel</span><sup>1</sup></p></div>
+<p class="aff"><sup>1</sup> Observatoire Astronomique de Strasbourg, Universit&#233; de Strasbourg, UMR 7550,  11 rue de l&#8217;Universit&#233;,  67000   Strasbourg,  France 
+<br>
+            e-mail: Mark.Allen@astro.unistra.fr; Pierre.Fernique@astro.unistra.fr
+          <br><sup>2</sup> National Research Council Canada, Canadian Astronomy Data Centre, 5071 W. Saanich Rd.,  Victoria,  BC,  Canada 
+<br></p>
+<p class="history"><span class="bold">Received: </span>11 March 2015<br><span class="bold">Accepted: </span>19 April 2015</p>
+<p class="bold"><a name="abs"></a>Abstract</p>
+        <p><i>Context. </i>Scientific exploitation of the ever increasing volumes of astronomical data requires efficient and practical methods for data access, visualisation, and analysis. Hierarchical sky tessellation techniques enable a multi-resolution approach to organising data on angular scales from the full sky down to the individual image pixels.</p>
+        <p><i>Aims. </i>We aim to show that the hierarchical progressive survey (HiPS) scheme for describing astronomical images, source catalogues, and three-dimensional data cubes is a practical solution to managing large volumes of heterogeneous data and that it enables a new level of scientific interoperability across large collections of data of these different data types.</p>
+        <p><i>Methods. </i>HiPS uses the HEALPix tessellation of the sphere to define a hierarchical tile and pixel structure to describe and organise astronomical data. HiPS is designed to conserve the scientific properties of the data alongside both visualisation considerations and emphasis on the ease of implementation. We describe the development of HiPS to manage a large number of diverse image surveys, as well as the extension of hierarchical image systems to cube and catalogue data. We demonstrate the interoperability of HiPS and multi-order coverage (MOC) maps and highlight the HiPS mechanism to provide links to the original data.</p>
+        <p><i>Results. </i>Hierarchical progressive surveys have been generated by various data centres and groups for <span class="simple-math">&#8764;</span>200 data collections including many wide area sky surveys, and archives of pointed observations. These can be accessed and visualised in Aladin, Aladin Lite, and other applications. HiPS provides a basis for further innovations in the use of hierarchical data structures to facilitate the description and statistical analysis of large astronomical data sets.</p>
+      <div class="kword"><p><span class="bold">Key words: </span>surveys / atlases / astronomical databases: miscellaneous / catalogs / virtual observatory tools / methods: statistical</p></div>
+</div>
+<p><i>&#169; ESO, 2015</i></p>
+</div>
+
+</div>
+
+    <div id="metrics-tabs" data-doi="10.1051/0004-6361/201526075" data-edps_ref="aa26075-15">
+<nav class="toolbar">
+	<button class="toolbar-item" id="metrics-siq">Current usage metrics</button>
+	<button class="toolbar-item" id="info">About article metrics</button>
+    
+	
+	<button class="toolbar-item" id="return">Return to article</button>
+</nav>
+
+<div class="panel" data-for="metrics-siq">
+</div>
+
+<div class="panel" data-for="metrics-alm"></div>
+
+<div class="panel" data-for="info">
+	
+
+	<p>Current usage metrics show cumulative count of Article Views (full-text article views including HTML views, PDF and ePub downloads, according to the available data)  and Abstracts Views on Vision4Press platform.</p>
+
+	<p>Data correspond to usage on the plateform after 2015. The current usage metrics is available 48-96 hours after online publication and is updated daily on week days.</p>
+
+	<div class="msg msg-info">
+		<span class="ico ico-info"></span>
+		<div>
+			<p>Initial download of the metrics may take a while.</p>
+		</div>
+	</div>
+
+
+</div>
+
+
+
+
+</div>
+<script type="text/javascript" src="https://www.aanda.org/templates/source/js/metrics-tab.js"></script>
+
+
+
+
+                                    
+
+
+                                                    </div>
+                        <nav class="article">
+                           
+  
+ 
+  <div class="module_title">
+    <a href="https://www.aanda.org/">Homepage</a>
+</div>
+<div class="nav-section"><div class="title_toc">
+<ul class="menu browse">
+<li class="item-452"><a class=" link-volumes" href="https://www.aanda.org/component/issues/?task=all" >All volumes</a></li><li class="item-453"><a href="https://www.aanda.org/component/list/?task=topic" >Special issues</a></li><li class="item-451"><a class=" link-forth" href="https://www.aanda.org/component/forthcoming/" >Forthcoming articles</a></li><li class="item-448"><a class=" link-pr" href="https://www.aanda.org/2022-press-releases" >Press releases</a></li></ul>
+<a href="https://www.aanda.org/articles/aa/abs/2015/06/contents/contents.html">Table of Contents</a></div></div> 
+<div class="nav-section files"> <h2>Article</h2><div class="article_doc"><ul><li><a href="./fetch.php%3Ftok=9a962e&amp;media=http:%252F%252Fwww.aanda.org%252Farticles%252Faa%252Fabs%252F2015%252F06%252Faa26075-15%252Faa26075-15.html" title="Abstract" class="current">Abstract</a></li><li><a href="https://www.aanda.org/articles/aa/full_html/2015/06/aa26075-15/aa26075-15.html" title="Full HTML">Full HTML</a></li><li><a href="https://www.aanda.org/articles/aa/pdf/2015/06/aa26075-15.pdf" title="PDF (2.221 MB)">PDF (2.221 MB)</a></li><li><a href="https://www.aanda.org/articles/aa/epub2/2015/06/aa26075-15/aa26075-15.epub" title="ePUB (1.384 MB)">ePUB (1.384 MB)</a></li><li><a href="https://www.aanda.org/articles/aa/ref/2015/06/aa26075-15/aa26075-15.html" title="References">References</a></li><li><a href="https://ui.adsabs.harvard.edu/#abs/2015A%26A...578A.114F" title="NASA ADS Abstract Service">NASA ADS Abstract Service</a></li></ul>
+    </div>
+
+</div>
+
+
+
+    <div class="nav-section stats"><h2>Metrics</h2><script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script><ul><li><a id="show-metrics">Show article metrics</a></li><li class="altmetrics"><div class='altmetric-embed' data-doi="10.1051/0004-6361/201526075" data-hide-no-mentions="true"></div></li></ul>
+    </div>
+
+
+<div class="nav-section servs"><h2>Services</h2><ul><li><strong>Articles citing this article</strong><br /><div style="margin-left:8px"><a href="https://www.aanda.org/component/citedby/?task=crossref&amp;doi=10.1051/0004-6361/201526075">CrossRef (24)</a></div></li><li><strong>Same authors</strong><br /><div style="margin-left:8px">- <a href="https://www.aanda.org/component/solr/?task=authors&amp;tool=google&amp;dkey=10.1051/0004-6361/201526075" target="_blank">Google Scholar</a></div><div style="margin-left:8px">- <a href="https://www.aanda.org/component/solr/?task=authors&amp;tool=ads&amp;dkey=10.1051/0004-6361/201526075" target="_blank">NASA ADS</a></div><div style="margin-left:8px">- <a href="https://www.aanda.org/component/solr/?task=authors&amp;dkey=10.1051/0004-6361/201526075" target="_blank">EDP Sciences database</a></div></li><div class="separator"></div><li><a href="https://www.aanda.org/component/recommend/?type=article&amp;dkey=10.1051/0004-6361/201526075">Recommend this article</a></li><li><a href="https://www.aanda.org/component/kindle/?dkey=10.1051/0004-6361/201526075" title="Send this article to my Kindle">Send to my Kindle</a></li><li><a href="https://www.aanda.org/component/makeref/?task=show&amp;type=html&amp;doi=10.1051/0004-6361/201526075">Download citation</a></li></ul>
+</div>
+ 
+
+
+ 
+  <div class="nav-section related">
+  <h2>Related Articles</h2>
+  <script type="text/javascript">
+    jQuery(function ($) {
+      $(document).ready(function() {
+        $('.nav-toggle').click(function() {
+          var collapse_content_selector = $(this).attr('href');
+          var toggle_switch = $(this);
+          $(collapse_content_selector).toggle(function() {
+            if ($(this).css('display') == 'none') {
+              toggle_switch.html('More');
+            } else {
+              toggle_switch.html('Less');
+            }
+          });
+        });
+      });
+    });
+  </script>
+            <div class="articles">
+                      <a href="https://www.aanda.org/articles/aa/abs/2017/09/aa31059-17/aa31059-17.html" class="title">Gaia Data Release 1 — The archive visualisation service</a>
+            <br />
+    
+          A&A 605, A52 (2017)<br />
+        <div class="separator"></div>
+                            <a href="http://www.aanda.org/highlights/2015-highlights/1117-hierarchical-progressive-surveys-p-fernique-et-al" class="title">Hierarchical progressive surveys (P. Fernique et al.)</a>
+            <br />
+    
+          Astronomy & Astrophysics<br />
+        <div class="separator"></div>
+                            <a href="https://www.epj-conferences.org/articles/epjconf/abs/2018/21/epjconf_lisaviii2018_02001/epjconf_lisaviii2018_02001.html" class="title">Bibliography, catalogs, pixel data: Management of heterogeneous Big Data at CDS by the documentalists</a>
+            <br />
+    
+          EPJ Web of Conferences 186, 02001 (2018)<br />
+        <div class="separator"></div>
+                </div>
+      <div id="searchmlt" class="articles" style="display:none">
+      <div class="separator"></div>
+                      <a href="https://www.aanda.org/articles/aa/abs/2021/02/aa37432-19/aa37432-19.html" class="title">Overdensity of VVV galaxies behind the Galactic bulge</a>
+            <br />
+    
+          A&A 646, A146 (2021)<br />
+        <div class="separator"></div>
+                            <a href="https://www.aanda.org/articles/aa/abs/2020/02/aa36573-19/aa36573-19.html" class="title">Web application for galaxy-targeted follow-up of electromagnetic counterparts to gravitational wave sources</a>
+            <br />
+    
+          A&A 634, A32 (2020)<br />
+        <div class="separator"></div>
+          </div>
+        </ul>
+  <button href="#searchmlt" class="nav-toggle">More</button>
+</div>
+
+ 
+  <div class="nav-section bookmark">
+	<h2>Bookmarking</h2>
+	<ul>
+		<li>
+			<a href="https://www.facebook.com/share.php?u=https://doi.org/10.1051/0004-6361/201526075" onclick="return fbs_click('https://doi.org/10.1051/0004-6361/201526075', 'Hierarchical progressive surveys - Multi-resolution HEALPix data structures for astronomical images, catalogues, and 3-dimensional data cubes');" title="Share on Facebook" target="_blank" onclick="_gaq.push(['_trackPageview', '/bookmarking/Facebook/Hierarchical progressive surveys - Multi-resolution HEALPix data structures for astronomical images, catalogues, and 3-dimensional data cubes']);">
+				<span class="ico ico-s ico-facebook"></span> 
+			</a>
+		</li>
+		<li>
+			<a title="Share on Twitter" href="https://twitter.com/intent/tweet?text=Hierarchical progressive surveys - Multi-resolution HEALPix data structures for astronomical images, catalogues, and 3-dimensional data cubes.%20https://doi.org/10.1051/0004-6361/201526075%20via%20@AandA_journal" class="twitter-share-button" data-count="none" target="_blank" onclick="_gaq.push(['_trackPageview', '/bookmarking/Twitter/Hierarchical progressive surveys - Multi-resolution HEALPix data structures for astronomical images, catalogues, and 3-dimensional data cubes']);">
+				<span class="ico ico-s ico-twitter"></span>
+			</a>
+		</li>
+		<li>
+			<a title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://doi.org/10.1051/0004-6361/201526075" onclick="_gaq.push(['_trackPageview', '/bookmarking/LinkedIn/Hierarchical progressive surveys - Multi-resolution HEALPix data structures for astronomical images, catalogues, and 3-dimensional data cubes']);">
+				<span class="ico ico-s ico-linkedin"></span>
+			</a>
+		</li>
+		<li>
+			<a title="Share on Sina Weibo" href="https://service.weibo.com/share/share.php?title=Hierarchical progressive surveys - Multi-resolution HEALPix data structures for astronomical images, catalogues, and 3-dimensional data cubes&url=https://doi.org/10.1051/0004-6361/201526075" target="_blank" onclick="_gaq.push(['_trackPageview', '/bookmarking/Weibo/Hierarchical progressive surveys - Multi-resolution HEALPix data structures for astronomical images, catalogues, and 3-dimensional data cubes']);">
+				<span class="ico ico-s ico-sinaweibo"></span>
+			</a>
+		</li>
+		<li>
+			<a title="Add this article to your Mendeley library" href="https://www.mendeley.com/import/?doi=10.1051/0004-6361/201526075" onclick="_gaq.push(['_trackPageview', '/bookmarking/Mendeley/Hierarchical progressive surveys - Multi-resolution HEALPix data structures for astronomical images, catalogues, and 3-dimensional data cubes']);">
+				<span class="ico ico-s ico-mendeley"></span>
+				<svg class="share-icon-svg" viewBox="0 0 32 32" xmlns="https://www.w3.org/2000/svg">
+					<title>Mendeley</title>
+					<path class="share-icon-svg-mendeley" d="M0 0h32v32H0z"/>
+					<path class="share-icon-svg" d="M25.9 19.14a2.85 2.85 0 0 1 .1.86 2.64 2.64 0 0 1-.2.8 1.82 1.82 0 0 1-.42.67 2.1 2.1 0 0 1-.64.42 1.65 1.65 0 0 1-1.65-.2 2 2 0 0 1-.88-1.53 2.57 2.57 0 0 1 0-.6 3.24 3.24 0 0 1 .15-.57 3.17 3.17 0 0 0 .14-.37 1.42 1.42 0 0 0 .07-.4 1.58 1.58 0 0 0-.1-.7 1.52 1.52 0 0 0-.4-.53 1.67 1.67 0 0 0-.36-.28 2.94 2.94 0 0 0-.4-.2 3.58 3.58 0 0 0-2.44 0l-.34.18a1.65 1.65 0 0 0-.3.2 1.42 1.42 0 0 0-.47.68 1.6 1.6 0 0 0 0 .83 1.22 1.22 0 0 0 .16.44 2.18 2.18 0 0 1 .2 1.47 2.07 2.07 0 0 1-.77 1.25 1.62 1.62 0 0 1-.56.3 2.48 2.48 0 0 1-.62.13h-.48a1.54 1.54 0 0 1-.48-.12 2.2 2.2 0 0 1-.84-.64 2.17 2.17 0 0 1-.42-1 1.7 1.7 0 0 1 0-.7 2.58 2.58 0 0 1 .22-.66 1.8 1.8 0 0 0 .18-.56 1.56 1.56 0 0 0 0-.6 1.15 1.15 0 0 0-.15-.37 1.68 1.68 0 0 0-.32-.33 2.4 2.4 0 0 0-.42-.3 1.8 1.8 0 0 0-.46-.2 3.8 3.8 0 0 0-1.28-.18 3.3 3.3 0 0 0-1.26.32.84.84 0 0 0-.22.12l-.24.16a1.54 1.54 0 0 0-.53.73 1.6 1.6 0 0 0 0 .93 1.47 1.47 0 0 0 .06.23 1.84 1.84 0 0 0 .1.24 2.33 2.33 0 0 1 .17.9 2.55 2.55 0 0 1-.2.94 1.94 1.94 0 0 1-.74.85 1.7 1.7 0 0 1-1 .26 1.57 1.57 0 0 1-.7-.2 2.45 2.45 0 0 1-.6-.48 1.6 1.6 0 0 1-.33-.56 2.94 2.94 0 0 1-.23-.62 3 3 0 0 1 0-.55 2.06 2.06 0 0 1 .1-.54 1.2 1.2 0 0 1 .12-.35 1.37 1.37 0 0 1 .22-.28l.3-.28a2 2 0 0 1 .36-.22 1.82 1.82 0 0 1 .4-.15 1.4 1.4 0 0 1 .44 0 1.27 1.27 0 0 0 .35 0 1.17 1.17 0 0 0 .32-.1.94.94 0 0 0 .38-.28 1.06 1.06 0 0 0 .2-.4 1.3 1.3 0 0 0 .14-.42 3.4 3.4 0 0 0 0-.44v-.24q0-.37-.06-.73t-.1-.7a.12.12 0 0 0 0-.08.12.12 0 0 1 0-.08 2.6 2.6 0 0 1-.18-.9 4.14 4.14 0 0 1 0-.63 4.26 4.26 0 0 1 .1-.63 3.45 3.45 0 0 1 .8-1.35 2.83 2.83 0 0 1 1.3-.74 2.57 2.57 0 0 1 1.7.12 2.9 2.9 0 0 1 1.35 1.15l.12.18.14.18.33.3.32.34a1 1 0 0 0 .27.22 1.2 1.2 0 0 0 .33.13 1.17 1.17 0 0 0 .5 0 1.15 1.15 0 0 0 .46-.22l.23-.2.2-.23.27-.3.26-.3v-.14a3.08 3.08 0 0 1 .88-.92 2.7 2.7 0 0 1 3.2.13A2.93 2.93 0 0 1 23 12.63a4.53 4.53 0 0 1 0 .9 3.67 3.67 0 0 1-.17.86 1.9 1.9 0 0 0-.06.28v.28a5.7 5.7 0 0 0-.08.66 5.8 5.8 0 0 0 0 .66 1.65 1.65 0 0 0 0 .24v.24a1.3 1.3 0 0 0 .33.66 1.13 1.13 0 0 0 .63.3h.38a1.88 1.88 0 0 1 1.07.27 1.66 1.66 0 0 1 .8 1.17zM16 17.68a1.73 1.73 0 0 0 1.44-.68 2.25 2.25 0 0 0 .56-1.43 2.18 2.18 0 0 0-.6-1.5 1.83 1.83 0 0 0-1.4-.63 1.8 1.8 0 0 0-1.4.63 2.16 2.16 0 0 0-.56 1.5A2.3 2.3 0 0 0 14.6 17a1.7 1.7 0 0 0 1.4.68z"/>
+				</svg>
+			</a>
+		</li>
+	</ul>
+</div>
+
+ 
+  <div class="nav-section account">
+    <ul>
+        <li>
+            <a href="https://www.aanda.org/component/services/"><span class="ico ico-account"></span> Reader's services</a>
+        </li>
+        <li>
+            <a href="https://www.aanda.org/component/services/?label=toc_email"><span class="ico ico-alert"></span> Email-alert</a>
+        </li>
+    </ul>
+</div>
+
+                        </nav>
+                        </div>
+                                          
+                    
+
+
+
+                                                            <div class="clear"></div>
+                  </div>
+                    
+               
+                </div>
+
+                                     
+
+                
+
+                                  
+        </main>
+
+        <footer>
+                  <div class="footer-journal">
+            <div class="wrap">
+              <div class="footer-infos">
+              <h3>Astronomy & Astrophysics (A&A)</h3>
+              
+
+<div class="flexme flexme3">
+
+<div class="c13">
+<p>
+Editor-in-Chief: T. Forveille<br />
+Letters Editor-in-Chief: J. Alves<br />
+Managing Editor: D. Elbaz <br />
+</p>
+</div>
+
+<div class="c13">
+<p>ISSN: 0004-6361 ; e-ISSN: 1432-0746<br />
+Frequency: 12 volumes per year<br />
+Published by: EDP Sciences<br />
+</p>
+</div>
+
+<div class="c13">
+<p>
+
+&copy; The European Southern Observatory (<a target="_blank" href="http://www.eso.org/">ESO</a>) 
+</p>
+
+</div>
+</div>
+</div>
+              <div class="footer-social">
+
+<ul class="ico-social">
+<li><a class="twitter" title="Follow us on twitter" target="_blank" href="https://twitter.com/AandA_journal"></a></li>
+<li><a class="facebook" title="Follow us on Facebook" target="_blank" href="https://www.facebook.com/Astronomy-Astrophysics-192738067986000/"></a></li>
+<!--li><a class="linkedin" title="Follow us on LinkedIn" target="_blank" href="https://www.linkedin.com/company/edp-sciences"></a></li-->
+<!--li><a class="google" title="Follow us on Google+" target="_blank" href="https://plus.google.com/+EdpsciencesOrg"></a></li-->
+<li><a class="rss" title="Accéder aux flux RSS" href="https://www.aanda.org/component/rsslist/?task=journal"></a></li>
+<li><a class="alert" title="Alerte courriel" href="https://www.aanda.org/component/services/?label=toc_email"></a></li>
+</ul>
+</div>
+            </div>
+          </div>
+          <div>
+            
+          </div>
+          <div class="footer-edp">
+            <div class="wrap">
+                              <a href="https://www.edpsciences.org/" target="_blank" title="EDP Sciences website"><img src="https://www.aanda.org/templates/source/images/logos/logo_edp_fff.svg" alt="EDP Sciences"></a>
+                                            
+<ul class="menu">
+<li class="item-175"><a href="https://www.aanda.org/mentions-legales" >Mentions légales</a></li><li class="item-174"><a href="https://www.edpsciences.org/en/contact-us/contact-form?subject=Astronomy%20%26%20Astrophysics&amp;contactid=5" >Contacts</a></li><li class="item-442"><a href="https://www.edpsciences.org/en/privacy-policy" target="_blank" >Privacy policy</a></li></ul>
+
+                          </div>
+          </div>
+                        <div class="footer-ptf">
+               <div class="wrap">
+                <div class="position-footer-ptf"></div>
+                <div class="link-vfp"><a href="https://www.vision4press.org" target="_blank">A Vision4Press website</a></div>
+               </div>
+               </div>
+                </footer>
+    </div>
+    <script src="https://www.aanda.org/templates/source/js/mmenu2/dist/js/jquery.mmenu.all.min.js"></script>
+    <script src="https://www.aanda.org/templates/template1/js/script.js"></script>
+    
+<span class="translations" data-name="separator_and" data-value="and"></span>
+<span class="translations" data-name="select_all" data-value="Select all"></span>
+<span class="translations" data-name="unselect_all" data-value="Unselect all"></span>
+<span class="translations" data-name="show_short_summary" data-value="Show short summary"></span>
+<span class="translations" data-name="hide_short_summary" data-value="Hide short summary"></span>
+<span class="translations" data-name="cookie_text" data-value="By using this website, you agree that EDP Sciences may store web audience measurement cookies and, on some pages, cookies from social networks. <a href='/component/cookie_policy/'>More information and setup</a>"></span>
+<span class="translations" data-name="cookie_close" data-value="Click to close this notification"></span>
+<span class="translations" data-name="cookie_close_btn" data-value="OK"></span>
+<span class="translations" data-name="loading" data-value="Loading author..."></span>
+<span class="translations" data-name="view_fullscreen" data-value="Click to view fullscreen"></span>
+<span class="translations" data-name="hide_fullscreen" data-value="Click anywhere to hide the fullscreen overlay"></span>
+<span class="translations" data-name="play_movie" data-value="Click to play the movie"></span>
+<span class="translations" data-name="cookie_is_mobile" data-value=""></span>
+<span class="translations" data-name="add_to_cart" data-value="Add to cart"></span>
+<span class="translations" data-name="remove_from_cart" data-value="Remove from cart"></span>
+<span class="translations" data-name="loading_cart" data-value="Loading..."></span>
+<span class="translations" data-name="empty_cart" data-value="Your cart is empty"></span>
+<span class="translations" data-name="terms_agreeement" data-value="You must agree the Purchase Agreement Terms and Conditions."></span>
+<span class="translations" data-name="makeref_url" data-value="/component/makeref/?task=show&amp;type=html&amp;doi="></span>
+<span class="translations" data-name="set_cart_article_status_url" data-value="/component/services/?task=set_cart_article_status"></span>
+<span class="translations" data-name="get_shopping_cart_url" data-value="/component/services/?task=get_shopping_cart_list"></span>
+<span class="translations" data-name="clear_shopping_cart_url" data-value="/component/services/?task=clear_shopping_cart"></span>
+<span class="translations" data-name="get_billing_url" data-value="/component/services/?label=ppv&amp;task=get_billing"></span>
+<span class="translations" data-name="authors_url" data-value="/component/article/?task=get_authors"></span>
+
+
+
+  <span id="google_analytics" data-host="ovh-france" data-domain="www.aanda.org" data-t1="UA-39520934-1" data-t2="UA-5187131-2" class="hidden"></span>
+<div id="wait" style="display:none"></div>
+
+
+	<script src="https://www.aanda.org/templates/source/js/cookie.js"></script>
+
+<script src="https://www.aanda.org/templates/source/js/common.js"></script>
+
+</body>
+</html>

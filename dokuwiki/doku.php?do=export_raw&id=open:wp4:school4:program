@@ -1,0 +1,98 @@
+===== Program =====
+
+It is important to have installed beforehand in your laptops the VO-tools to be used in the School, namely:
+
+     * [[http://aladin.u-strasbg.fr/java/download/Aladin.jar|ALADIN]] (Download the Aladin.jar file and execute it from a terminal using "**java -Xmx2048m -jar Aladin.jar**"). Official version: v10 
+     * [[http://www.star.bris.ac.uk/~mbt/topcat/topcat-full.jar|TOPCAT]] (Download the topcat-full.jar file and execute it from a terminal using "**java -jar topcat-full.jar**"). Official version: v4.6-2
+       * See detailed instructions under http://www.star.bris.ac.uk/~mbt/topcat/ 
+     * [[http://www.star.bris.ac.uk/~mbt/stilts/stilts.jar|STILTS]] (Download the stilts.jar file and execute it from a terminal using "**java -jar stilts.jar**"). Official version: v3.1-5 
+       * See detailed instructions under http://www.star.bris.ac.uk/~mbt/stilts/
+     * [[http://svo2.cab.inta-csic.es/theory/vosa/|VOSA]] (Web server. You don't need to install anything). Official version: v6.0
+
+     * Java 1.8 or a later version has to be installed on your system. 
+       * To check the Java installation from a terminal, type the command line: java -version
+       * You can download the latest JRE version from: https://www.java.com/en/download/
+
+
+**Tuesday 20**
+  * 09:00 Registration
+  * 09:30 - 10:30 Introductory talks
+    * 09:30 - 09:35 - Welcome & logistics (Ada Nebot)
+    * 09:35 - 09:50 - {{:open:wp4:school4:vo_school-2018.pdf|Observatory of Strasbourg (Pierre-Alain Duc)}}
+    * 09:50 - 10:05 - {{:open:wp4:school4:allen_voschool2018.pdf|The ASTERICS project (Mark Allen)}}
+    * 10:05 - 10:30 - {{:open:wp4:school4:introvo_school_2018.pdf|Introduction to the VO and the school (Ada Nebot)}}
+
+  * 10:30 - 11:00 Coffee break
+
+  * 11:00 - 12:45 Tutorial #1 (1h45m).
+    * Title: [[https://github.com/kathl/EURO-VO-tutorials/blob/master/cds-tutorial_4asterics/cdstutorial_4ASTERICS.pdf|The CDS tutorial.]] {{:open:wp4:school4:tutorial-cds.pdf|The CDS tutorial.}}
+    * VO-tools: Simbad, VizieR, Aladin
+    * Tutor: **K. Lutz** + A. Nebot (group 1) / **S. Derriere** + T. Boch  (group 2)
+
+  * 12:45 - 14:00 LUNCH
+
+  * 14:00 - 15:45 Tutorial #2 (1h45m)
+    * Title:{{:open:wp4:school4:tutorial-vosa.pdf|Determination of stellar physical parameters using VOSA}}
+    * Introduction to VOSA and the science case
+    * VO-tools: VOSA, TOPCAT
+    * Tutor: **F. Jiménez** + A. Nebot (group 1) / **M. Cortés** + G. Greco (group 2)
+
+  * 15:45 - 16:00 Coffee break
+
+  * 16:00 - 18:00 Tutorial #3 (2h00m)
+    * Title: [[http://docs.g-vo.org/adql-gaia/html/|Accessing and cross matching of big data sets with ADQL]]
+    * VO-tools: TOPCAT (TAP/ADQL)
+    * Tutor: **H. Heinl** + M. Taylor (group 1) / **M. Demleitner** + S. Derriere (group 2)
+
+**Wednesday 21**
+  * 09:00 - 10:45 Tutorial #4 (group 1) / Tutorial #5 (group 2) (1h45m).
+  * Tutorial #4 
+    * Title:{{:open:wp4:school4:tutorial-topcat-stilts.pdf|Exploring Gaia data with TOPCAT and STILTS}}
+    * VO-tools: TOPCAT, STILTS
+    * Tutor: **M. Taylor** + H. Heinl (group 1) 
+  * Tutorial #5 
+    * Title: [[http://nbviewer.jupyter.org/github/ggreco77/Electromagnetic-follow-up-of-gravitational-wave-events/blob/master/Electromagnetic_followup_gravitational-wave_events%20%28v7%29.ipynb|Electromagnetic follow-up of gravitational-wave events]]
+    * VO-tools: Aladin, TOPCAT, GWsky
+    * Tutor: **G. Greco** +  C. Bot (group 2) 
+
+  * 10:45 - 11:15 Coffee break
+
+  * 11:15 - 13:00 Tutorial #5 (group 1) / Tutorial #4 (group 2)(1h45m)
+  * Tutorial #5 
+    * Title: [[http://nbviewer.jupyter.org/github/ggreco77/Electromagnetic-follow-up-of-gravitational-wave-events/blob/master/Electromagnetic_followup_gravitational-wave_events%20%28v7%29.ipynb|Electromagnetic follow-up of gravitational-wave events]]
+    * VO-tools: Aladin, TOPCAT, GWsky
+    * Tutor: **G. Greco** +  C. Bot (group 1) 
+
+  * Tutorial #4 
+    * Title: {{:open:wp4:school4:tutorial-topcat-stilts.pdf|Exploring Gaia data with TOPCAT and STILTS}}
+    * VO-tools: TOPCAT, STILTS
+    * Tutor: **M. Taylor** + H. Heinl (group 2) 
+
+  * 13:00 - 14:00 LUNCH
+
+  * 14:00 - 16:00 Tutorial #6 (2h00m)
+    * Title: {{:open:wp4:school4:tutorial-hips-mocs.pdf|Advanced usage of HiPS & MOCs}}
+    * VO-tools: Aladin, TOPCAT
+    * Tutor: **S. Derriere** + K. Lutz (group 1) / **C. Bot** + T. Boch (group 2)
+
+  * 16:00 - 16:30 Coffee break
+
+  * 16:30 - 17:30 {{:open:wp4:school4:treasurehunt.pdf|Treasure Hunt (1h)}}
+
+  * 17:30 - 17:45 {{:open:wp4:school4:tutor-participant.pdf|Preparation of participants project (15 min)}}
+
+
+**Thursday 22**  
+  * 09:00 - 10:45 Participants project
+
+  * 10:45 - 11:15 Coffee break
+
+  * 11:15 - 13:00 Participants project (cont.)
+
+  * 13:00 - 14:00 Lunch 
+
+  * 14:00 - 15:45 Participants project (cont.)
+
+  * 15:45 - 16:15 Feedback 
+
+  * 16:15 - 16:30 Wrap-up

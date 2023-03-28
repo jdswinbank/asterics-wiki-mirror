@@ -1,0 +1,29 @@
+(up one level: [[open:wp4:wp4edpforum1|ASTERICS European Data Provider Forum and Training Event 1]])
+
+====== Saada ======
+
+[[http://amwdb.u-strasbg.fr/saada|Saada]] transforms a set of heterogeneous FITS files or VOtables
+of various categories (images, tables, spectra, ...) into a powerful database deployed on the Web,
+which operates VO services (SSA, SCS, SIS, and TAP) as well. Exposed data can be linked to each other
+in order to provide a global view on complex data sets.
+
+==== Elevator pitch ====
+
+[[http://www.g-vo.org/edp-forum-2016/slides/LMichel_SaadaElevatorPitch.pdf|Elevator pitch]]
+
+==== Hands-on tutorial ====
+
+[[http://www.g-vo.org/edp-forum-2016/slides/LMichel_SaadaHandson.pdf|Hands-on tutorial]]
+
+
+==== Download page for tutorial materials ====
+
+[[http://saada.unistra.fr/saada/spip.php?article259|Download page for tutorial materials]]
+
+==== Download page for the Saada software package ====
+
+[[http://saada.unistra.fr/saada/spip.php?rubrique90|Download page for the Saada software package]]
+
+==== Schedule for Friday, June 17th, 2016 ====
+
+[[http://www.g-vo.org/edp-forum-2016/programme.html#friday|Schedule for Friday, June 17th, 2016]]

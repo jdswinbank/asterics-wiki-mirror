@@ -1,0 +1,166 @@
+====== WP4: Data Access, Discovery and Interoperability (DADI) ======
+
+----
+
+===== Objectives =====
+
+Make the ESFRI and pathfinder project data available for discovery and usage by the whole astronomical community, interoperable in a homogeneous international framework, and accessible with a set of common tools. More specifically:
+
+  * Train and support ESFRI project staff in the usage and implementation of the VO framework and tools, and make them active participants in the development of the VO framework definition and updates, thus contributing to relevance and sustainability of the framework.
+  * Train and support the wider astronomical community in scientific use of the framework, in particular for pathfinder data, and gather their requirements and feedback.
+  * Adapt the VO framework and tools to the ESFRI project needs, and make sure European astronomers remain lead actors in the IVOA, influencing it in the interest of the European infrastructures and the European scientific community.
+
+===== Setting the scene =====
+
+Slides from the WP4 presentation at the ASTERICS kick-off meeting available [[https://indico.astron.nl/contributionDisplay.py?contribId=7&confId=9|here]]
+
+===== Repository of Products =====
+
+A repository of DADI products has been made available at ASTERICS mid-term (April 2017), with an final version provided at the end of the project. It is updated regularly.
+
+>> **The repository of DADI products can be found [[DADIProductRepository|here]]**
+
+===== Events =====
+
+==== ASTERICS concluding event ====
+
+[[http://multi-messenger.asterics2020.eu/|The New Era of Multi-Messenger Astrophysics]], 25-29 March 2019, Groningen
+
+==== Events organised by ASTERICS WP4 ====
+
+=== Deliverables ===
+
+[[WP4Techforum1|WP4 Technology Forum 1]], 17 & 18 September 2015, Strasbourg
+
+[[WP4EsfriForum1|ESFRI Forum & Training Event 1]], 3 & 4 December 2015, Trieste
+
+[[School1|ASTERICS DADI School 1]], 15-17 December 2015, Madrid
+
+[[WP4Techforum2|WP4 Technology Forum 2]], 7 & 8 March 2016, Edinburgh
+
+[[http://www.g-vo.org/edp-forum-2016|European Data Provider Forum and Training Event 1]], 15 & 16 June 2016, Heidelberg ([[wp4edpforum1|Wiki]])
+
+[[open:wp4:school2|ASTERICS DADI School 2, 14-16 November 2016, Strasbourg]]
+
+[[WP4TechForum3|WP4 Technology Forum 3]], 22-23 March 2017, Strasbourg
+
+[[School3|ASTERICS DADI School 3]], 14-16 November 2017, Madrid
+
+[[WP4EsfriForum2|ESFRI Forum & Training Event 2]], 12 (newcomers session) + 13 & 14 December 2017, Trieste
+
+[[WP4TechForum4|WP4 Technology Forum 4]], 16-17 April 2018, Edinburgh
+
+[[http://www.g-vo.org/edp-forum-2018|European Data Provider Forum and Training Event 2]], 27 & 28 June 2018, Heidelberg --- plus introductory course on the Virtual Observatory on 26 June and hands-on consulting sessions on data publication on 29 June
+
+[[School4|ASTERICS DADI School 4]], 20-22 November 2018, Strasbourg
+
+[[WP4TechForum5|WP4 Technology Forum 5]], 26-28 February 2019, Strasbourg
+
+=== Specific events ===
+
+Authorisation & Authentication meeting, Meudon, 11 December 2015 (meeting organised by CTA with participation from SKA, IVOA and ASTERICS WP3)
+
+[[WP4GWStrasbourg2016|Gravitational Waves]], 31 May - 1 June 2016, Strasbourg
+
+[[WP4LOFARStrasbourg2016|LOFAR/VO]], 18 November 2016, Strasbourg
+
+[[http://svo.cab.inta-csic.es/meetings/escuela_svo10/|10th SVO school, 6-8 March 2017, La Laguna, Tenerife, Spain]]
+
+[[WP4WP5TimeDomain|DADI-CLEOPATRA meeting on the Time Domain]], 21 March 2017, Strasbourg
+
+[[WP4GAPSINAF|GAPS Time Series face-to-face]], 22 June 2017, INAF-OAPd, Padova, Italy
+
+[[https://www.oca.eu/fr/ecoles-thematiques/1319-ecole-vo-2017|Observatoire Virtuel 2017 @OCA, 26-27 September 2017, Observatoire de la Côte d'Azur, Nice, France]]
+
+[[TimeSeriesDataMeeting|Strasbourg Time Series Data Meeting]], 5-6 December 2017, Strasbourg
+
+[[http://wiki.ivoa.net/twiki/bin/view/IVOA/IvoaVOEvent#Strasbourg_2018_Meeting|Strasbourg Time Series Data Model meeting]], 17-20 July 2018, Strasbourg
+
+[[WP4EXODM|Exo-Planetary Data Model Meeting]], 20-21 September 2018, INAF-OAPd, Padova, Italy
+
+[[AuthNauthZf2f|DADI/OBELICS A&A face-to-face Meeting]], 29-30 January 2019, Trieste, Italy
+
+=== Provenance meetings ===
+
+6-7 July 2015, Paris: CTA and provenance
+
+[[http://wiki.ivoa.net/twiki/bin/view/IVOA/ProvDayApril2016|Provenance Day, 14 April 2016, Paris]]
+
+[[http://wiki.ivoa.net/twiki/bin/view/IVOA/ProvDayJune2016|Provenance Day, 14 June 2016, Heidelberg]]
+
+[[http://wiki.ivoa.net/twiki/bin/view/IVOA/ProvDayJuly2016|Provenance Day, 20 July 2016, Paris]]
+
+[[http://wiki.ivoa.net/twiki/bin/view/IVOA/ProvDayDec2016|Provenance Day, 13 December 2016, Strasbourg]]
+
+[[http://wiki.ivoa.net/twiki/bin/view/IVOA/ProvDayMay2017|Provenance Days, 3-4 May 2017, Montpellier]]
+
+[[http://wiki.ivoa.net/twiki/bin/view/IVOA/ProvDayAug2018|Provenance Days, 29-30 August 2018, Paris]]
+
+
+
+==== Other events of interest for WP4 ====
+
+[[http://wiki.ivoa.net/twiki/bin/view/IVOA/InterOpJune2015|IVOA Interoperability meeting]], 14-19 June 2015, Sesto/Sexten
+
+[[https://rd-alliance.org/plenary-meetings/rda-sixth-plenary-meeting.html|RDA Sixth Plenary meeting]], 23-25 September 2015, Paris
+
+[[http://www.caastro.org/international-virtual-observatory-alliance-ivoa-meeting|IVOA Interoperability meeting]], 30 October - 1 November 2015, Sydney and the attached [[http://www.caastro.org/event/2015-adass|ADASS XXV Conference]] (25-29 October 2015)
+
+[[https://rd-alliance.org/plenary-meetings/rda-seventh-plenary-meeting.html|RDA Seventh Plenary Meeting]], 1-3 March 2016, Tokyo
+
+[[http://ivoa2016.sa3.ac.za/|IVOA Interoperability Meeting]], 9-13 May 2016, Cape Town
+
+[[https://cosmology-school.ujk.edu.pl/|Second Cosmology School]], Keilce, Poland, 11-24 July 2016 (two days of tutorials on the scientific usage of VO)
+
+[[https://rd-alliance.org/plenaries/rda-eighth-plenary-meeting-denver-co|RDA Eighth Plenary meeting]], during the [[https://rd-alliance.org/denver-colorado-host-international-data-week.html-0|International Data Week]], Denver, Colorado, 11-17 September 2016
+
+[[http://www.adass2016.inaf.it/index.php/13-ivoa-interop|IVOA Interoperability Meeting]], 21-23 October 2016, Trieste, and the attached [[http://www.adass2016.inaf.it/|ADASS XXVI Conference]] (16-20 October 2016)
+
+[[http://svo.cab.inta-csic.es/meetings/escuela_svo10/|X SVO School]], Tenerife, Spain, 6-8 March 2017
+
+[[https://www.rd-alliance.org/plenaries/rda-ninth-plenary-meeting-barcelona|RDA Ninth Plenary meeting]], Barcelona, Spain, 5-7 April 2017
+
+[[http://ivoa2017shanghai.csp.escience.cn/dct/page/1|IVOA Interoperability meeting]], Shanghai, China, 14-19 May 2017
+
+[[http://blogs.helsinki.fi/rdasummerschool/|RDA EU – ENVRI Summer School on Data Management and Data Science]], 12–16 June 2017, hosted at CSC in Helsinki/Espoo, Finland
+
+[[http://www.oa.uj.edu.pl/2017cosmoschool/index.html|Third Cosmology School]], Cracow, Poland, 10-23 July 2017 (VO mini-workshop: two days of tutorials on the scientific usage of VO) 
+
+[[https://www.rd-alliance.org/plenaries/rda-tenth-plenary-meeting-montreal-canada|RDA Tenth Plenary meeting]], Montréal, Canada, 19-21 September 2017
+
+[[http://www.adass.cl/#ivoa|IVOA Interoperability meeting]], Santiago, Chile, 27-29 October 2017, and the attached [[http://www.adass.cl/|ADASS XXVII Conference]] (22-26 October 2017)
+
+[[https://www.rd-alliance.org/plenaries/rda-eleventh-plenary-meeting-berlin-germany|RDA Eleventh Plenary Meeting]], Berlin, Germany, 21-23 March 2018 
+
+[[http://svo.cab.inta-csic.es/meetings/escuela_svo11/|XI SVO School]], Madrid, Spain,24-25 May 2019
+
+[[http://wiki.ivoa.net/twiki/bin/view/IVOA/InterOpMay2018MeetingtPage|IVOA Interoperability meeting]], Victoria, Canada, 27 May - 1 June 2018
+
+[[https://www.rd-alliance.org/plenaries/rdas-12th-plenary-meeting-part-international-data-week-2018-gaborone-botswana|RDA Twelfth Plenary Meeting]], Gaborone, Botswana, 5-8 November 2018, in the framework of the [[http://www.internationaldataweek.org/|International Data Week 2018]]
+
+[[https://svo.cab.inta-csic.es/docs/index.php?pagename=Meetings/SVO_thematic_network/UAM_Escuela_SVO|XII SVO School]], 7-8 November 2018, Madrid
+
+[[http://wiki.ivoa.net/twiki/bin/view/IVOA/InterOpNov2018MeetingPage|IVOA Interoperability meeting]], College Park, Md, USA, 8-10 November 2018 and the attached [[http://adass2018.umd.edu/|ADASS XXVIII]] Conference (11-15 November 2018)
+
+[[http://svo.cab.inta-csic.es/svoMeetings/index.php?mid=46&action=page&pagename=Meetings/SVO_thematic_network/Decimotercera_Escuela_SVO/Presentation|XIII SVO School]], Madrid, 4-5 March 2019
+
+[[https://rd-alliance.org/plenaries/rdas-13th-plenary-meeting-philadelphia-us|RDA Thirtieth Plenary Meeting]], Philadelphia, 2-4 April 2019
+
+[[https://indico.in2p3.fr/event/18313/overview|Gravitational Wave Open Data Workshop]], Paris, 8-10 April 2019
+
+
+===== Tasks =====
+
+==== Task4.1 (INAF - UHEI) ====
+
+Support to astronomy ESFRI facilities, their pathfinders and other infrastructures of pan-European interest
+for implementation of their data in the VO framework [[WP4Task1|Task description]]
+
+==== Task 4.2 (INTA - CNRS) ====
+
+Support to the astronomical community [[WP4Task2|Task description]]
+
+==== Task 4.3 (CNRS - UEDIN) ====
+
+Update of the VO framework from feedback and requirements [[WP4Task3|Task description]]
+

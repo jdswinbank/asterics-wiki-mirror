@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>IVOA Proposed Recommendation - Observation Data Model Core Components and its Implementation in the Table Access Protocol v1.1</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<meta name="keywords" content="IVOA, International, Virtual, Observatory, Alliance, Documents">
+<meta name="maintainedBy" content="IVOA Document Coordinator, ivoadoc@ivoa.net">
+<link href="http://www.ivoa.net/misc/ivoa_pr.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<center><table><tr><td>
+<font class="titleText"><b>I</b>nternational &nbsp;<b>V</b>irtual &nbsp;<b>O</b>bservatory &nbsp;<b>A</b>lliance</font>
+<table><tr><td>&nbsp;</td></tr>
+<tr><td><font class="titleText" style="font-size: 18pt; font-weight: 600">
+<a class="nodec" href="http://www.ivoa.net/Documents" title="IVOA Documents" target="_parent">IVOA Documents </a></font></td></tr></table>
+</td><td rowspan="2">
+<a href="http://www.ivoa.net/"><img src="https://www.ivoa.net/images/IVOA_wb_300.jpg" width="300" height="169" border="0" alt="ivoa.net" /></a></td></tr></table></center><br/><br/>
+<div class="head">
+<h1>Observation Data Model Core Components and its Implementation in the Table Access Protocol v1.1<br/>
+Version 1.1</h1>
+<h2> IVOA Proposed Recommendation 30 March 2016</h2>
+<dl>
+<dt>Interest/Working Group:</dt>
+<dd><a href="http://www.ivoa.net/twiki/bin/view/IVOA/IvoaDataModel" target="_blank">http://www.ivoa.net/twiki/bin/view/IVOA/IvoaDataModel</a>
+</dd>
+<dt>Author(s):</dt>
+<dd><b>Mireille Louys, Doug Tody, Patrick Dowler, Daniel Durand, Laurent Michel, Francois Bonnarel, Alberto Micol and the IVOA DataModel working group <br/></b></dd>
+<dt>Editor(s):</dt>
+<dd><b>Mireille Louys, Doug Tody, Patrick Dowler, Daniel Durand<br/></b></dd>
+</dl><hr></div>
+<h2><a name="abstract" id="abstract">Abstract</a></h2>
+This document defines the core components of the Observation data model that are necessary to perform data discovery when querying data centers for astronomical observations of interest.  It exposes use-cases to be carried out, explains the model and provides guidelines for its implementation as a data access service based on the Table Access Protocol (TAP).  It aims at providing a simple model easy to understand and to implement by data providers that wish to publish their data into the Virtual Observatory.  This interface integrates data modeling and data access aspects in a single service and is named ObsTAP. It will be referenced as such in the IVOA registries.  There will be a separate document to cover the full Observation data model.  In this document, the Observation Data Model Core Components (ObsCoreDM) defines the core components of queryable metadata required for global discovery of observational data.  It is meant to allow a single query to be posed to TAP services at multiple sites to perform global data discovery without having to understand the details of the services present at each site.  It defines a minimal set of basic metadata and thus allows for a reasonable cost of implementation by data providers. The combination of the ObsCoreDM with TAP is referred to as an ObsTAP service.  As with most of the VO Data Models, ObsCoreDM makes use of STC, Utypes, Units and UCDs.  The ObsCoreDM can be serialized as a VOTable.  ObsCoreDM can make reference to more complete data models such as ObsProvDM (the Observation Provenance Data Model, to come), Characterisation DM, Spectrum DM or Simple Spectral Line Data Model (SSLDM).
+<div class="status">
+<h2><a name="status" id="status">Status of this document</a></h2>
+<p>This is an IVOA Proposed Recommendation made available for public review.<br/> It is appropriate to reference this document only as a recommended standard that is under review and which may be changed before it is accepted as a full recommendation.</p><br />
+</div><br />
+<div class="documentfile">
+<!-- URL: http://www.ivoa.net/up/PR/DaM/PR-ObsCore-v1.1-201630032016-20160401.* -->
+<!-- Filename: 24275___PR-ObsCore-v1.1-201630032016.pdf -->
+Available formats: <a href="http://www.ivoa.net/documents/ObsCore/20160330/PR-ObsCore-v1.1-20160330.pdf">pdf</a>
+</div>
+<br/><br/>
+<div class="doccoordinator">maintained by&nbsp;
+<a title="IVOA Document Coordinator" href="mailto:ivoadoc@ivoa.net">::ivoa document coordinator::</a></div>
+</body></html>

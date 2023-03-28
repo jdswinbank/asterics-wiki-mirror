@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <title>open:wp3:jupyter-casa_repository</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2017-06-01T14:32:47+0200"/>
+<meta name="keywords" content="open,wp3,jupyter-casa_repository"/>
+<link rel="search" type="application/opensearchdescription+xml" href="lib/exe/opensearch.php" title="ASTERICS Wiki pages"/>
+<link rel="start" href="index.html"/>
+<link rel="contents" href="./doku.php%3Fid=open:wp3:jupyter-casa_repository&amp;do=index.html" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent changes" href="feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current namespace" href="./feed.php%3Fmode=list&amp;ns=open:wp3"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="./doku.php%3Fdo=export_xhtml&amp;id=open:wp3:jupyter-casa_repository.html"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="./doku.php%3Fdo=export_raw&amp;id=open:wp3:jupyter-casa_repository"/>
+<link rel="canonical" href="./doku.php%3Fid=open:wp3:jupyter-casa_repository.html"/>
+<link rel="stylesheet" type="text/css" href="lib/exe/css.php%3Ft=dokuwiki&amp;tseed=3e868cdb9e6faaec34cd57ca71666f47.css"/>
+<script type="text/javascript">/*<![CDATA[*/var NS='open:wp3';var JSINFO = {"id":"open:wp3:jupyter-casa_repository","namespace":"open:wp3"};
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="lib/exe/js.php%3Ftseed=3e868cdb9e6faaec34cd57ca71666f47&amp;template=dokuwiki"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div id="dw__toc">
+<h3 class="toggle">Table of Contents</h3>
+<div>
+
+<ul class="toc">
+<li class="level1"><div class="li"><a href="./doku.php%3Fdo=export_xhtml&amp;id=open:wp3:jupyter-casa_repository.html#jupyter-casa_repository">Jupyter-CASA repository</a></div>
+<ul class="toc">
+<li class="level2"><div class="li"><a href="./doku.php%3Fdo=export_xhtml&amp;id=open:wp3:jupyter-casa_repository.html#introduction">Introduction</a></div></li>
+<li class="level2"><div class="li"><a href="./doku.php%3Fdo=export_xhtml&amp;id=open:wp3:jupyter-casa_repository.html#installation">Installation</a></div></li>
+<li class="level2"><div class="li"><a href="./doku.php%3Fdo=export_xhtml&amp;id=open:wp3:jupyter-casa_repository.html#usage">Usage</a></div></li>
+<li class="level2"><div class="li"><a href="./doku.php%3Fdo=export_xhtml&amp;id=open:wp3:jupyter-casa_repository.html#examples">Examples</a></div></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1" id="jupyter-casa_repository">Jupyter-CASA repository</h1>
+<div class="level1">
+
+</div>
+<!-- EDIT1 SECTION "Jupyter-CASA repository" [1-40] -->
+<h2 class="sectionedit2" id="introduction">Introduction</h2>
+<div class="level2">
+
+<p>
+The size of astronomical datasets has increased dramatically over the years; terabyte sized datasets are no longer an exception. This trend will only accelerate; the SKA is expected to produce nearly 1 TB of archived data each day. This means that it will no longer be feasible for astronomers to download these huge datasets and perform the data reduction on their own machines, as is currently the practice. Instead the data reduction is likely to be done close to where the data is archived in central data processing centres, with the astronomer operating remotely on the data.
+</p>
+
+<p>
+One way of facilitating this is through <a href="http://jupyter.org/" class="urlextern" title="http://jupyter.org/"  rel="nofollow">Jupyter</a> notebooks. Jupyter is a web-based application which allows users to create interactive notebooks which can include annotated text and graphics as well as executable code. Currently Jupyter supports more than 40 different programming languages, including Python, R, and Matlab. Jupyter is designed be extended and makes it easy to add additional languages.
+</p>
+
+<p>
+As part of the Obelics work-package we have created a Jupyter kernel for <a href="https://casa.nrao.edu/" class="urlextern" title="https://casa.nrao.edu/"  rel="nofollow">CASA</a>, a widely-used software package for processing astronomical data. The kernel allows all CASA tasks to be run from inside a Jupyter notebook, albeit non-interactively. Tasks which normally spawn a <abbr title="Graphical User Interface">GUI</abbr> window are wrapped so that their output is saved to an image instead, which is then displayed inside the notebook. 
+</p>
+
+<p>
+The notebook format also has the great advantage that all steps of the data reduction are preserved inside the notebook. This means that the whole data reduction process is self-documenting and fully repeatable. It also allows users to very easily make changes to their pipeline and then rerun the pipeline steps affected.
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Introduction" [41-1824] -->
+<h2 class="sectionedit3" id="installation">Installation</h2>
+<div class="level2">
+
+<p>
+Because Jupyter requires a much more current python distibution than what is provided in NRAO&#039;s CASA releases, a custom build of CASA is required. We distribute a DOCKER image containing a version of CASA which uses the most recent (I)python, matplotlib, etc. Note that this version of CASA can only be used from within Jupyter.
+</p>
+
+<p>
+Installation is a simple as executing: <code>docker pull penngwyn/jupytercasa</code>
+</p>
+
+<p>
+The source code is located here: <a href="https://github.com/aardk/jupyter-casa" class="urlextern" title="https://github.com/aardk/jupyter-casa"  rel="nofollow">https://github.com/aardk/jupyter-casa</a>
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Installation" [1825-2329] -->
+<h2 class="sectionedit4" id="usage">Usage</h2>
+<div class="level2">
+
+<p>
+Even though we wrap all CASA tasks so that they will not launch a <abbr title="Graphical User Interface">GUI</abbr> window, the QT based CASA tasks still require X11, unfortunately. Tasks such as <em>plotms</em> won&#039;t start unless X11 is working even when it doesn&#039;t even open a window. Therefore the local X11 socket needs to be shared with Docker container.
+</p>
+
+<p>
+The simplest incantation to start JUPYTER on a recent Ubuntu:
+</p>
+
+<p>
+<code>
+docker run –rm -p 8888:8888 -i -t -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY penngwyn/jupytercasa /bin/sh -c “jupyter notebook”
+</code>
+</p>
+
+<p>
+Note that the <code>–rm</code> option will make DOCKER delete the container after use.
+</p>
+
+<p>
+Of course the above example is not very useful as the container will not be able to access locally stored measurement sets. To add a data directory to the DOCKER container is, fortunately, very simple using the <code>-v</code> option:
+</p>
+
+<p>
+<code>
+docker run –rm -p 8888:8888 -i -t -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY -v PATH_TO_DATA_DIR:/home/jupyter/data penngwyn/jupytercasa /bin/sh -c “jupyter notebook”
+</code>
+</p>
+
+<p>
+Where <code>PATH_TO_DATA_DIR</code> should be replaced with the full path to your local data directory.
+</p>
+
+</div>
+<!-- EDIT4 SECTION "Usage" [2330-3455] -->
+<h2 class="sectionedit5" id="examples">Examples</h2>
+<div class="level2">
+
+<p>
+We have created an example <a href="https://github.com/aardk/jupyter-casa/blob/master/examples/vla-cont-tutorial.ipynb" class="urlextern" title="https://github.com/aardk/jupyter-casa/blob/master/examples/vla-cont-tutorial.ipynb"  rel="nofollow">notebook</a> which contains the NRAO continuum VLA tutorial. To run the notebook locally download the data files from the <a href="https://casaguides.nrao.edu/index.php/VLA_Continuum_Tutorial_3C391-CASA4.7" class="urlextern" title="https://casaguides.nrao.edu/index.php/VLA_Continuum_Tutorial_3C391-CASA4.7"  rel="nofollow">NRAO wiki</a> and make the data available to the DOCKER container as is explained above.
+</p>
+
+</div>
+<!-- EDIT5 SECTION "Examples" [3456-] --></div>
+</body>
+</html>

@@ -1,0 +1,159 @@
+====== ASTERICS DADI Product Repository ======
+
+//[[open:wp4:start|Back to DADI home page]]//
+
+
+==== Introduction ====
+
+The Data Access, Discovery and Interoperability (DADI) Work Package of the ASTERICS project maintains a repository of its "products", with a first delivery at the project mid-term (April 2017, D4.8). The repository will then be regularly maintained with a final delivery at the end of the project. DADI has three strands of work: 
+  * Support to ESFRIs and pathfinders in their uptake of the Virtual Observatory framework, including workshops involving the wider European data provider community
+  * Support to the scientific community in the usage of VO-enabled data and tools
+  * Technological activities to update the VO framework to optimize it to include ESFRI and pathfinder data and taking into account feedback from the ESFRIs and pathfinders and science users
+
+
+==== Content ====
+
+DADI has several kind of "products", including some which have been developed totally or partially with DADI support and some which are key components of the project with respect to the ESFRI and science needs. They can be broadly classified in several categories:
+
+  * Scientific tutorials describing real use cases of VO-enabled data and tools, prepared and updated in particular in the framework of the annual DADI Schools
+  * VO-enabled tools in support to the ESFRI and science needs identified by the project
+  * VO standards in support to the ESFRI needs identified by the project
+  * Tools in support to data publishing in the VO
+  * Other results of collaborative work
+
+Presentations of DADI participants in the Interoperability meetings organised twice a year by the International Virtual Observatory Alliance IVOA can also be considered as DADI "products". A list is provided in this repository.
+
+DADI team members' contributions to the final ASTERICS event, the [[http://multi-messenger.asterics2020.eu/index.php|New Era of Multi-Messager Astrophysics]], is also one of the final products of DADI. The list is provided, with links to the slides or poster.
+
+DADI also organised many workshops which are direct products of its activities.  The list of the Workshops, with a link to the meeting agenda and all the material presented, is on DADI wiki site [[open:wp4:start|here]]. Some were formal deliverables included in the project initial description of work, others were organised at the request of the ESFRI/pathfinder partners on topics of specific interest to them, with in particular a series of Provenance Workshops, or co-organised with other ASTERICS Work Packages.
+
+==== Scientific tutorials ====
+
+The scientific tutorials prepared for the DADI Schools are provided on a sustainable web page from the Euro-VO web site [[http://www.euro-vo.org/?q=science/scientific-tutorials]]. Their last version to date, with the list of the updates if any, as well as additional tutorials prepared for different occasions by the DADI teams, are listed below. 
+
+| **Tutorial name** | **Link** | **Description** | **Dates** |
+| **The CDS tutorial** | {{:open:wp4:school4:tutorial-cds.pdf|pdf}} | This tutorial describes the basis of the VO program hosted at CDS. The three major VO programs are described: SIMBAD (astronomical database), VizieR (catalog service) and Aladin (interactive sky atlas). The user gets familiar with the programs 1) searching for the galaxy NGC4039 through the CDS portal to get direct access to SIMBAD, VizieR and Aladin, 2) comparing the sky coverage between SDSS and GALEX surveys using Aladin and 3) selecting interacting galaxies with Aladin. | School Nov. 2018, School Nov. 2017, Jan. 2017, School Nov. 2016, School Dec. 2015 |
+| **Discovery of Brown Dwarfs mining the 2MASS and SDSS databases** | [[https://www.asterics2020.eu/dokuwiki/lib/exe/fetch.php?media=open:wp4:school3:tutorial_browndwarfs.pdf|pdf]] |This tutorial uses the advanced VO functionalities of Aladin (interactive sky atlas), TOPCAT (tools to work on catalogs) and STILTS to find brown dwarfs in 2MASS and SDSS surveys using three differents methods. The user learns about the filtering, cross-matching and visualization functions of Aladin and TOPCAT as well as about the implementation of scripts for Aladin and STILTS to repeat several time the same steps leading to the identification of the brown dwarfs in these surveys. | Schools Nov. 2017, Nov. 2016, Dec. 2015 |
+| **Determination of stellar physical parameters using VOSA** | {{:open:wp4:school4:tutorial-vosa.pdf|pdf}} | This tutorial uses the advanced VO functionalities of VOSA (VO Sed Analyzer) and TOPCAT to determine empirically the masses and radii of stars surrounded by planets. The user needs to register to get access to the functionalities of VOSA (online tool). They can then upload a list of objects to study, build their SEDs and analyze them (by fitting models). Using the interoperability between VOSA and TOPCAT, the user can compare the empiral values obtained with VOSA to those published in papers. | Schools Nov. 2018, Nov. 2017, Nov. 2016, Dec. 2015 |
+| **Multi-instrument, multi-wavelength study of high energy sources with the virtual Observatory** | [[https://www.asterics2020.eu/dokuwiki/lib/exe/fetch.php?media=open:wp4:school2:highenergy-tutorial-4.pdf|pdf]] | This tutorial makes extensive use of the cross-matching and selection (based on criteria) functionalities of the VO tools to study high energy sources observed at different photon energy bands and with various instruments. The user queries SIMBAD to get HESS sources and overlays them on a Fermi LAT image in Aladin. They then cross-match HESS sources with the Fermi LAT catalog that they download from VizieR via its interoperability with TOPCAT. Applying selection criteria with TOPCAT functionalities, they can identify different classes of objects in a color-color diagram to finally get SEDs for the objects of interest. | Schools Nov. 2016, Dec. 2015 |
+| **Exploring Gaia with TopCAT and STILTS** | {{:open:wp4:school4:tutorial-topcat-stilts.pdf|pdf}} | This tutorial uses TOPCAT and STILTS to study the Pleiades open star cluster.  The user starts with getting TGAS data for the Pleiades and identifies its as a comoving subset. In a second step, the user matches HST data with Gaia observations using the interoperability of TOPCAT with VizieR to access the catalogs. The cross-match is refined using a color-magnitude diagram. The user can also use the TAP (Table Access Protocole) service of TOPCAT to run scripts for Gaia data. Finally, the user can upload the full TGAS catalog and investigate it with STILTS. | Schools Nov. 2018, Nov. 2016 |
+| **Accessing and cross matching big datasets with ADQL** | [[http://docs.g-vo.org/adql-gaia/html/|webpage]] | This online tutorial permits the user to get familiar with ADQL (Astronomical Data Query Language) and TAP (Table Access Protocol)  through lots of examples. ADQL and TAP are widely used in VOs to handle large datasets that cannot be handled locally. | Schools 2018, Nov. 2017, Nov. 2016 |
+| **Advanced usage of HiPS and MOCs** | {{:open:wp4:school4:tutorial-hips-mocs.pdf|pdf}} | This is a hands-on tutorial demonstrating an advanced usage of Hierarchical Progressive Surveys (HiPS) and Multi-Order Coverage (MOC) maps in Aladin. Using this document, you will learn how to handle a problem like : I have an image survey. I would like to select regions in my observations that are above a given threshold in another survey (e.g. at low extinction), retrieve objects from very large catalogs (e.g. Gaia + WISE) in these non-trivial shapes and not-necessarily-connected regions, and combine them to visualise some quantities (e.g. color magnitude diagram).| School Nov. 2018 (June 2018), June 2017 (Aladin V10), Feb. 2017 |
+| **Electromagnetic follow-up of gravitational wave events** | [[http://nbviewer.jupyter.org/github/ggreco77/Electromagnetic-follow-up-of-gravitational-wave-events/blob/master/Electromagnetic_followup_gravitational-wave_events%20%28v7%29.ipynb|github page]] | This online tutorial uses mostly Aladin functionalities to locate the sources of latest gravitational wave events on the sky. | Schools Nov. 2018, Nov. 2017 |
+| **Handling gravitational-wave sky maps for EM-followUP observations** | [[https://www.asterics2020.eu/dokuwiki/lib/exe/fetch.php?media=open:wp4:school2:gravitationalwaves-tutorial-7.pdf|pdf]] | This tutorial uses the functionalities of Aladin to visualize probability sky maps. It also makes extensive use of the MOC (Multi-Order Coverage) capabilities of Aladin to query a given region of the sky and access the catalogs with information in that region via the interoperability with VizieR. Finally the additional interoperability with TOPCAT permits sending the data available in that region to the latter for further studies. | School Nov. 2016 |
+| **Classifying the SEDs of Herbig Ae/Be stars** | [[https://www.asterics2020.eu/dokuwiki/lib/exe/fetch.php?media=open:wp4:school3:splat_herbig_stars.pdf|pdf]] | The overall goal of this tutorial is to become familiar with VOSpec, by building the Spectral Energy Distribution (SED) of a Herbig Ae/Be star. | Schools Nov. 2017, Dec. 2015 |
+| **Advanced functionalities in TOPCAT** | [[https://www.astron.nl/asterics/lib/exe/fetch.php?tok=d3d107&media=http%3A%2F%2Fandromeda.star.bris.ac.uk%2Ftopcat%2Ftutorial-asterics1%2F|pdf]] | Advanced TOPCAT tutorial (December 2015), covering of the desktop GUI tool TOPCAT and its command-line evil twin STILTS. These tools are designed to do things with tabular data - typically source catalogues. TOPCAT and STILTS can do basically the same things, but are used in different ways. TOPCAT is easier to learn, and good for interactive use, especially exploring data to get a feel for what's there. For production work, it is sometimes better to move on to STILTS, which can be scripted for repeated or reproducible work. STILTS can also, for some purposes, be used for larger datasets. | School Dec. 2015 |
+| **Compute Redshifts of Quasars Using SPLAT-VO** | [[http://www.g-vo.org/pmwiki/uploads/Documents/asterics_splat_redshift.pdf|pdf]] | SPLAT-VO  to  search  for  spectra  of galaxies  and  quasars  in  the  VO,  and  compute  their  redshifts  and velocity, using the Hydrogen Lyman Alpha line. | School Dec. 2015 |
+| **Abell 1656: The Coma Cluster of Galaxies** | [[https://www.asterics2020.eu/dokuwiki/lib/exe/fetch.php?media=open:wp4:abell1656_4asterics.pdf|pdf]] | This tutorial uses the advanced VO functionalities of Aladin (interactive sky atlas), TOPCAT (tools to work on catalogs) and Cassis (interactive spectrum analyzer) to study interactively the Coma cluster of galaxies. The user can visualize the Coma cluster of galaxies and build a subset of these galaxies with Aladin. With TOPCAT, they can analyze this subset. Finally, they can study an HST power spectrum with Cassis.| Jan. 2017 | 
+
+
+
+
+
+==== VO-enabled tools ====
+
+The tools listed here are in particular used in the science tutorials. A more complete list of VO-enabled applications can be found in the IVOA site at [[http://www.ivoa.net/astronomers/applications.html]]. The tools particularly linked to DADI are tagged with a (*).
+
+| **Tool name** | **Link** | **Short description** | **Producer** |
+| **Aladin (*)** | [[http://aladin.u-strasbg.fr/aladin.gml|web site]] | The interactive sky atlas Aladin allows one to visualize astronomical images and to superimpose entries from different catalogs and databases, including SIMBAD and VizieR, as well as to upload own tables or images. There are two versions of Aladin: Aladin desktop and Aladin lite which runs in the web browser.  | CDS |
+| **CASSIS** | [[http://cassis.irap.omp.eu/|web site]] | CASSIS is a tool for the scientific analysis of high resolution spectral observations, which includes line identification, prediction of spectra from telescopes, comparison of observations and models and determination of physical parameters of the source. | IRAP |
+| **GWSky (*)** | [[https://github.com/ggreco77/GWsky|web site]] | Interactive Python script to generate a sequence of pointings given a specific Gravitational Wave Field of View (FoV). [[http://www.virgo-gw.eu/skymap.html|Interactive Detection Sky Map]] | INFN with CDS support |
+| **SIMBAD (*)** | [[http://simbad.u-strasbg.fr/simbad/|web site]] | The SIMBAD astronomical database contains more than 8 million objects. For each object it provides basic measurements (type, coordinates, proper motion, radial velocity, spectral type, distance, magnitude), cross-correlations and bibliography.  | CDS |
+| **SkyMap viewer (*)** | [[https://losc.ligo.org/s/skymapViewer/|web site]] | SkyMap Viewer is a sky atlas for understanding LIGO-Virgo skymaps. | LIGO with CDS support |
+| **SPLAT-VO (*)** | [[http://www.g-vo.org/pmwiki/About/SPLAT|web page]] | SPLAT is a graphical tool for displaying, comparing, modifying and analysing astronomical spectra stored in several file formats. Spectra can be read from local files or retrieved through VO protocols. | Maintained by GAVO |
+| **STILTS (*)** | [[http://www.star.bris.ac.uk/~mbt/stilts/|web site]] | STILTS (STARLINK Tables Infrastructure Library Tool Set) offers many of the same facilities as TOPCAT (and some additional ones) in the form of command-line tools, which can be invoked from the Unix/DOS command-line prompt, or from Jython. | University of Bristol |
+| **TOPCAT (*)** | [[http://www.star.bris.ac.uk/~mbt/topcat/|web site]] | TOPCAT (Tool for OPerations on Catalogues And Tables) is an interactive graphical viewer and editor for tabular data. Its aim is to provide most of the facilities that astronomers need for analysis and manipulation of source catalogues and other tables, though it can be used for non-astronomical data as well.  | University of Bristol |  
+| **VizieR (*)** | [[http://vizier.u-strasbg.fr/index.gml|web site]] | The VizieR catalogue service provides access to about 15,000 catalogues, including very large surveys, and datasets attached to publications. | CDS |
+| **VOSA (*)** | [[http://svo2.cab.inta-csic.es/theory/vosa/|web site]] | VOSA (VO SED analyser) is a tool which provides a workflow to derive physical properties of stars by fitting synthetic spectra or photometry extracted from theoretical models to observational data. | Spanish VO |
+| **VOSpec** | [[https://www.cosmos.esa.int/web/esdc/vospec|web site]] | VOSpec is a multi-wavelength spectral analysis tool with access to spectra, theoretical models and atomic and molecular line databases registered in the VO. | ESAC |
+
+
+
+
+
+==== VO standards ====
+
+The VO standards and their history can be found from the IVOA web page here: [[http://www.ivoa.net/documents/]]. Several are particularly linked to DADI, either because they tackle DADI initial priorities, multi-dimensional data and time domain, or because they deal with topics which appeared as priorities for the ESFRIs, in particular HiPS/MOC and Provenance. A short description of these standards of particular interest for DADI is given below. The status of the standard is given at the end of ASTERICS (April 2019). The link goes to the current version of the standard when it is activated.
+
+__IVOA categories of standards__: App: Applications, DM: Data Model, DAL: Data Access Layer, G&WS: Grid & Web Services, Semantics, VoE: VO Event - currently dealt with by DM and DAL
+
+__Standard status in IVOA__: REC: IVOA Recommendation, PR: IVOA Proposed Recommendation, WD: Working Draft, see [[http://www.ivoa.net/documents/DocStd/|IVOA Document standards]] for more details)
+
+| **Topic** | **IVOA Category** |**Standard name** | **Link** | **Short description** | **Status in IVOA in April 2019** |
+| The multi-dimensional "DAL caravan" | DAL | **DataLink** | [[http://www.ivoa.net/documents/DataLink/index.html|current version]] | DataLink describes the linking of data discovery metadata to access to the data itself, further detailed metadata, related resources, and to services that perform operations on the data.| V1.0 REC, 17 June 2015 |
+|   | DAL | **SIAP** | [[http://www.ivoa.net/documents/SIA/|current version]] | The Simple Image Access protocol (SIA) provides capabilities for the discovery, description, access, and retrieval of multi-dimensional image datasets, including 2-D images as well as datacubes of three or more dimensions. | V2.0 REC, 23 Dec. 2015 |
+|   | DAL | **SODA** | [[http://www.ivoa.net/documents/SODA/index.html|current version]] | The Server-side Operations for Data Access (SODA) web service capability is a low-level data access capability or server side data processing that can act upon the data files, performing various kinds of operations: filtering/subsection, transformations, pixel operations, and applying functions to the data. | V1.0 REC, 17 May 2017 |
+| Related standard | DM | **ObsCore** | [[http://www.ivoa.net/documents/ObsCore/index.html|Current version]] | ObsCore defines the core components of the Observation data model that are necessary to perform data discovery when querying data centers for astronomical observations of interest. ObsCore has been selected  as  the  core  data  model  for  data  discovery  by  the  Simple  Image  Access  protocol version  2  (SIAv2). | V1.1 REC, 09 May 2017 |
+| Time Domain | VoE | **VOEvent** | [[http://www.ivoa.net/documents/VOEvent/index.html|current version]] | VOEvent defines the content and meaning of a standard information packet for representing, transmitting, publishing and archiving information about a transient celestial event, with the implication that timely follow-up is of interest. | V2.0 REC, 11 July 2011 |
+|   | DAL | **VTP** | [[http://www.ivoa.net/documents/VOEventTransport/index.html|current version]] | VOEvent Transport Protocol formalizes a TCP-based protocol for VOEvent transportation that has been in use by members of the VOEvent community for several years and discusses the topology of the event distribution network. It is intended to act as a reference for the production of compliant protocol implementations. | V2.0 REC, 20 March 2017 |
+|   | App | **VOTable** | [[http://www.ivoa.net/documents/VOTable/index.html|current version]] | VOTable is the IVOA XML standard for interchange of data represented by a set of tables. V1.4 includes the TIMESYS element, a simple means to furnish time in VOTables with the necessary metadata| V1.4 WD, 3 March 2019 |
+| Space coverage | App | **MOC** | [[http://www.ivoa.net/documents/MOC/index.html|current version]] | The standard describes Multi-Order Coverage maps (MOC) to specify arbitrary sky regions. The goal is to be able to provide a very fast comparison mechanism between coverage maps. The mechanism is based on the HEALPix sky tessellation algorithm. | V1.1 PR, 04 April 2019 |
+| Sky tessellation  | App | **HiPS** | [[http://www.ivoa.net/documents/HiPS/index.html|current version]] | HiPS is a hierarchical scheme for the description, storage and access of sky survey data, based on hierarchical tiling of sky regions at finer and finer spatial resolution which facilitates a progressive view of a survey, and supports multi-resolution zooming and panning. HiPS uses the HEALPix tessellation of the sky as the basis for the scheme and is implemented as a simple file structure with a direct indexing scheme that leads to practical implementations. | V1.0 REC, 19 May 2017 |
+| Provenance | DM | **ProvenanceDM** | [[http://www.ivoa.net/documents/ProvenanceDM/index.html|current version]] | ProvenanceDM describes how provenance information for astronomical datasets can be modeled, stored and exchanged within the astronomical community in a standardized way. The definition of provenance as proposed by the W3C is applied. | V1.0 PR, 19 October 2018 |
+| Authentication | G&WS | **SSO** | [[http://www.ivoa.net/documents/SSO/index.html|current version]] | Approved client-server authentication mechanisms are described for the IVOA single-sign-on profile. Normative rules are given for the implementation of these mechanisms, mainly by reference to pre-existing standards. | V2.0 REC, 24 May 2017 |
+|   |   | **GMS** | [[http://www.ivoa.net/documents/GMS/index.html|current version]] | Group Membership Service (GMS) describes a REST interface for determining whether a user is a member of a group. GMS offers organizations an interoperable, flexible and scalable way of protecting a heterogeneous set of resources within and outside an organization. | V1.0 WD, 29 March 2019 |
+|   | RoR | **RegTap** | [[http://www.ivoa.net/documents/RegTAP/20190326/index.html|current version]] | RegTAP defines an interface to search the IVOA Registry of Resources using the IVOA TAP protocol. This version includes Authorization issues, among other updates. | V1.1 PR, 26 March 2019 |
+| Semantics for quantities | Semantics | **UCD1+** | [[http://www.ivoa.net/documents/UCD1+/index.html|current version]] | The document contains the list of controlled terms used to build the Unified Content Descriptors, which describe quantities in the Virtual Observatory. | V1.3 REC, 27 May 2018 |
+|   | Semantics | **UCDListMaintenance** | [[http://www.ivoa.net/documents/latest/UCDlistMaintenance.html|current version]] | Description of the procedures used to update the UCD list | V2.0 PR, 23 August 2018 | 
+
+==== Data publication tools ====
+
+The list includes the data publication tools demonstrated during the Training sessions of DADI Workshops. An excellent introduction to publishing in the VO was presented at the [[http://www.g-vo.org/edp-forum-2016|Heidelberg European Data Provider Forum & Training event]] by Grégory Mantelet ([[http://www.g-vo.org/edp-forum-2016/slides/mantelet_VODataAccessService.pdf|pdf]]).
+
+| **Name** | Link | Description | Producer |
+| **CDS-ARI libraries** | [[http://cdsportal.u-strasbg.fr/adqltuto/|ADQL Library]], [[http://cdsportal.u-strasbg.fr/taptuto/|TAP Library]], [[http://cdsportal.u-strasbg.fr/uwstuto/|UWS Library]] | a set of four generic Java libraries, each of them implementing an IVOA standard: ADQL-Lib for ADQL, UWS-Lib for UWS (a protocol for asynchronous execution of computations), TAP-Lib for TAP (Table Access Protocol) and SCS-Lib for Simple Cone Search. | Maintained by CDS |
+| **DaCHS** | [[http://docs.g-vo.org/DaCHS/|web site]] | The GAVO Data Center Helper Suite (DaCHS) is a publishing infrastructure for the Virtual Observatory, including a flexible component for ingesting and mapping data, integrated metadata handling with a publishing registry, and support for many VO protocols and standards. | UHEI | 
+| **INAF IA2 VO Publishing tools** | [[http://ia2.inaf.it/index.php/13-software/33-vo-dance|VO-Dance]], [[http://ia2.inaf.it/index.php/13-software/37-ia2-tap|IA2TAP]], [[http://ia2.inaf.it/index.php/13-software/36-tap-schema-manager|TAP Schema Manager]] | A set of tools to deploy and manage VO services based upon S*AP and TAP recommendations. Tools are all developed as Java web applications, connecting to MySQL RDBMS back ends. | INAF IA2 |
+| **SAADA** | [[http://saada.unistra.fr/saada/|web site]] | Saada builds databases from data files: no code to write - heterogeneous dataset storage - can host multiple data collections - support persistent links between data - metadata tagging - access by Web interface, VO protocols or API. | OAS |
+| **SVO Publishing Tools** | [[http://svo.cab.inta-csic.es/docs/index.php?pagename=Projects/Astronomical_Data_Centres/Publishing|web site]] | SVOCat and MySpecMyImg are tools developed respectively to publish a web interface and access through the relevant VO protocols, respectively ConeSearch and SIAP or SSAP. No code to write and little technical expertise is required. | Spanish VO |
+| **VizieR** | [[http://vizier.u-strasbg.fr/index.gml|web site]]  | VizieR can be used to publish tables and data (e.g. images, spectra) in the Virtual Observatory, taking advantage of all the service functionalities. | CDS |
+
+
+
+
+
+==== Other products of DADI work ====
+
+| **Title** | **Link** | **Short description** | **Producer** |
+| **Maintenance of PGSphere** | [[http://pgsphere.github.io/index.html|web site]] | PGSphere, a popular extension of PostgreSQL for astronomy used by many data providers, is now maintained by UHEI. This includes in particular its extension to MOC data and using computation exclusively in the database back-end (an exemplar of the code-to-data paradigm) to create a publication-ready data product. | UHEI |
+| **Publication of ANTARES data in the VO** | [[http://dc.zah.uni-heidelberg.de/antares10/q/cone/form|query form]] | The time integrated search for point sources of cosmic neutrinos was performed using the data collected from January 2007 to November 2010 by the ANTARES neutrino telescope (a Km3NeT pathfinder) was published in the VO by GAVO following the [[open:wp4:wp4esfriforum1|First Trieste ESFRI Forum & Training Event]] | GAVO and LPPM |
+| **Inclusion of the GLADE catalogue in VizieR** | [[http://cdsarc.u-strasbg.fr/viz-bin/Cat?VII/275|VizieR catalogue entry]] | GLADE (Galaxy List for the Advanced Detector Era) is a value-added full-sky galaxy catalog with high completeness for identifying gravitational wave (GW) sources in order to support future electromagnetic (EM) follow-up projects of the LIGO/Virgo Collaboration. It was included in VizieR as a result of the [[open:wp4:wp4gwstrasbourg2016|DADI Gravitational wave meeting]]. | CDS and Eötvös University |
+| **Proper inclusion of the Gravitational Wave Events in SIMBAD** | [[http://simbad.u-strasbg.fr/simbad/sim-sam?Criteria=maintype%3DGWE&submit=submit+query&OutputMode=LIST&maxObject=10000&CriteriaFile=|list from SIMBAD]] | The way to include Gravitational Wave events in SIMBAD was discussed between CDS and APC during the [[open:wp4:wp4gwstrasbourg2016|DADI Gravitational wave meeting]] and the [[open:wp4:wp4techforum3|Third DADI Technology Forum]] | CDS and APC |
+ 
+
+
+==== IVOA Interoperability meeting presentations related to DADI ====
+
+The first IVOA meeting during ASTERICS was held in May 2015 just after the beginning of the project, too early to report on "ASTERICS products" for this meeting. The other meetings held since then have allowed significant input from DADI: 
+
+   * [[http://wiki.ivoa.net/twiki/bin/view/IVOA/InterOpOct2015|Sydney IVOA Interoperability meeting]] - 29 October - 1 November 2015
+   * [[http://wiki.ivoa.net/twiki/bin/view/IVOA/InterOpMay2016|Cape Town IVOA Interoperability meeting]] - 8-13 May 2016
+   * [[http://wiki.ivoa.net/twiki/bin/view/IVOA/InterOpOct2016|Trieste IVOA Interoperability meeting]] - 21-23 October 2016
+   * [[http://wiki.ivoa.net/twiki/bin/view/IVOA/InterOpMay2017|Shanghai IVOA Interoperability meeting]] - 14-19 May 2017
+   * [[http://wiki.ivoa.net/twiki/bin/view/IVOA/InterOpOct2017|Santiago IVOA Interoperability meeting]] - 26-29 October 2017
+   * [[http://wiki.ivoa.net/twiki/bin/view/IVOA/InterOpMay2018|Victoria IVOA Interoperability meeting]] - 27 May-1 June 2018
+   * [[https://wiki.ivoa.net/twiki/bin/view/IVOA/InterOpNov2018| College Park IVOA Interoperability meeting]] - 8-10 November 2018
+
+List of talks related to topics discussed in DADI presented by participants working in European laboratories during the meetings, with a link to the slides: 
+
+   * {{ivoa_sydney_asterics_dadi.pdf|Sydney}}
+   * {{ivoa_capetown_asterics_dadi.pdf|Cape Town}}
+   * {{ivoa_trieste_asterics_dadi.pdf|Trieste}}
+   * {{ivoa_shanghai_asterics_dadi_final.pdf|Shanghai}}
+   * {{ivoa_santiago_asterics_dadi.pdf|Santiago}}
+   * {{ivoa_victoria_asterics_dadi.pdf|Victoria}}
+   * {{ivoa_collegepark_asterics-dadi.pdf|College Park}}
+
+==== DADI contribution to ASTERICS final event ====
+
+DADI contributions to the ASTERICS final event, [[http://multi-messenger.asterics2020.eu/index.php|The New Era of Multi-Messenger Astrophysics]], which was held in Groningen 26-29 March 2019, are an excellent illustration of DADI results, impact and legacy. 
+
+   * {{multimessenger_groningen_genovaallen.pdf|Access, discovery and interoperability of multi-messenger/multi-wavelength data}}, F. Genova, M. Allen, C. Boisson, E. Chassande-Mottin, P. Coyle, A. Lawrence, M. Molinaro, E. Solano, J. Wambsganss, M. Wise, and ASTERICS WP4 Team (invited)
+   * {{allen-groningen.pdf|All-Sky astrophysics enabled by innovative systems for indexing the sky}}, M. Allen, P. Fernique, T. Boch, C. Bot, A. Nebot, S. Derriere, M. Baumann, K. Lutz, F. Genova
+   * {{asterics-mm-nebot.pdf|Exploring time-domain multi-messenger astronomy through the Virtual Observatory}}, A. Nebot, M. Allen, P. Fernique, T. Boch, C. Bot, S. Derriere, M. Baumann, K. Lutz, F. Genova
+   * {{gravitational-wave_greco.pdf|Working with Gravitational-Wave sky localizations: new methods and implementations}}, G. Greco, M. Branchesi, E. Chassande-Mottin, G. Stratta, G. Dálya, M.W. Coughlin, E. Brocato, G. Guidi, F. Piergiovanni, F. Brighenti, P. Capellacci, P. Fernique, T. Boch, S. Derriere, F. Genova, M. Allen
+   * {{mmolinaro_esfri-vo_groningen.pdf|ESFRIs and the VO: Networking and discussing}}, M. Molinaro, F. Pasian
+   * {{2019_03_27_Trovato_V4.pdf|GWOSC: Gravitational Wave Open Science Center}}, A. Trovato for the LIGO/VIRGO collaboration
+   * {{mmgroningen_cb.pdf|Archiving data from a software telescope}}, C. Boissson, M. Servillat, K. Kosack, M.Louys, F. Bonnarel, M. Sanguillon
+   * {{schools_mma_mar19_v2.pdf|The ASTERICS VO schools. Getting closer to the astronomical community}}, E. Solano, A. Nebot, F. Genova (poster)
+  

@@ -1,0 +1,32 @@
+(up one level: [[open:wp4:wp4edpforum1|ASTERICS European Data Provider Forum and Training Event 1]])
+
+====== VizieR, HiPS, and MOC ======
+
+[[http://vizier.u-strasbg.fr|VizieR]]  provides access to the most
+complete library of published astronomical catalogues and data table
+available on-line, organized in a self-documented database.
+   
+[[http://aladin.u-strasbg.fr/hips|HiPS]] is the hierarchical 
+tiling mechanism, which allows one to access, visualize, and browse
+seamlessly, image, catalogue, and cube data.
+   
+[[http://wiki.ivoa.net/twiki/bin/view/IVOA/MocInfo|MOC]],
+the Multi-Order Coverage map method, allows to specify arbitrary sky
+regions, with very fast comparisons between them.
+It is based on the HEALPix sky tessellation algorithm.
+   
+
+==== Elevator pitch ====
+
+[[http://www.g-vo.org/edp-forum-2016/slides/Introduction-VizieR-HiPS-MOC-Heidelberg.pdf|Elevator pitch]]
+
+==== Hands-on tutorial ====
+
+[[http://www.g-vo.org/edp-forum-2016/slides/HiPS-Heidelberg.pdf
+|HiPS Slides]]
+[[http://www.g-vo.org/edp-forum-2016/slides/HIPS-tutorial.pdf|HiPS Tutorial]]
+[[http://www.g-vo.org/edp-forum-2016/slides/Moc-Heidelberg.pdf|MOC Slides]]
+
+==== Schedule for Friday, June 17th, 2016 ====
+
+[[http://www.g-vo.org/edp-forum-2016/programme.html#friday|Schedule for Friday, June 17th, 2016]]

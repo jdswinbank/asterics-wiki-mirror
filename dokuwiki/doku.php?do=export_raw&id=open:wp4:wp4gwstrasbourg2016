@@ -1,0 +1,125 @@
+====== DADI Meeting on Gravitational Waves ======
+
+Two-day informal meeting where VO developers can understand the issues and needs of GW people and where GW people can learn about the VO and get technical support for on-going or future development of VO tools.
+
+(Top level DADI page: [[open:wp4:start|WP4: Data Access, Discovery and Interoperability (DADI)]])
+
+==== Dates ====
+
+31 May-1 June 2016
+
+==== Location ====
+
+Observatoire de Strasbourg, 11 rue de l'Université, Strasbourg, France
+
+==== Main Topics ====
+
+   * VOevent/alert and GW
+   * Tools to help defining follow-up strategy:
+      * Skymap visualization and tiling
+      * Galaxy catalogs and usage for prioritization
+   * Tutorial on the scientifc usage of the VO
+
+
+   
+
+==== Tutorial ====
+
+**//Please install Aladin and TOPCAT on your computer//** {{:open:wp4:install_instructions.pdf|Install Instructions}}
+
+[[https://www.astron.nl/asterics/lib/exe/fetch.php?media=open:wp4:highenergytutorial_astericsmadrid_dec10.pdf|Multi-instrument, multi-wavelength study of high energy sources with the virtual Observatory]]
+
+==== Programme ====
+
+The meeting will begin at 9:00 on 31 May 2016 and likely finish in the afternoon on 1 June 2016. The initial programme was purely indicative and evolved as the meeting progressed. The programme shown below is the final one.
+
+
+**May 31st** //Salle de Cours//
+
+
+9:00 Welcome
+
+   * Introduction -- A few words about ASTERICS ad DADI (Data Access Discovery and Interoperability) (Francoise){{:open:wp4:wp4_gw2016.pdf|pdf}}
+   * Introduction -- Scope of the meeting (Eric)
+   * Quick recap of the science context : GW observations so far (Eric) {{:open:wp4:presentation_intro.pdf|pdf}}
+
+
+
+10:30 -- 11:00 Coffee break
+
+   * VO in a nutshell from [[http://ivoa.net]]
+   * Discussion on VOevent std and its application to GW observations - [[http://www.ivoa.net/documents/VOEvent/20110711/|Current VOEvent standard]] - [[http://www.ivoa.net/documents/VOEventTransport/20160503/index.html|Current VOEvent Transport Protocol]] 
+   * VO tools for astronomers and handling GW skymaps
+   * Working with probability sky maps: tools for astronomers and suggestions (Giuseppe) {{open:wp4:giuseppe_gw2016.pdf|pdf}}
+   * Useful information on HiPS (Hierarchical Progressive Survey) and MOC (HEALPix Multi-Order Coverage map): {{http://www.ivoa.net/documents/MOC/20140602/index.html|MOC IVOA Standard}} {{http://www.aanda.org/articles/aa/abs/2015/06/aa26075-15/aa26075-15.html|Hierarchical Progressive Surveys : Fernique et al, 2015 A&A 578 A114}}
+   * Obscore standard (main information about observations) {{http://www.ivoa.net/documents/ObsCore/20111028/index.html|current version V1.0}} {{http://www.ivoa.net/documents/ObsCore/20160330/index.html|Proposed V1.1}}
+
+12:30 -- 14:00 Lunch break
+
+   * Tutorial  [[https://www.astron.nl/asterics/lib/exe/fetch.php?media=open:wp4:highenergytutorial_astericsmadrid_dec10.pdf|Multi-instrument, multi-wavelength study of high energy sources with the virtual Observatory]] 
+  
+  Other tutorials can be found [[http://www.euro-vo.org/?q=science/scientific-tutorials|here]], in particular one about advanced functionalities in TOPCAT [[https://www.astron.nl/asterics/lib/exe/fetch.php?tok=d3d107&media=http%3A%2F%2Fandromeda.star.bris.ac.uk%2Ftopcat%2Ftutorial-asterics1%2F|here]]
+   
+15:30 -- 16:00 Coffee break
+
+   * Multimessenger astrophysics and open science
+   * Prospects for joint GW and high-energy EM observations of NS-NS mergers (Barbara) {{:open:wp4:dadi2016-barbara.pdf|pdf}}
+   * LIGO Open Science Center (Roy - {{:open:wp4:losc.pdf|pdf}}) and Virgo plans (Eric) 
+   * Follow-up strategies
+
+
+
+17:30 Session closes
+
+19:30 Workshop dinner
+
+**Jun 1st** //Salle de réunion coupôle//
+
+9:00 Welcome
+
+   * Galaxy catalogs for GW follow-up
+   * Gergely Dalya: “The current state of GLADE” {{open:wp4:gdalya_glade_eurovo.pdf|pdf}}
+   * Gabor Galgocy: "Planned future development of GLADE” {{open:wp4:galgoczi_euvo.pdf|pdf}}
+
+10:30 -- 11:00 Coffee break
+
+   * Follow-up strategies
+   * Tiling strategies of wide FOV optical telescopes (Shaon) {{open:wp4:presentation_ghosh.pdf|pdf}}
+   * MassBus: virtual observatory for gravitational-wave follow-up (Roy) ({{:open:wp4:massbus.pdf|pdf}})
+   * Multimessenger astrophysics and open science
+
+ 12:30 -- 14:00 Lunch break
+
+   * VO tools for astronomers
+   * The BlackGEM array -- needs of VO tools  (Steven) {{open:wp4:bloemen_20160531.pdf|pdf}}
+   * Meeting summary. What's next?
+   * Small group meetings/Hackathon   
+
+16:00 Meeting ends
+==== Participants ====
+
+|  //**Name**//  |  //**Affiliation**//  | //**Dinner**//  |   |
+| Barbara Patricelli | INFN Pisa  |   |   |
+| Giuseppe Greco | Urbino University, INFN Firenze  |   |   |
+| Shaon Ghosh | Radboud University |   |   |
+| Steven Bloemen | Radboud University  |   |   |
+| Zsolt Frei | Eötvös University  |   |   |
+| Peter Raffai | Eötvös University |  |   |
+| Eric Chassande-Mottin | APC CNRS  |   |   |
+| Philippe Bacon | APC CNRS |  |   |
+| Roy Williams | CalTech |  |  |
+| Gergely Dalya | Eötvös University |  |   |
+| Gabor Galgocy | Eötvös University |  |  |
+| Dave Morris | UEDIN |  |  |
+| Francoise Genova | CDS | Yes |   |
+| Ada Nebot | CDS |  |   |
+| Thomas Boch | CDS | No | Not available on 31st afternoon |
+| Gilles Landais | CDS | No | Not available on 31st |
+| Mark Allen | CDS |  | Not available on 31st |
+| Pierre Ocvirk | CDS |    | As required |
+| Pierre Fernique | CDS |  | May 31st |
+| Francois Bonnarel | CDS |   | June 1st |
+
+
+
+

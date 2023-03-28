@@ -1,0 +1,100 @@
+Participants - please go ahead and develop these Hack-a-thon topics, and use this page to provide notes
+
+| **TOPIC: X509 certificates** |
+| BERTOCCO, Sara, DEMLEITNER, Markus|
+
+| **TOPIC: DataLink** |
+| Fernique, Demleitner, Chaitra, Taylor ?|
+
+| **TOPIC: Docker** |
+| BERTOCCO, Sara - Docker vs. Virtual Machines and other means for direct VO tool installation. Status, perspectives and ideas. VOSpace to VOSpace copy: use case utility discussion. |
+
+| MORRIS, Dave - 1) Using Docker - sharing experiences, problems and solutions. 2) Time series data - what data do we have and how do we want to access it. (tuesday afternoon ?) |
+
+{{open:wp4:docker-20170323.pdf|Summary of the discussion}}
+
+| **TOPIC: Time Series && Provenance** |
+|BONNAREL, François - 1 ) TimeSeries in the VO (actually organized in the Tuesday  afternoon) 2 ) Provenance data model (see below) |
+| Time Domain Follow up of tuesday, Thursday morning : FB proposal = list metadata and data needed for the different use cases  |
+
+{{open:wp4:wp4techforum3:timedomainhackathon.pdf|Summary of the discussion (text)}}, {{open:wp4:timedomainhat.pdf|Summary of the discussion (slides)}}
+
+| **TOPIC : PROVENANCE** | 
+| //time slots: Wednesday afternoon 16:30  and Thursday afternoon 2PM // | 
+**RIEBE Kristin - "Links between SimDM and ProvenanceDM" max. 15 min. presentation  **
+
+the mapping between SimDM classes and provDM classes is easy 
+will be explained in the current ProvDM WD
+ 
+**All prov members - Prov DAL and Serialisation formats for Provenance DM  discussion **
+  - PROV-JSON  all partners SVOM, CTA, Pollux, ..
+  - PROV-XML   Lofar 
+  - VOTable    Pollux , CDS 
+
+
+** Jose Enrique RUIZ DEL MAZO,  CTA data model **
+
+** Michèle SANGUILLON -  voprov python module: current status  presentation + discussion **
+examples of VOprov python library need more trials 
+tools are available : we can build on it . 
+
+we see we should explore more the various serialisation formats of the DM Classes 
+a wiki page will be dedicated for that and annonced on the DM list 
+
+|Riebe Kristin, Louys Mireille, F. Bonnarel - Updates in class design : Activity Flow, relations as classes, roles in the Provenance DM WD |discussion --> postponed| 
+
+| RIEBE Kristin- VO-DML representation How to deal with the "double compositions" in-between relation-classes|discussion --> postponed |
+|RIEBE Kristin - F. Bonnarel and ?  - Use case discussions: next steps for implementations|  discussion| 
+
+|Mathieu Servillat -  ctapipe Provenance python class for CTA  |presentation + discussion --> postponed|
+ 
+|RIEBE Kristin - F. Bonnarel and ?  - Use case discussions: next steps for implementations  |discussion| 
+
+
+
+| **TOPIC: RDA** |
+| Genova - Certification and RDA query-store |
+| ZWOLF, Carlo Maria - Title - Persistent Identifiers: a key component for achieving agile data provenance and reproducibility Starting from a working example (the VAMDC query Store), we will generalise the implemented concepts for sketching an agile method for data provenance and reproducibility.|
+
+Discussion of RDA activities and of the information provided on the web site. Exchange of experience with those of the participants who had attended a RDA Plenary on the interest of participation. Short presentation by CMZ of implementation the dynamic data citation recommendation (demo at {{https://youtu.be/kDDWFpi22cU}}).
+
+| **TOPIC : Intellectual property rights and the VO ** (was: VO SOFTWARE AND THIRD-PARTY LIBRARIES) |
+| NULLMEIER, Markus - Licence compliance woes: Birds of a feather and a use case from PostgreSQL. While PostgreSQL is provided under a very liberal licence, a typical installation of it adds several third-party libraries with their own peculiar copyright provisions. Just by using an addional library that is GPL-licensed, we have quite a problem. {{:open:wp4:wp4techforum3:dadi-tf3-hack-3rd-party-libs.odp|odp}} {{:open:wp4:wp4techforum3:dadi-tf3-hack-3rd-party-libs.pdf|pdf}} {{:open:wp4:wp4techforum3:dadi-tf3-hack-3rd-party-libs.ppt|ppt}} |
+
+| **TOPIC : TAP Table Discovery with RegTAP** |
+| DEMLEITNER: How do we get rid of GloTS? Figuring out query patterns and the state of Registry records necessary.  + Taylor |
+
+(1) Developed on the RegTAP Query TOPCAT uses for TAP service discovery,
+working towards replacing GloTS there.  Came up with something working
+pretty nicely, and produced a list of services that need more metadata
+(specifically, tablesets)
+
+(2) Discussion on a stopgap measure for discovering SSA services
+actually serving time series (there's an increasing number of those).
+Tentative idea: Put, in effect, time_min and time_max in the tableset
+and use ad-hoc utypes like "timeseries.start" and "timeseries.end".
+
+(3) There are now some services that publish two different records for
+SIAv1 and SIAv2 -- how should a client that it should only, say the
+SIAv2 one should be shown/queried?  Agreed that the original sin is to
+have to records in the first place. This should be one record with two
+capabilities; clients can then have a list of standardIDs to use in
+order of preference.
+
+| **TOPIC : GRAVITATIONAL WAVES REQUIREMENTS ON SIMBAD and VIZIER** |
+| CHASSANDE-MOTTIN, Eric - with C. Loup, P. Ocvirk, B. Vollmer (CDS){{:open:wp4:presentation_gw_simbadvizier_v2.pdf|pdf}} |
+
+| **TOPIC : IVOA Standard Documents V2.0** |
+| GENOVA, Françoise - The comments received on the IVOA Standard Documents V2.0 are nearly all taken into account. A decision has to be taken on a few points. It would be useful to seize the opportunity that three of the authors are attending to discuss these points F2F. The discussion is of course open to other people interested if any |
+Discussion of and agreement on the pending questions.
+
+| **TOPIC : starjava build** |
+| M. Taylor and M. Castro Neves discussed how to incorporate additional libraries in SPLAT build --> solved. |
+
+===== Hack-a-Thon Rooms =====
+
+| | **Amph** | **Sal de Cours** | **Salle de Reunion** |
+| PM | Docker | RegTAP | Prov |
+| AM | RDA | Datalink | Time Domain |
+| PM | IVOA Std | 3rd Party Libs | Prov |
+

@@ -1,0 +1,98 @@
+====== DADI-CLEOPATRA meeting on the Time Domain ======
+
+A meeting gathering DADI and CLEOPATRA staff is organised to discuss topics of common interest in the time domain. The time domain is one of the initial DADI priorities, and DADI is involved in particular in gathering requirements for the evolution of the VOEvent IVOA standard. One of CLEOPATRA tasks is to "develop methods for relaying alerts, which will signal transient event detections between the facilities and enable joint observing programmes. The focus will not just be on interchange formats but on scientific strategies and methods for joint observing." **Contact persons: Françoise Genova (DADI), Mark Kettenis (CLEOPATRA)**
+
+==== Dates ====
+Meeting: 21 March 2017
+
+//The meeting is organised the day before the [[WP4TechForum3|Third ASTERICS DADI Technology Forum]].//
+
+
+==== Location ====
+Observatoire astronomique de Strasbourg, 11 rue de l'Université,
+Strasbourg, FRANCE\\
+[[http://astro.unistra.fr/nous-joindre/|Access Information]]
+
+The meeting will be held in the main building with the big dome.
+
+==== Hotels ====
+Please arrange your own hotel accommodation. Strasbourg has a lot to offer, and hotels in the central part of town are generally accessible by foot or tram.
+
+==== Agenda ====
+
+This is a //'working meeting'// so the agenda will be adapted based on the contributions of the participants.
+ 
+**Coffee at 9:30**
+
+**Meeting starts at 10:00**
+
+   * Introduction :VOEvent use-cases types D. Morris (10 min)
+   * VOEVent M. Kettenis (20 min) - mostly radio {{:intra:wp5:dadi-cleopatra.pdf|pdf}}
+      * Evolution of the VOEvent standard.
+      * Standardizing the content of VOEvent messages.
+      * Using VOEvent messages and infrastructure for handshakes between facilities?
+      * Archiving VOEvent messages.
+   * VOEvent Grav. Wave experience E. Chassande Mottin (~15 min) {{:open:wp4:presentation_gwtimedomain.pdf|pdf}}
+   * Microlensing events H. Heinl (~10 min) {{:open:wp4:pop.pdf|pdf}}
+
+**Lunch at 13:00**
+
+**Afternoon session**
+
+   * Time series (will continue during the Tech Forum)
+      * Hack-a-Thon type meeting. Material:
+         * Please read the draft technical document :          (http://mail.ivoa.net/pipermail/dm/attachments/20170207/9eb8fefb/attachment-0001.pdf)
+         * Summary of the CDS discussion (In French http://alinda.u-strasbg.fr/TimeDomain/TimeDomain06022017.pdf)
+         * IVOA science use cases (http://wiki.ivoa.net/twiki/bin/view/IVOA/CSPTimeSeries)
+         * Discussion on the DM email list (http://mail.ivoa.net/pipermail/dm/2017-February/thread.html#start)
+      * Slides presented during the meeting
+         * Time Series Cube - Introduction, J. Nadvornik {{open:wp4:timeseriescube_-_intro.pdf|pdf}}
+         * CDS requirements on time domain, F. Bonnarel {{:open:wp4:cdstimedomain.pdf|pdf}}
+
+**Coffee at 15:00**
+
+==== Documents Related to the meeting ====
+
+IVOA VOEvent 2.0 standard: 
+http://www.ivoa.net/documents/VOEvent/20110711
+
+IVOA VOEvent Transport Protocol
+http://www.ivoa.net/documents/VOEventTransport/20170114/index.html
+
+IVOA Provenance Data model: the current working draft is here
+ http://www.ivoa.net/documents/ProvenanceDM/index.html 
+
+IVOA Unified Content Descriptor : on going revision of the UCD standard
+The current working draft with proposals for updating the UCD terms collection / new terms added for planetary data and statistical measurements
+http://www.ivoa.net/documents/UCD1+/20150608/index.html
+
+IVOA UCD standard recommendation  : http://www.ivoa.net/documents/cover/UCDlist-20070402.html
+
+==== Participants ====
+
+| Mark Kettenis | JIVE |
+| Françoise Genova | CDS |
+| Dave Morris | UEDIN |
+| François Bonnarel | CDS |
+| Mireille Louys | CDS & Icube, Université de Strasbourg |
+| Ada Nebot | CDS |
+| Hendrik Heinl  | ARI, UHEI, Heidelberg  |
+| Markus Hundertmark | ARI, University of Heidelberg |
+| Grégory Mantelet | ARI, University of Heidelberg |
+| Catherine Boisson | Observatoire de Paris (finally unable to attend) |
+| Jiří Nádvorník | Czech Technical University in Prague |
+| Marco Molinaro  | INAF - OATs |
+| Jose Manuel Alacid | INTA |
+| Eric Chassande-Mottin | APC |
+| Jenny Sorce | CDS |
+| Thomas Boch | CDS |
+| Sébastien Derriere | CDS |
+| Jesus Salgado | ESAC |
+| Raúl Gutiérrez | ESAC |
+| Laurent Michel | Observatoire Astronomique de Strasbourg |
+| Vladimir Kulikovskiy | KM3NeT/CPPM |
+| Carlos Rodrigo | SVO |
+| Madjid Bouchair | CDS |
+| Ibrahim Yapici | CDS |
+| Pierre Fernique | CDS |
+| Gilles Landais | CDS |

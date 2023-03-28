@@ -1,0 +1,11 @@
+==== Project outline ====
+
+Multi-messenger astrophysics is receiving a lot of attention, especially following the first gravitational wave detections with LIGO and Virgo and their electromagnetic counterparts.
+
+New tools are needed to promote it and take advantage of the massive and extensive data production that are or will be provided by large facilitates and space missions.
+
+A software platform is being prototyped in ASTERICS to face some of the involved challenges with the use of digitisation technologies and existing complementary applications. The platform shall serve the needs of both data providers and data users, and be useful for both planned multi-observatory observations and reactive observations following transients. The analysis undertaken in a first phase will be shared and a discussion is proposed to collect suggestions and receive the feedback from the DADI Tech Forum attendees that are interested in multi-messenger science.
+
+{{:open:wp4:wp4techforum5:MMPlatform_introduction.pdf|MMPlatform introduction}}
+
+{{:open:wp4:wp4techforum5:20190228-design-sketch.pdf|20190228-design-sketch}}

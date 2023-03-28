@@ -1,0 +1,120 @@
+====== ASTERICS DADI Technology Forum 1 ======
+
+The Forums enable technology discussion involving the framework developers and ESFRI project staff, to develop technical collaboration and exchange good practice - establishing a European strategy for IVOA and RDA activities
+
+(Top level DADI page: [[open:wp4:start|WP4: Data Access, Discovery and Interoperability (DADI)]])
+
+==== Dates ====
+Meeting: 17 & 18 September, 2015
+
+
+==== Location ====
+Observatoire astronomique de Strasbourg, 
+Strasbourg, FRANCE\\
+[[http://astro.unistra.fr/nous-joindre/|Access Information]]
+
+==== Hotels ====
+Please arrange your own hotel accommodation. Strasbourg has a lot to offer, and hotels in the central part of town are generally accessible by foot or tram.
+
+==== Agenda ====
+//(updated 16 September)//
+
+This is a //'working meeting'// so the agenda will be adapted based on the contributions of the participants.
+
+Location: Amphitheatre in the building with the big dome
+
+| //Time// | //Title//  | //Speaker//            | //Materials// |
+| **Day 1** | **Thursday September 17** | | |
+| 9h   | Coffee |                    |
+| 9h30 | Introduction to the Tech Forum, and round table introductions | Mark Allen & Keith Noddle | |
+| 9h40 | Introduction to ASTERICS | Francoise Genova | {{:open:wp4:introduction_to_asterics.pdf|}} |
+| 10h  | Architecture of the IVOA | Christophe Arviset | [[http://www.ivoa.net/documents/Notes/IVOAArchitecture/index.html|IVOA Architecture Document]] {{:open:wp4:20150917-ivoa-architecture-arviset.pdf|}} |
+| 10h30 | Coffee | | |
+| 11h  | Supporting VO infrastructure, DADI activities | | |
+|      | Technical Sustainability of the Euro-VO   | Mark Allen | |
+|      | ASTERICS DADI Activities                      | Francoise Genova | {{:open:wp4:asterics_dadi_activities.pdf|}} | 
+| 12h30 | Lunch (provided) | | |
+| 14h   | Presentations of ESFRI and pathfinder projects | | |
+|       | EGO/VIRGO | Eric Chassande-Mottin | {{:open:wp4:chassande-mottin_advirgo.pdf|}} |    
+|       | CTA | Catherine Boisson | {{:open:wp4:strasbg_cta.pdf|}} |    
+| 15h30 | Coffee | | |
+| 16h   | Making the ESFRI & pathfinders participants in defining the VO | | |
+|       | Summaries of activities of VO teams (10 min each)  | | |
+|       | INTA | Enrique Solano, presented by Carlos Rodrigo | {{:open:wp4:carlos_techforum.pdf|}} |
+|       | UEDIN | Andy Lawrence | {{:open:wp4:EDI-activities.pdf|}}|
+|       | INAF | Marco Molinaro on behalf of Fabio Pasian | {{:open:wp4:inafstatus.pdf|}} |
+|       | CNRS | Francoise Genova | {{:open:wp4:CDS_TechForum1_Genova_Final.pdf|}} |
+| 17h30 | close | | |
+| 19h  | **//Tech Forum Dinner//**  Restaurant:[[https://www.openstreetmap.org/node/899426124#map=17|Restaurant on OpenStreetMap]] [[http://www.pont-saint-martin.com|Au Pont Saint Martin website]] Address: 15 rue des Moulins | | |
+| | | | |
+| | | | |
+| **Day 2** | **Friday September 18** | | |
+| 9h   | Contributed presentations | | |
+|      | TOPCAT and TAP             | Mark Taylor | {{:open:wp4:tapcat.pdf|}} |
+|      | Reviving and extending Pgsphere | Markus Nullmeier | {{:open:wp4:dadi-rep-tf2015.pdf|}} |
+|      | Provenance Data Model  | Mireille Louys | {{:open:wp4:vo-provenancepresentation-asterics2.pdf}} |
+| 10h  | Observatory Coffee        | | |
+| 10h30 | Contributed presentations | | |
+|       | INAF-OATs VO status | Marco Molinaro | {{:open:wp4:OATSstatus.pdf}} |
+|       | ESA's Future Astronomy Multi-mission Interface | Jesus Salgado | {{:open:wp4:MMI_Strasbourg_Asterics.pdf}} |
+| 11h10 | Hack-a-thon I  ([[Hackathon Page]])   | Keith Noddle              | |
+| 12h   | Lunch (provided)| | |
+| 13h30 | Current IVOA standards in progress | | |
+|       | Data Access Layer (DAL) Standards  | Francois Bonnarel | {{:open:wp4:astericstechforum2015.pdf|}} |
+| 14h   | Preparation for IVOA Interoperability Meeting | | |
+|       | Progress toward registering HiPS data collections | Pierre Fernique | {{:open:wp4:hips-fernique.pdf|}} |
+| 14h50 | New-comer perceptions | | |
+| 15h   | Coffee | | |
+| 15h30 | Hack-a-thon II | | |
+| 17h   | Conclusions | | |
+| 17h30   | Close | | |
+  
+==== Organisation ====
+
+**Program Organising Committee:** Mark Allen, Keith Noddle (co-chairs) 
+
+**Local Organising Committee:** André Schaaff, Thomas Boch, Laurence Arbousse, Céline Halter, Mark Allen, Francoise Genova, Thomas Keller
+
+**Contact:** tech_forum (at) astro.unistra.fr
+==== Participants ====
+
+| Mark Allen | CDS, Observatoire de Strasbourg |
+| Andrew Lawrence | IfA, Edinburgh |
+| Keith Noddle | IfA, Edinburgh |
+| Mark Taylor | University of Bristol |
+| Dave Morris | IfA, Edinburgh |
+| Stelios Voutsinas | IfA, Edinburgh |
+| Andre Schaaff | CDS, Observatoire de Strasbourg, CNRS |
+| Markus Nullmeier | ARI, UHEI, Heidelberg |
+| Paul Sladen | ARI, UHEI, Heidelberg |
+| Mireille Louys | CDS, ICube, Strasbourg |
+| Francoise Genova | CDS, Observatoire de Strasbourg, CNRS |
+| Thomas Boch | CDS, Observatoire de Strasbourg|
+| Sebastien Derriere | CDS, Observatoire de Strasbourg|
+| Marco Molinaro | INAF - OATs |
+| Ada Nebot | CDS, Observatoire de Strasbourg |
+| Francois Bonnarel | CDS, Observatoire de Strasbourg,CNRS |
+| Norman Gray | University of Glasgow |
+| Pierre Fernique | CDS, Observatoire de Strasbourg |
+| J. Manuel Alacid | INTA |
+| Carlos Rodrigo | INTA |
+| Michael Sipior | ASTRON/LOFAR |
+| Giulia Iafrate | INAF-OATs |
+| Paul Harrison | University of Manchester |
+| Stefano Zampieri | ESO |
+| Eric Chassande-Mottin | APC / Université de Paris-Diderot |
+| Christophe Arviset | ESAC |
+| Jesus Salgado | ESAC |
+| Catherine Boisson | LUTH / Observatoire de Paris-Meudon |
+| Mathieu Servillat | LUTH / Observatoire de Paris-Meudon |
+| Anaïs Oberto | CDS, Observatoire de Strasbourg, CNRS |
+| François-Xavier Pineau | CDS, Observatoire de Strasbourg |
+| Soizick Lesteven | CDS, Observatoire de Strasbourg, CNRS |
+| Gilles Landais | CDS, Observatoire de Strasbourg, CNRS |
+| Laurent Michel | Observatoire de Strasbourg |
+|  |  |
+| 34 | participants |
+
+----
+
+[[open:wp4:start|WP4: Data Access and Data Interoperability]]

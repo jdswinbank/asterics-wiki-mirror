@@ -1,0 +1,44 @@
+====== Jupyter-CASA repository ======
+
+
+===== Introduction =====
+
+The size of astronomical datasets has increased dramatically over the years; terabyte sized datasets are no longer an exception. This trend will only accelerate; the SKA is expected to produce nearly 1 TB of archived data each day. This means that it will no longer be feasible for astronomers to download these huge datasets and perform the data reduction on their own machines, as is currently the practice. Instead the data reduction is likely to be done close to where the data is archived in central data processing centres, with the astronomer operating remotely on the data.
+
+One way of facilitating this is through [[http://jupyter.org/|Jupyter]] notebooks. Jupyter is a web-based application which allows users to create interactive notebooks which can include annotated text and graphics as well as executable code. Currently Jupyter supports more than 40 different programming languages, including Python, R, and Matlab. Jupyter is designed be extended and makes it easy to add additional languages.
+
+As part of the Obelics work-package we have created a Jupyter kernel for [[https://casa.nrao.edu/|CASA]], a widely-used software package for processing astronomical data. The kernel allows all CASA tasks to be run from inside a Jupyter notebook, albeit non-interactively. Tasks which normally spawn a GUI window are wrapped so that their output is saved to an image instead, which is then displayed inside the notebook. 
+
+The notebook format also has the great advantage that all steps of the data reduction are preserved inside the notebook. This means that the whole data reduction process is self-documenting and fully repeatable. It also allows users to very easily make changes to their pipeline and then rerun the pipeline steps affected.
+
+===== Installation =====
+
+Because Jupyter requires a much more current python distibution than what is provided in NRAO's CASA releases, a custom build of CASA is required. We distribute a DOCKER image containing a version of CASA which uses the most recent (I)python, matplotlib, etc. Note that this version of CASA can only be used from within Jupyter.
+
+Installation is a simple as executing: ''docker pull penngwyn/jupytercasa''
+
+The source code is located here: https://github.com/aardk/jupyter-casa
+
+===== Usage =====
+
+Even though we wrap all CASA tasks so that they will not launch a GUI window, the QT based CASA tasks still require X11, unfortunately. Tasks such as //plotms// won't start unless X11 is working even when it doesn't even open a window. Therefore the local X11 socket needs to be shared with Docker container.
+
+The simplest incantation to start JUPYTER on a recent Ubuntu:
+
+''
+docker run --rm -p 8888:8888 -i -t -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY penngwyn/jupytercasa /bin/sh -c "jupyter notebook"
+''
+
+Note that the ''--rm'' option will make DOCKER delete the container after use.
+
+Of course the above example is not very useful as the container will not be able to access locally stored measurement sets. To add a data directory to the DOCKER container is, fortunately, very simple using the ''-v'' option:
+
+''
+docker run --rm -p 8888:8888 -i -t -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY -v PATH_TO_DATA_DIR:/home/jupyter/data penngwyn/jupytercasa /bin/sh -c "jupyter notebook"
+''
+
+Where ''PATH_TO_DATA_DIR'' should be replaced with the full path to your local data directory.
+
+===== Examples =====
+
+We have created an example [[https://github.com/aardk/jupyter-casa/blob/master/examples/vla-cont-tutorial.ipynb|notebook]] which contains the NRAO continuum VLA tutorial. To run the notebook locally download the data files from the [[https://casaguides.nrao.edu/index.php/VLA_Continuum_Tutorial_3C391-CASA4.7|NRAO wiki]] and make the data available to the DOCKER container as is explained above.

@@ -1,0 +1,96 @@
+====== ASTERICS DADI Technology Forum 3 ======
+
+The Forums enable technology discussion involving the framework developers and ESFRI project staff, to develop technical collaboration and exchange good practice - establishing a European strategy for IVOA and RDA activities
+
+**Program Organisers: Mark Allen, Keith Noddle, Françoise Genova**
+
+(Top level DADI page: [[open:wp4:start|WP4: Data Access, Discovery and Interoperability (DADI)]])
+
+==== Registration ====
+Please register using the form at the link below. Registration deadline is March 3, 2017.
+
+https://indico.in2p3.fr/event/14260/registration/register#/register
+==== Meeting Dates ====
+Meeting: 22 & 23 March 2017, Strasbourg
+
+//A [[WP4WP5TimeDomain|DADI-CLEOPATRA meeting on the time domain]] is organised for the day before the Tech Forum, on 21 March 2017, also in Strasbourg at the Observatory.//
+
+
+==== Location ====
+Observatoire astronomique de Strasbourg, 11 rue de l'Université,
+Strasbourg, FRANCE\\
+[[http://astro.unistra.fr/nous-joindre/|Access Information]]
+
+The meeting will be held in the main building with the big dome (plenary session in the amphitheatre, splinters in the amphitheatre and in the meeting room on the ground floor).
+
+==== Hotels ====
+Please arrange your own hotel accommodation. Strasbourg has a lot to offer, and hotels in the central part of town are generally accessible by foot or tram.
+
+==== Dinner ====
+A working dinner will be organised Wednesday evening. Please indicate your attendance and dietary requirements on the registration form.
+
+==== Participants ====
+
+[[https://indico.in2p3.fr/event/14260/registration/registrants]]
+
+==== Agenda ====
+
+This is a //'working meeting'// so the agenda will be adapted based on the contributions of the participants. Please submit proposals for presentations and topics for the Hack-a-thon sessions in the registration form. Hack-a-thon topics will also be developed on the spot during the meeting.
+
+----
+
+| **Wed March 22** |
+|**10h** Welcome and introductions - Session chair: Mark ALLEN |
+|**10h05 - 10h25** DADI status - F. Genova {{:open:wp4:dadistatus_techforum3_genova.pdf|pdf}}|
+|**10h25** Presentations (20 min slots: 15 min + 5 min questions, 15 min slots: 10 min + 5 min questions  ) |
+| Feedback on Implementations |
+| **10h25 - 10h40** BONNAREL, François - IVOA DAL WG projects / CDS implementations {{:open:wp4:dal_asterics_2017.pdf|pdf}} |
+| **10h40 - 10h55** Chaitra - Datalink and TAP demonstration in Aladin {{:open:wp4:datalinkandtapimplinaladin.pdf|pdf}} {{http://aladin.unistra.fr/java/AladinProto.jar|link to Aladin prototype}} | 
+|**10h55 - 11h15** BERTOCCO, Sara - IVOA GWS based implementation: interoperability feedback {{open:wp4:sara_bertocco_demo_vospace_interop.pdf|pdf}} |
+|**11h15 - 11h35** LOUYS, Mireille - Current Status on the IVOA Provenance Data Model {{:open:wp4:astericscurrentstatusprovenancedm2017.pdf|pdf}}|
+|**11h35 - 11h55** ZWOLF, Carlo Maria and BA, Yaye Awa - RDA and DSA  related topics in VAMDC (Certification and Query Store) {{:open:wp4:asterics-provenance-vamdc-feedbacks.pdf|pdf}} |
+| Implementations in ESFRI + : |
+|**11h55 - 12h15** SERVILLAT, Mathieu - CTA Data Diffusion {{:open:wp4:servillat_asterics-dadi-tf3_cta.pdf|pdf}}|
+|**12h15 - 12h35** MICOL, Alberto  - ESO Archive Services Project {{open:wp4:eso_archive_services_project.pdf|pdf}}|
+| |
+|**12h35 Lunch** |
+| |
+|**14h** Presentations (20 min slots: 15 min + 5 min questions, 15 min slots: 10 min + 5 min questions  ) Session Chair: Keith NODDLE |
+|Time Domain: |
+|**14h00 - 14h10** MORRIS and BONNAREL - Summary of Time Domain splinter meeting {{open:wp4:voevent-20170321.pdf|VOEvent}} {{open:wp4:timedomaindaysummary.pdf|Time Series}} |
+|**14h10 - 14h30** ALACID, José Manuel - Implementation of Time Series DM {{open:wp4:timeseries_alacid.pdf|pdf}} |
+|**14h30 - 14h50** DERRIERE, Sébastien - Simple Time Series in VizieR {{open:wp4:vizier_timeseries.pdf|pdf}}|
+|**14h50 - 15h05** NADVORNIK, Jiri - Time Series Cube Data Model {{open:wp4:time_series_cube-dm.pdf|pdf}}|
+|**15h05 - 15h20** MOREAU, Nicolas - Semantics in the VAMDC infrastructure {{open:wp4:2017_03_22_asterics_vamdc_2.pdf|pdf}} |
+|**15h20 - 15h35** MORRIS, Dave - Using Docker to manage service deployment {{open:wp4:docker-20170322-001.pdf|pdf}} |
+|**15h35 - 15h55** SCHAAFF, André - Experiments with Docker and Spark {{open:wp4:ASTERICS-TechForum-ASchaaff.pdf|pdf}}|
+| **15h55** Coffee Break |
+| **16h10** Hackathon introduction - K. Noddle |
+| **16h15** Hackathon  [Amphitheatre + Salle de reunion coupole] |
+| **17h30** Close |
+| **19h30** Dinner {{:open:wp4:baeckeoffealsacemap.png?linkonly|}} 14 rue des Moulins http://baeckeoffe.com |
+ 
+| **Thurs March 23** |
+|**9h** Presentations (20 min slots: 15 min + 5 min questions, 15 min slots: 10 min + 5 min questions  ) |
+| **9h00 - 9h20** DEMLEITNER, Markus - RegTAP changes after VOResource 1.1 {{open:wp4:regtap.pdf|pdf}} |
+| **9h20 - 9h40** TAYLOR, Mark - TOPCAT recent visualisation enhancements {{open:wp4:tcvizup.pdf|pdf}} |
+| **9h40 - 10h00** RODRIGO, Carlos - Datalink implementation for stellar libraries |
+| **10h00 - 10h30**  DISCUSSION |
+| **10h30** Coffee Break |
+| **11h** Hackathon [ Amphitheatre + Salle de Cours] |
+| 12h30 Lunch |
+| **14h** Hackathon  [ Amphitheatre + Salle de Cours] |
+| **15h30** Coffee Break |
+| **16h** Reports from Hackathon |
+| **16h30** Conclusions |
+| **17h30** Close |
+
+photo: {{:open:wp4:p1100363.jpg?200|}}
+----
+
+
+==== Hack-a-thon Sessions ====
+
+A page for developing hack-a-thon topics and recording the notes is available here. Please go ahead and edit this page to add extra information 
+
+[[open:wp4:wp4techforum3:hackathon|Hack-a-thon Page]]

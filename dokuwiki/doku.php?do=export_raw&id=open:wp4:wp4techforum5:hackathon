@@ -1,0 +1,149 @@
+**Hack-a-thon Page**
+
+
+Participants - please go ahead and develop these Hack-a-thon topics, and use this page to provide notes
+
+
+(If you need an ASTERICS wiki account, please email mark.allen@astro.unistra.fr)
+
+**Tuesday 26 th at 4:30 PM**
+
+I ) ObsCore and other VO standards in the context of EST and solar data
+
+Participants Morten Franz, Thomas Hederer, Carl Schaffer, François Bonnarel 
+
+Discussion was about how Solar data can be described and discovered using an ObsCOre/EPNTAP strategy.
+
+Spectral data at KIS (and probably also fo EST) are produced by combination of spatial/spectral measurements at different time. The  time differentiation may be missed inside the datasets. The Polarization is also available
+These datasets may be made available as 4D FITS cubes. Sequences of observation at  several times may also be gathered in the same cube, which may be seen as a TimeSeries of 3D or 4D cubes.
+Description of all this should fit with ObsCore but has to be prototyped.
+Spatial constraints would however require the possibility to use any of the coordiate systems attached to the SUN body. EPNTAP solutions have to be explored ( see:  https://arxiv.org/abs/1407.5738 )
+
+Extract data subset around a sunspot could be seen as some kind of extension of sODA functionality. Has to be checked
+ 
+
+//Links to useful documents//:
+
+   * Link to the VO standard document collection: [http://www.ivoa.net/documents/]]
+   * Obscore (metadata describing a dataset): [[http://www.ivoa.net/documents/ObsCore/20170509/index.html]]
+   * UCDs - Unified Content Descriptor (standard vocabulary for quantities): [[http://www.ivoa.net/Documents/latest/UCD.html]]
+   * CDS VizieR service: [[http://vizier.u-strasbg.fr/viz-bin/VizieR]]
+      * To see the catalogues from the Solar field: choose Sun in Astronomy
+      * To see the UCD tree and explore it: Search catalogues by column description
+      * Example of ReadMe file describing a catalogue: [[http://cdsarc.u-strasbg.fr/viz-bin/ReadMe/J/ApJS/183/225?format=html&tex=true]]
+   * Registry
+      * IVOA: resource metadata [[http://www.ivoa.net/documents/RM/20070302/index.html]]
+      * Europlanet (planetary sciences): EPN-TAP
+         * Technical description: [[https://voparis-confluence.obspm.fr/display/VES/EPN-TAP+V2.0+parameters]]
+         * "Descriptive" description: [[https://voparis-confluence.obspm.fr/display/VES/EPN-TAP+v2+parameter+description]]
+   * IVOA Document Standards (IVOA processes to define its standards): [[http://www.ivoa.net/documents/DocStd/20170517/]]
+
+II ) How should services and clients behave on the transition from ADQL-2.0
+to ADQL-2.1 (in particular wrt TAP's LANG parameters)?
+
+**Wednesday 27 th at 2 PM : Tme Series + time //Salle de réunion downstairs//**
+
+17 attendants: Carlos Rodrigo, Markus Demleitner, Marco Molinaro, Mark Taylor, Stelios Voutsinas, Margarida Castro Neves, François-Xavier Pineau, Matthieu Baumann, Mireille Louys, Francois Bonnarel, Sebastien Derriere, Zheng Meyer-Zhao, Thomas Boch, Laurent Michel, Gilles Landais, Dave Morris, Ada Nebot
+
+2 topics discussed: Discovery and Data Model 
+{{:open:wp4:wp4techforum5:20190228-time-series-summary.pdf|20190228-time-series-summary}}
+
+                      
+1 topic need for further discussion and didn't have the time           
+{{:open:wp4:wp4techforum5:timeserieshackhaton.pdf| DM annotation and utypes (focusing on data part)}}
+
+**Wednesday 27 th at 4 PM : Provenance next steps Salle de Cours**
+
+Laurent, Mireille, François + Nicolas Renault Tinacci, Markus Nullmeier to discuss Provenance next steps.
+
+
+implementation CTA at LUPM Montpellier
+shown by Nicolas Renault Tinacci ( LUTH)
+
+Demo of a database instance in Jupyter Note book
+
+Implementation test for an activity extracting Muons’ signal from a raw observation
+
+All DM classes implemented.  ParameterDescription
+This re-uses some provenance  classes from CTA pipe library and adds some to be compliant to the model.
+
+Mathieu Servillat &Catherine Boisson work in another part of the pipeline , on advanced analysis steps of gamma ray data
+gamma_py  package
+
+Some features : roles depend on the activity description
+e.g role = dl0.subevent    could be published as a vocabulary with a name space cta:dl0.subevent
+
+In this example execution config attributes are embedded into the  instance of Activity
+
+Parameter not implemented  in this instance because not needed .
+question : is it using  default values?
+then these can be discovered via the ParameterDescription links , but the Activity —> parameter link should tell it .
+e.g  param_default =true in Activity
+
+* config repository:
+All configs for activities are stored in a specific system, and re-used when necessary via copy or via reference
+comment by Laurent : how to store  provenance objects
+Elements with diffrent life cycles , like parameters attached to an Activity should be stored in a different class / table than long lasting elements .
+They disapear with their related Activity.
+
+* CTE functions for recursive queries in ADQL 
+Markus Nullmeir will write some documentation for them and provide examples .
+
+will be tried in Prov-Tap prototype.
+
+**Wednesday 27 th at 4 PM : Platforms Salle de réunion dowstairs**
+
+Zheng, Dave, Sara, Stelios  ... general discussion on science platforms, what they are, what our users need, what technologies are available and how we can make them interoperable. 
+(Mark A.)
+
+**Wednesday 27 th after Provenance: after the Provenance hack-a-thon ~5pm**
+
+If needed : François + ... to discuss Multi-D standards status an next steps. Planning for the radio meeting tomorrow
+---> Cancelled. No participants
+
+**Wednesday 27: Transition to ESCAPE:**
+
+Francoise (not available during Tuesday 26 Hack-a-Thon), Marco + ...
+
+** Tuesday 16: Transition to ADQL 2.1 **
+
+Participants: Markus D., Mark T., Grégory, Stelios, Dave + others
+
+Topic: How should servers and clients behave with respect to
+minor version-sharp LANG parameters in TAP queries?
+
+There is now ADQL 2.1, and services want to accept LANG=ADQL-2.1 (as per
+TAP).  Should they accept LANG=ADQL-2.0, too.  Should they declare
+version 2.0 in TAPRegExt?
+
+Should we care about minor versions at all? Mark's use case: Syntax
+highlighting.  There already is a language selector in TOPCAT, filled
+from language/version from TAPRegExt.
+
+But then there's  people with hacked scripts not looking at TAPRegExt,
+perhaps just passing in LANG=ADQL-2.0 as gleaned from TAP.  Should this
+work on a 2.1 only service?  Yes, because there's no way it could
+(regularly) fail (ADQL 2.0 is a strict subset of ADQL 2.1).
+
+Should an ADQL-2.1 server declare support for 2.0 in TAPRegExt?  Mark
+thinks he'd not turn off syntax highlighting just because he doesn't
+know a version.  Mark would prefer no separate declaration if the
+behaviour is actually the same; users would worry about a meaningless
+decision.  It's a different thing if there's actually a behavioural
+difference.  So: No 2.0 declaration unless there's actually different
+parsers behind it.
+
+Have a versioning explanation in the ADQL spec: If you're a client and a
+service only declares support for a newer minor version than you know,
+use the latest artefacts you know about and hope for the best.  Also
+advse to leave out the version completely unless there's a strong reason
+to specify it (as in: when using new features in a cross-service query
+to fail early -- perhaps)..
+
+ADQL-2.2 to a ADQL-2.1 service: most likely it'd work because most
+people won't use the new versions.  Even if it fails, perhaps "I don't
+support DISTINCT ON" might be more useful than "I don't support ADQL
+2.2".  But then: people who do this kind of thing should be able to read
+"Just cut away the version number" error message, and this concrete
+information might be useful in other use cases.  So: Fail with higher
+versions. 

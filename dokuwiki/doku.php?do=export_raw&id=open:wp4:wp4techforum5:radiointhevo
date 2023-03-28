@@ -1,0 +1,106 @@
+| **14h** Radioastronomy in the VO - State of the art |
+|**overall view** François Bonnarel {{:open:wp4:wp4techforum5:radioastronomyinthevo_-_state_of_the_art.pdf| Overview}} |
+|Alessandra Zanichelli {{:open:wp4:hackaton_strasbourgh28feb2019_v0.pdf|The Italian radio data archive and the VO perspective}}  |
+|**Discussion** |
+|** Coffee Break 15:30** |
+|**16h** Scientist and projects requirements |
+|**Scientist point of view** Katharina Lutz {{:open:wp4:wp4techforum5:talk_klutz.pdf|An astronomer's thoughts on radio data and the VO}} |
+|**Scientist Yelena Stein** {{:open:wp4:voradio_stein_.pdf|Point of view & AENEAS slides}}  |
+|**Scientist Point of view** Marco Iacobelli {{:open:wp4:vo-interoperability_radio_data_mi.pdf|VO radio interoperability data}} |
+|**Discussion** | 
+
+**Participants :** Mark Allen, Sarah Bertocco, Rosie Bolton (remotely), François Bonnarel, Françoise Genova, Ian Grange (remotely), Marco Iacobelli, Gilles Landais, Mireille Louys, Katharina Lutz, Zheng Meyer-Zhao,  Laurent Michel, Marco Molinaro,Carlos Rodrigo, Eric Slezak, Yelena Stein, Arpad Szomoru, Harro Verkouter, Bernd Vollmer, Alessandra Zanichelli
+
+**3 main trends in the discussion.** Summary by FB with help of notes taken by ML and FG
+
+
+I ) **status and feedback on Multi-D and existing standard protocols for radio data**
+      ObstPAP(Obscore)-SIAV2+DataLink+SODA+clients(Aladin) work for imaging cubes (science ready
+      products)
+      HiPS works for the same (full 3D HiPS or alternatively  2D continuum HiPS  + DataLink access
+      to cubes, Other moment maps SODA). See CASDA (ASKAP) data + partially ALMA. Detailed 
+      analysis by INAF.
+      MOC also useful for discovery. But MOC in velocity could help.
+      Due to the nature of raw data, image sensitivity may change a lot from pixel to pixel ..
+      --> need for sensitivity cubes?
+      Some of the data are complex. ObsCore not really suited for this. Use of CAOM better?  
+      Coarse grain discovery of raw data (or calibrated discovery) via ObstAP/SIAV2 (or HiPS +
+      DataLink) probably possible, but not experimented yet. Links to project native pages for
+      the data can be made available 
+      It appears that currently most of the data in the radio archives are not science ready.
+      So there is a big question mark: why and how integrating visibility/raw data in the VO?
+
+
+II ) **Fine grain discovery:**
+
+      Seems to be needed before retrieving data (due to data volume). Need to define some "data
+      filters" by characterizing data.
+      Visibility characterisation to answer the trustability question: uv coverage = uv ranges,
+      uv power plots, uv distribution maps, amplitude versus spectral frequency, versus phase 
+      and versus time. 
+      Sensitivity or resolution based discovery.  For a given target which are the best
+      observations to provide some minimal sensitivity? some minimal resolution ? It seems to
+      require information on the beam shape and size.
+      Discovery based on configuration details. : number of antennas, array configuration, etc.. 
+      or others: filling factor, baseline length ... or PROPOSALS. ---> Provenance dM
+      Trustability by examining different calibration steps (provenance also ?)
+      Aparently some of this stuff can be provided statically, some other stuff can only be
+      generated dynamically according to user needs. This is more difficult to provide for large
+      field of views
+      Open questions: what does the VO can do for this?
+                     - integrate additional characterisation feature in existing models (ObsCore) 
+                       usage of provenance?
+                     - Use DataLink to give access to various characterisation or sensitivity
+                       features? Including graphically.
+                     - provide dynamical tools: as web services? as Desktop applications?
+                             - they can probably be easily integrated in the VO as custom services
+                               using UWS and DataLink "service descriptor" or applications using
+                               SAMP, registry and DAL communications.
+                             - provide more may be cumbersome and outside of the scope of the VO.
+                             
+      Last but not least : VO is not in charge of verifying the quality of the data. (No data
+      police !). VO Validators deal with compliance of services with the standard.  
+
+
+III ) **Data Access for observations (non science ready data)**
+
+Among other possibilities: 
+           Web service creating on the fly science ready data (reduction details hidden behind the
+           service interface)
+           Go back to progenitors of science data using provenance and reprocess. characterisation
+           and other metadata information needed to reprocess (see II above)
+           Port code to the data and execute CASA or whatever reduction software remotely.  
+           Store and distribute science data produced by users. Reusability of the data.
+           Download data and reduce them with Python VO package tools in Jupyter notebooks.
+           "Measurement sets" seem to be the most complete and widely used data model for
+           visibility data. Used by VLBI.
+           Do we need to tackle other formats (MBFITs, VLBI FITS, PSRFITS for pulsars etc ???)
+           Do we need to map measurements and metadata to some extensions of VO data models 
+           (Cube DM, TS DM, Provenance ?) For which purpose? Exposing what is relevant for
+           other users from the internal model ?
+
+
+IV )    **Conclusion.**
+
+              We need use cases (JIVE,LOFAR) and experience reports (SKA) at all levels. This will
+              allow to find some minimal common requirements. this will allow to go from simple
+              ones to more complex (what can be already done with little changes, what  does need
+              changes of larger extent, what is outside of VO Scope). ESCAPE will settle a "Radio
+              astronomy data in the VO" page organised in 3 parts as above which will gather these
+              use cases. JIVE, LOFAR, SKA may have very different use cases. 
+
+
+|**Relevant VO standards** |
+|**ObsCore** http://www.ivoa.net/documents/ObsCore/20170509/index.html |
+|**SIAP 2.0** http://www.ivoa.net/documents/ObsCore/20170509/index.html |
+|**DataLink** http://www.ivoa.net/documents/DataLink/20150617/index.html |
+|**SODA** http://www.ivoa.net/documents/SODA/20170517/index.html |
+|**HiPS** http://www.ivoa.net/documents/SODA/20170517/index.html |
+|**MOC** http://www.ivoa.net/documents/MOC/20140602/index.html |
+|**Cube DM (and dependencies to Dataset  DM and STC 2.0 data models) ** http://www.ivoa.net/documents/NDimCubeDM/20150320/index.html |
+|**Provenance DM** http://www.ivoa.net/documents/ProvenanceDM/20181015/index.html |
+
+          
+                      
+
+         

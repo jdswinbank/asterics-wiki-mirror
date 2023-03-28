@@ -1,0 +1,55 @@
+======= OBELICS D-ANA Software Repository =======
+
+==== Introduction ====
+
+The ASTERICS/OBELICS/D-ANA task is developing software libraries for statistically robust analysis of PetaByte-scale datasets in astronomy. The primary outputs of this task are these software libraries which are all released as open source software. The primary purpose of this page is to act as the **canonical  and long-term repository** for released versions of these libraries so that they remain permanently available to the public.
+
+This page is for public releases of the libraries, the ongoing software development work is managed separately.
+
+==== Intended Audience ====
+
+The intended audience for this software repository are scientists working on analysis of large data sets as well members of the public which may have a need or interest in such software, for commercial or non-commercial applications.
+
+ 
+==== Citing request ====
+
+If you use libraries developed or improved within the D-ANA task, we would appreciate it if you include a link to this page in the software documentation and/or any derived publications so that the readers are able to locate the original software easily. This will also help us gauge the public interest and use of these libraries. The current location is the **permanent location** of the repository.
+
+==== Current Version Information ====
+
+The D-ANA task is still in its ramp-up stage. The completion of this task is expected in April 2019. In the light of this the following should be noted:
+
+  - The software is still preliminary and will be updated through to the final milestone in April 2019
+  - In cases where there hasn't yet been significant progress within D-ANA we have currently posted the pre-existing open-source software on which we plan to build.
+
+
+
+==== Repository Table ====
+
+
+^ Short Name  ^Description  ^Summary of existing software to be used ^ Partners Delivering ^ License ^
+^SMART | Sparse Methods for arrays of telescopes (name to be finalised). Library for image analysis based on sparse methods. Will be used for signal/background discrimination of atmospheric showers and then for source morphology studies on sky images. | Software based on the existing Cosmostat tools iSAp (Interactive Sparse Astronomical data analysis Packages, http://www.cosmostat.org/software/isap/). | CEA | iSAP licence : CeCILL (http://www.cecill.info/) |
+^PLIBS | High Performance Computing software libraries (Intel) for data reduction, barycenter, first and second momenta calculation ... | The deliverable participation of the LAPP is composed of two different parts, a High Performance Computing library and some programs described below. The library will be composed of fast elementary functions, those meet the requirements for actual big experiments (CTA, SKA, ...), to guarantee the reusability of those functions. For example, we can perform a vector reduction 10 times faster than numpi in python. Or barycenter calculation more than 3 times faster than the same vectorized by GCC, in C of C++. For the moment, we have the basis of the library and a developer documentation. This library will be in development, we will also provide the documentation as soon as possible.  {{:open:wp3:plibs_8-master-a19eda11f392015ba71ec55b94274f00f0915aed.zip|}}  https://gitlab.in2p3.fr/CTA-LAPP/PLIBS_8 | LAPP | CeCILL-C |
+^MW-Inference               | Software libraries for  Bayesian and Neural Network,  multi-wavelength  and transient source detection and classification             | Will be based on PySciKit (http://scikit-learn.org/stable/), PyMC3 (https://github.com/pymc-devs/pymc3) and potentially Torch (http://torch.ch/)                                            | UCAM                    | GPLv3 |
+^StatPlanner                | Software tool for planning of statistical studies based on archival or planned surveys from multiple observatories.            | This will be based on TopCat {{:open:wp3:topcat_src.zip|}} and {{:open:wp3:tapsh-latest.tar.gz|}}                    | UCAM                   | GPL|
+^ VLBI in the cloud | Cloud computing and minimal recomputation for Casa |The Casa data processing package, widely used in radio astronomy; Jupyter, a system for hosting science data processing on the World Wide Web and Recipe ({{:open:wp3:hilado-d10.13.tgz|Recipe Tarball}}), developed during  the RadioNet[[http://www.radionet-eu.org/radionet3wiki/doku.php?id=jra:hilado|Hilado]] project. \\ \\ In data-processing astronomical data it is common to rerun scripts with slight changes as understanding of the data set is refined. The Recipe system takes Casa scripts (in python) and translates them to graph form; a recomputation-elimination engine can then compare this graph with previous iterations of the script. Our goal in Obelics is to develop this system further and integrate it with a web-hosted edition of the Casa package to transparently allow efficient cloud-based data processing. | JIVE,UCAM | |
+^AWImager2 | Software framework that uses CASA's libsynthesis to do imaging of radiointerferometric data with AW-projection.  | Source code snapshot: {{:open:wp3:awimager2-r34343.zip|}} | ASTRON | GPLv3 |
+^CASAsynthesis | Repackaging of CASA's libsynthesis in a modular form, so that it can be used by AWImager2. | Source code snapshot: {{:open:wp3:casasynthesis-0.1.zip|}} | ASTRON | GPLv3  |
+^DPPP | Extensions to DPPP, the streaming framework for radio interferometric data.  | Source code snapshot: {{:open:wp3:dppp-r34343.zip|}} | ASTRON | GPLv3 |
+^CORELib    | Library of cosmic ray events     | CORSIKA generator: {{:open:wp3:corelib_2016-04-29.pdf}}, Bookkeeping information: {{:open:wp3:bookkeeping_corelib_2016-04-28.csv.gz|}}, Data files (open access): https://pandora.infn.it/public/b1a02a | INFN    | GPLv3 |
+^ROAst | ROOT extension for Astronomy and astrophysics  {{:open:wp3:roast.h.zip}} [[Deliverables#roast|Deliverables]]| ROOT | INFN | GPLv3 |
+^pLISA | Parallel Library for Identification and Study of Astroparticles {{:open:wp3:plisa.h.zip|pLISA.h}} [[Deliverables#plisa|Deliverables]] | TMVA/ROOT, SciKit-Learn | INFN | GPLv3 |
+^ A&A | Authorisation and Authentication systems [[Deliverables]] | Django, Shibboleth service provider, Cross border Identity provider, Unity, Grouper, GMS | INAF | freely available |
+^ Workflows | Workflow Management systems [[Deliverables]] | Taverna, Kepler, Triana, Pegasus, WS-pGrade/gUSE, YaBi, DAGman | INAF | freely available |
+
+==== Development Plan ====
+
+Software development under D-ANA will continue through to April 2019 when final versions of the software will be posted here. Over this time there will be emphasis on consolidation and identifying where common sub-components or libraries can be used for all of the capabilities listed above.
+
+==== Feedback ====
+
+You can send feedback/questions on the software to the D-ANA task leaders Bojan Nikolic <b.nikolic@mrao.cam.ac.uk> and Fabio Pasian <pasian@oats.inaf.it>
+
+==== Further Information ====
+
+There is [[Deliverables|further information]] on some of the software being developed and on other relevant open source libraries on following the page: [[Deliverables|Further Information]].

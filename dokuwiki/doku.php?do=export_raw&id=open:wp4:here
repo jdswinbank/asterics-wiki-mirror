@@ -1,0 +1,112 @@
+===== Program =====
+
+It is important to have installed beforehand in your laptops the VO-tools to be used in the School, namely:
+
+     * [[http://aladin.unistra.fr/java/download/AladinBeta.jar|ALADIN]] (Download the AladinBeta.jar file and execute it from a terminal using "**java -Xmx2048m -jar AladinBeta.jar**") 
+     * [[http://www.star.bris.ac.uk/~mbt/topcat/topcat-full.jar|TOPCAT]] (Download the topcat-full.jar file and execute it from a terminal using "**java -jar topcat-full.jar**")
+     * [[http://svo2.cab.inta-csic.es/theory/vosa/|VOSA]] (Web server. You don't need to install anything)
+     * [[http://www.star.bris.ac.uk/~mbt/stilts/stilts.jar|STILTS]] (Download the stilts.jar file and execute it from a terminal using "**java -jar stilts.jar**")
+     * [[http://esavo01.esac.esa.int/vospec/standalone/VOSpec_6.7.jar|VOSpec]] (Download the VOSpec_6.7.jar file and execute it from a terminal using "**java -jar VOSpec_6.7.jar**")
+     * [[http://soft.g-vo.org/splat-beta/splat-vo-20150712.jar | SPLAT-VO]] (Download the splat-vo-20150712.jar file and execute it from a terminal using "**java -jar splat-vo-20150712.jar**"). Note that, unlike ALADIN, TOPCAT or STILTS, the //splat-vo-20150712.jar// file does not launch the tool but an installation program. Once the installation has been completed, you should launch the tool with a command like this:
+        * **$XXXX/splat-vo/bin/splat/splat&**
+
+**Day 1. Tuesday 14 November**
+
+  * 08:15 Bus leaving hotel to CAB-Villafranca
+  * 09:15 Arrival at CAB-Villafranca. Registration
+  * 09:30 - 10:15 Introductory talks
+     * 09:30 - 09:35 Welcome and logistics (Enrique Solano)
+     * 09:35 - 09:50 {{:open:wp4:ASTERICS_School1_Genova.pdf | The ASTERICS project}} (Francoise Genova)
+     * 09:50 - 10:15 {{:open:wp4:VO_intro_esolano.pdf |Introduction to the VO and the school}} (Enrique Solano)
+
+  * 10:15 - 11:15 Tutorial #1 (1h45m).
+     * Title: {{:open:wp4:cds-tutorial-asterics-madrid2015.pdf | The CDS tutorial}} (LAST UPDATE: Dec 11th).
+     * VO-tools: Simbad, Vizier, Aladin
+     * Tutor: Ada Nebot + Caroline Bot + F. X. Pineau 
+
+  * 11:15 - 11:45 Coffee break
+
+  * 11:45 - 12:30 Tutorial #1 (cont.).
+
+  * 12:30 - 13:30 Tutorial #2 (1h45m)
+     * Title: [[https://www.astron.nl/asterics/doku.php?id=open:wp4:bd_tutorial |Discovery of Brown Dwarfs mining the 2MASS and SDSS databases ]] 
+     * VO-tools: Aladin, Topcat
+     * Tutor: F. Jiménez + E. Solano + G. Iafrate
+
+  * 13:30 - 15:00 LUNCH
+
+  * 15:00 - 15:45 Tutorial #2 (cont)
+
+  * 15:45 - 16:15 Coffee break
+
+  * 16:15 - 18:00 Tutorial #3 (1h45m)
+     * Title: [[https://www.astron.nl/asterics/doku.php?id=open:wp4:herbig_tutorial | Classifying the SEDs of Herbig Ae/Be stars]] (Last update: Dec 14th)
+     * VO-tools: SPLAT
+     * Tutor:  H. Heinl + F. Jiménez + M. Molinaro
+
+  * 18:15 Bus leaving CAB-Villafranca to hotel 
+    
+ **Day 2. Wednesday 15 November**   
+
+  * 08:30 Bus leaving hotel to CAB-Villafranca
+  * 09:30 - 11:15 Tutorial #4 (1h45m)
+     * Title: [[https://www.astron.nl/asterics/doku.php?id=open:wp4:view_vosa_tutorial |Determination of stellar physical parameters using VOSA]] (Last update Dec 13th).
+     * VO-tools: VOSA
+     * Tutor: E. Solano, F. Jiménez + G. Iafrate
+        
+  * 11:15 - 11:45 Coffee break
+
+  * 11:45 - 13:30 Tutorial #5 (1h45m)
+     * Title: {{:open:wp4:HighEnergyTutorial_ASTERICSMadrid_dec10.pdf | Multi-instrument, multi-wavelength study of high energy sources with the virtual Observatory.}} (Last update: Dec 10th)
+     * VO-tools: Aladin, Topcat, Simbad
+     * Tutor: Caroline Bot + Ada Nebot + F.X. Pineau
+
+  * 13:30 - 15:00 LUNCH
+
+  * 15:00 - 16:30 Tutorial #6 (1h30m)
+     * Title: Advanced functionalities in TOPCAT ({{ http://andromeda.star.bris.ac.uk/topcat/tutorial-asterics1/|HTML - recommended}} or {{ http://andromeda.star.bris.ac.uk/topcat/tutorial-asterics1/tcadv.pdf |PDF}})
+     * VO-tools: TOPCAT, STILTS
+     * Tutor: Mark Taylor 
+     
+  * 16:30 - 17:00 Coffee break 
+ 
+  * 17:00 - 18:00 Tutorial #7 (1h)
+    * Title: Treasure hunt
+    * VO-tools: 
+    * Tutor: E. Solano + M. Molinaro + H.Heinl
+    * [[Pictures | Pictures of the award ceremony]]
+ 
+  * 18:00 - 18:30 Participants' projects (set up of groups)
+
+  * 18:30-20:00 Reception 
+
+  * 20:15 Bus leaving CAB-Villafranca to hotel  
+
+   
+ **Day 3. Thursday 16 November**   
+
+   * 08:30 Bus leaving hotel to CAB-Villafranca
+
+   * 09:30 - 11:15 Participants' projects (groups) {{tutors.pdf | list of students - tutors}}
+
+   * 11:15 - 11:45 Coffee break 
+
+   * 11:45 - 13:00 Participants' projects (groups)
+
+   * 13:00 - 13:30 Project presentations
+      * {{arrieta.pdf | Maialen Arrieta, Fernando Buitrago}}
+      * {{bikram_pradham.pdf | Bikram Pradhan}}
+      * {{nogueras.pdf | Francisco Nogueras, Eulalia Gallego, Teresa Gallego}} 
+      * {{pouliasis.pdf | Ektoras Pouliasis}}
+
+   * 13:30 - 15:00 LUNCH
+
+   * 15:00 - 15:45 Project presentations (cont.) 
+
+   * 15:45 - 16:15 Feedback
+      * Theoretical models in the VO: AGN models to be used with VOSA
+      * Spectral fitting capabilities in VO tools. Not just viewing the SED but obtaining a quick fit + parameters. 
+
+   * 16:15 - 16:30 {{wrapup.pdf | Wrap-up}}
+
+   * 16:45 Bus leaving CAB-Villafranca to hotel.

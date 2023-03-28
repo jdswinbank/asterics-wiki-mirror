@@ -1,0 +1,112 @@
+===== Program =====
+
+It is important to have installed beforehand in your laptops the VO-tools to be used in the School, namely:
+
+     * [[http://aladin.u-strasbg.fr/java/download/Aladin.jar|ALADIN]] (Download the Aladin.jar file and execute it from a terminal using "**java -Xmx2048m -jar Aladin.jar**"). Official version: v9.033b 
+     * [[http://aladin.u-strasbg.fr/java/AladinV10.jar|ALADINV10]] (Download the Aladinv10.jar file and execute it from a terminal using "**java -Xmx2048m -jar Aladinv10.jar**"). Aladin V10 Avant Premiere 
+     * [[http://www.star.bris.ac.uk/~mbt/topcat/topcat-full.jar|TOPCAT]] (Download the topcat-full.jar file and execute it from a terminal using "**java -jar topcat-full.jar**"). Official version: v4.5
+     * [[http://svo2.cab.inta-csic.es/theory/vosa/|VOSA]] (Web server. You don't need to install anything). Official version: v5.1
+     * [[http://www.star.bris.ac.uk/~mbt/stilts/stilts.jar|STILTS]] (Download the stilts.jar file and execute it from a terminal using "**java -jar stilts.jar**"). Official version: v3.2-1 
+     * [[http://star-www.dur.ac.uk/~pdraper/splat/splat-vo/splat-vo.jar| SPLAT-VO]] (Download the splat-vo.jar file and execute it from a terminal using "**java -jar splat-vo.jar**"). Official version: 3.11. Note that, unlike ALADIN, TOPCAT or STILTS, the //splat-vo.jar// file does not launch the tool but an installation program. Once the installation has been completed, you should launch the tool with a command like this:
+        * **$XXXX/splat-vo/bin/splat/splat&**
+
+**Day 1. Tuesday 14 November**
+
+  * 08:45 Bus leaving hotel to CAB-Villafranca
+  * 09:15 Arrival at CAB-Villafranca. Registration
+  * 09:45 - 10:30 Introductory talks
+     * 09:45 - 09:55 {{:open:wp4:school3:school_intro.pdf|Welcome and logistics (Enrique Solano)}}
+     * 09:55 - 10:10 {{:open:wp4:school3:allen_voschool2017.pdf|The ASTERICS project (Mark Allen)}}
+     * 10:10 - 10:30 {{:open:wp4:school3:vo_intro.pdf|Introduction to the VO and the school (Enrique Solano)}}
+
+  * 10:30 - 11:30 Tutorial #1 (1h45m)
+     * Title: {{:open:wp4:school3:tutorial_browndwarfs.pdf|Discovery of Brown Dwarfs mining the 2MASS and SDSS databases}} 
+     * {{:open:wp4:school3:stilts_script.pdf|stilts.script}} 
+     * VO-tools: Aladin, Topcat, Stilts
+     * Tutor: **F. Jiménez** + E. Solano + G. Greco
+
+  * 11:30 - 12:00 Coffee break
+
+  * 12:00 - 12:45 Tutorial #1 (cont.).
+
+  * 12:45 - 13:30 Tutorial #2 (1h45m).
+     * Title: {{:open:wp4:school3:cdstutorial_4asterics.pdf | The CDS tutorial}}.
+     * VO-tools: Simbad, Vizier, Aladin
+     * Tutor: **Jenny Sorce** + Sébastien Derriere, Thomas Boch
+
+  * 13:30 - 15:00 LUNCH
+
+  * 15:00 - 16:00 Tutorial #2 (cont)
+
+  * 16:00 - 16:30 Tutorial #3 (1h45m)
+     * Title: {{:open:wp4:school3:splat_herbig_stars.pdf| Classifying the SEDs of Herbig Ae/Be stars}} LAST UPDATE: Nov 13th
+     * VO-tools: SPLAT, TOPCAT
+     * Tutor: **H. Heinl** + M. Cortés, T. Boch
+
+  * 16:30 - 17:00 Coffee break
+
+  * 17:00 - 18:15 Tutorial #3 (cont)
+
+  * 18:30 Bus leaving CAB-Villafranca to hotel 
+
+
+    
+ **Day 2. Wednesday 15 November**   
+
+  * 08:45 Bus leaving hotel to CAB-Villafranca
+  * 09:30 - 11:15 Tutorial #4 (1h45m)
+     * Title: {{open:wp4:school3:vosa.pdf |Determination of stellar physical parameters using VOSA}} LAST UPDATe: Nov 13th.
+     * {{open:wp4:school3:vosa_intro.pdf| Introduction to VOSA and the science case}} 
+     * VO-tools: VOSA, TOPCAT
+     * Tutor: **E. Solano** + F. Jiménez, M. Cortés
+        
+  * 11:15 - 11:45 Coffee break
+
+  * 11:45 - 13:30 Tutorial #5 (1h45m)
+     * Title: {{open:wp4:school3:adql.pdf|Accessing and cross matching of big data sets with ADQL}} LAST UPDATE: Nov 13th
+     * VO-tools: TOPCAT (TAP/ADQL)
+     * Tutor: **H. Heinl** + T. Boch, J. Sorce
+
+  * 13:30 - 15:00 LUNCH
+
+  * 15:00 - 16:45 Tutorial #6 (1h45m)
+     * Title: [[http://htmlpreview.github.io/?https://github.com/ggreco77/Electromagnetic-follow-up-of-gravitational-wave-events/blob/master/Electromagnetic_followup_gravitational-wave_events_v5.html|Electromagnetic follow-up of gravitational-wave events]] LAST UPDATE: Nov 13th
+     * VO-tools: Aladin, TOPCAT, GWsky
+     * Tutor: **G. Greco** + S. Derriere, J. Sorce
+     
+  * 16:45 - 17:15 Coffee break 
+ 
+  * 17:15 - 18:15 Tutorial #7 (1h)
+    * Title: Treasure hunt
+    * VO-tools: 
+    * Tutor: **F. Jimenez** + E. Solano + M. Cortes + S. Derriere
+
+  * 18:30-20:00 Reception 
+
+  * 20:15 Bus leaving CAB-Villafranca to hotel  
+
+   
+ **Day 3. Thursday 16 November**   
+
+   * 08:45 Bus leaving hotel to CAB-Villafranca
+
+   * 09:30 - 11:15 Participants' projects 
+
+   * 11:15 - 11:45 Coffee break 
+
+   * 11:45 - 13:30 Participants' projects 
+
+   * 13:30 - 15:00 LUNCH
+
+   * 15:00 - 15:45 Project presentations 
+      * {{open:wp4:school3:aliceperez_scientificcase.pdf|| Herbig stars form in clusters? (Alice Perez)}}
+      * {{open:wp4:school3:marzena.pdf|| VO tools and quasars (Marzena Śniegowska)}}
+      * {{open:wp4:school3:Presentation_Miguel.pdf|| Determination of physical parameters of Herbig stars using VOSA (Miguel Vioque)}}
+      * {{open:wp4:school3:VO_rlgarcia.pdf|| SFR science cases with J-PLUS (Rafael García)}}
+      * {{open:wp4:school3:virginiacuomo.pdf|| Selection of barred galaxies in Virgo cluster using images and spectra (Virginia Cuomo)}}
+
+   * 15:45 - 16:15 Feedback
+
+   * 16:15 - 16:30 Wrap-up
+
+   * 16:45 Bus leaving CAB-Villafranca to hotel.

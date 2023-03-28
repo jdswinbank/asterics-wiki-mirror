@@ -1,0 +1,128 @@
+====== ASTERICS DADI ESFRI Forum & Training Event 1 ======
+
+
+ESFRI Forum and Training event aims at gathering ESFRI facility staff and VO developers together to continue active participation in the development of the VO framework and train ESFRI technical staff in VO technical environment.
+
+(Top level DADI page: [[open:wp4:start|WP4: Data Access, Discovery and Interoperability (DADI)]])
+
+==== Dates ====
+3 & 4 December, 2015
+
+==== Location ====
+INAF - Osservatorio Astronomico di Trieste
+
+(Villa Bazzoni building)\\
+Via Riccardo Bazzoni, 2\\
+34124 Trieste (TS), Italy
+
+[[http://www.oats.inaf.it/index.php/en/2014-09-12-11-41-38/servizi-oats-3.html|Access Information]]
+
+To/From the Trieste Airport there are three possible means of transportation to reach Trieste:
+  * local **APT bus 51**, runs about every 30', 4.05€ one way. You can find it on the right when exiting the airport  (50 meters away), ticket can be purchased at a vending machine on the right of the arrivals exit doors inside the airport building. **Pay attention**: check the destination to be Trieste, not Udine!
+  * [[http://www.science-bus.com/user/index.php?l=en|Science Bus]] shuttle service, about 20€ each way. The driver will wait you at the arrivals exit. You can book it by yourself, it can drop you at your hotel or preferred location in Trieste. **Note**: send us an email if you choose this solution, we'll send you a code for INAF-OATs agreed fare!
+  * **taxi**, about 50€ each way
+==== Hotels & Logistics ====
+Please arrange your own hotel accommodation. The Observatory is nearby Trieste city center, walking distance (uphill) from it. 
+
+A [[https://www.google.com/maps/d/edit?mid=zic38YRAZABk.kwv3da44vL8w&usp=sharing|MAP]] with Hotels and some logistics is available [[https://www.google.com/maps/d/edit?mid=zic38YRAZABk.kwv3da44vL8w&usp=sharing|HERE]].
+
+INAF-OATs has an agreement with two hotels:
+  * [[http://www.continentalehotel.com/en/hotel-continentale/|Hotel Continentale]], 4*, 100€/night
+  * [[http://www.residencedelmare.it/en/index.html|Residence del Mare]], 3*, 55€/night
+
+If you'd like to book at those hotels please state in your booking that you're attending a meeting at INAF-OATs. This should ensure they apply the correct fare.
+
+Other suggested hotels or accommodation areas can be (refer to the above map):
+  * Hotel Colombia or near Oberdan square
+  * Hotel Città di Parenzo or near Goldoni square
+  * Hotel San Giusto or in San Giacomo neighborhood
+
+The first two choices are in city center, last one is possibly nearer to the event location, but in a less //touristic//area. On the map you can see that all of these are (nearly) walking distance form the Forum location (10-20 minutes, but pay attention to local topography), but are also connected by local transportation. Bus fare is 1.35€  for 60' travel (tickets must be purchased in advance and validated onboard).
+
+
+==== Agenda ====
+
+Finalized as the Forum progressed.
+
+| //Time// | //Title//  | //Speaker// | //Materials// |
+^  Day 1 - Thursday December 3  ^^^^
+^ 09:00-09:45 |  **Introduction**  |||
+| 09:00-09:15 | Welcome & Logistics | M. Molinaro | |
+| 09:15-09:30 | ASTERICS DADI Overview | F. Genova | {{:open:wp4:asterics_dadi_activities_esfriforum1.pdf|pdf}} |
+| 09:30-09:45 | ESFRI Forum & Training Event 2015: Goals | F. Pasian | {{:open:wp4:FPasian_ESFRIForumTrainingEvent2015.pdf|pdf}} |
+^ 09:45-11:15 |  **Projects Contribution**  |||
+| 09:45-10:20 | Gravitational waves and the VO | G. Greco & M. Razzano | {{:open:wp4:2015_GWVO_031215_razzano_v2.pdf|pdf [1]}} \\ {{:open:wp4:greco_g.pdf|pdf [2]}} |
+| 10:20-11:00 | ESO Phase 3 operations and the 3D data standard | J. Retzlaff | {{:open:wp4:Retzlaff-AstericsTrieste2015pub.pdf|pdf}} |
+| 11:00-11:15 | LOFAR data products and management: towards the SKA | R. Pizzo | {{:open:wp4:ASTERICS_DADI_FORUM_Trieste_pizzo.pdf|pdf}} |
+^ 11:15-11:45 | **coffee break** |||
+^ 11:45-12:45 |  **VO Overview**  |||
+| 11:45-12:00 | Science Priority Areas - capturing use cases and requirements | M. Allen | {{:open:wp4:esfri_forum1_allen.pdf|pdf}} |
+| 12:00-12:30 | Current status  of VO solutions for discovering, pre-visualising, describing \\ and accessing multidimensional and time domain massive data | F. Bonnarel | {{:open:wp4:astericsesfri2015.pdf|pdf}}  |
+| 12:30-12:45 | DataLink Overview (TBC) | M. Demleitner | {{:open:wp4:trieste-datalink.pdf|pdf}} |
+^ 12:45-13:45 | **lunch (provided)** |||
+^ 13:45-15:15 |  **Multi-D Data Access**  |||
+| 13:45-15:15 | Discussion fired up by previous sessions | ALL (chair M. Allen) | {{:open:wp4:multi-d_discussion_notes.pdf|pdf}} |
+^ 15:15-15:45 | **coffee break** |||
+^ 15:45-17:00 |  **VO Registry**  |||
+| 15:45-16:15 | Registry overview | M. Demleitner | {{:open:wp4:trieste-registry.pdf|pdf}} |
+| 16:15-17:00 | Discussion | ALL (chair M. Demleitner) | |
+| ||||
+^  19:30  | **Working Dinner** (OBELICS-DADI Interface) - Caffè Tommaseo (see [[https://www.google.com/maps/d/edit?mid=zic38YRAZABk.kwv3da44vL8w&usp=sharing|MAP]]) |||
+| ||||
+^  Day 2 - Friday December 4  ^^^^
+^ 09:00-10:30 |  **Authentication & Authorization**  |||
+| 09:00-09:15 | A&A overview and IVOA perspective | G. Taffoni | {{:open:wp4:Taffoni_A&A-AST-workshop.pdf|pdf}} |
+| 09:15-09:30 | A&A prototype for the SKA (WP3 presentation) | C. Knapic | {{:open:wp4:A&A_SKA_DADI_ESFRI.pdf|pdf}} |
+| 09:30-10:30 | Discussion | ALL (chair G. Taffoni) | {{:open:wp4:AuthNAuthZ_DiscussionNotes.pdf|notes}} \\ {{:open:wp4:Servillat_SSO_CTA.pdf|additional contribution from M. Servillat, CTA, transmitted by C. Boisson}} |
+^ 10:30-11:00 | **coffee break** |||
+^ 11:00-12:30 |  **Time Domain Data Access**  |||
+| 11:00-11:30 | PanSTARRS and the Edinburgh LSST data centre | A. Lawrence | {{:open:wp4:trieste-talk-axl.pdf|pdf}} |
+| 11:30-11:50 | The Antares/KM3net Neutrino Telescope projects and real time alerts | J. Brunner | {{:open:wp4:Alerts_with_Neutrinos_short.pdf|pdf}} |
+| 11:50-12:30 | Discussion | ALL (chair A. Lawrence) | [[http://mail.ivoa.net/pipermail/voevent/2015-December/thread.html | Debrief of discussion for IVOA IG]] |
+^ 12:30-13:30 | **lunch (provided)** |||
+^ 13:30-15:00 |  Final discussion / Splinter sessions  | |
+^ 15:00-15:30 | **close** |||
+| 15:30-17:00 | rooms available to continue discussion |||
+  
+==== Organisation ====
+
+**Program Organising Committee:** Marco Molinaro, Fabio Pasian
+
+**Local Organising Committee:** Fabio Pasian, Marco Molinaro
+
+**Contact:** molinaro (at) oats (dot) inaf (dot) it
+
+==== Participants ====
+
+| **Name** | **Surname** | **Affiliation** |
+| Fabio | Pasian | INAF-OATs |
+| Marco | Molinaro | INAF-OATs |
+| Mark  | Allen    | CNRS-OAS  |
+| Dave  | Morris   | [[http://www.roe.ac.uk/ifa/wfau|WFAU-IfA]] |
+| Stelios | Voutsinas | [[http://www.roe.ac.uk/ifa/wfau|WFAU-IfA]] |
+| Giuseppe | Greco | Uni. Urbino & INFN-Firenze / EGO |
+| Massimiliano | Razzano | Uni. Pisa & INFN-Pisa / EGO |
+| Francoise  | Genova  | CNRS-OAS  |
+| Francois  | Bonnarel  | CNRS-OAS  |
+| Carlos    | Rodrigo   | INTA      |
+| José Manuel | Alacid  | INTA      |
+| André | Schaaff  | CNRS-OAS  |
+| Markus | Demleitner | UHEI/GAVO |
+| Joerg | Retzlaff | ESO |
+| Paschal | Coyle | ANTARES/KM3NeT |
+| Juergen | Brunner | ANTARES/KM3NeT |
+| Catherine | Boisson | ObsPM/CTA |
+| Julien | Lefaucheur | ObsPM/CTA |
+| Markus | Nullmeier | UHEI/GAVO |
+| Riccardo | Smareglia | INAF-OATs |
+| Giuliano | Taffoni | INAF-OATs |
+| Cristina | Knapic | INAF-OATs/SKA |
+| Andy | Lawrence | IfA-ROE |
+| Paul | Sladen | UHEI |
+| Roberto | Pizzo | ASTRON/LOFAR |
+| |||
+|  25 participants  |||
+
+----
+
+[[open:wp4:start|WP4: Data Access and Data Interoperability]]

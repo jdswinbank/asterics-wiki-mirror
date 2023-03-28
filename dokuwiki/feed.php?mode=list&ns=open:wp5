@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="FeedCreator 1.7.2-ppt DokuWiki" -->
+<?xml-stylesheet href="https://www.asterics2020.eu/dokuwiki/lib/exe/css.php?s=feed" type="text/css"?>
+<rss version="2.0">
+    <channel>
+        <title>ASTERICS Wiki pages open:wp5</title>
+        <description></description>
+        <link>https://www.asterics2020.eu/dokuwiki/</link>
+        <lastBuildDate>Tue, 28 Mar 2023 16:54:33 +0200</lastBuildDate>
+        <generator>FeedCreator 1.7.2-ppt DokuWiki</generator>
+        <image>
+            <url>https://www.asterics2020.eu/dokuwiki/lib/tpl/dokuwiki/images/favicon.ico</url>
+            <title>ASTERICS Wiki pages</title>
+            <link>https://www.asterics2020.eu/dokuwiki/</link>
+        </image>
+        <item>
+            <title>open:wp5:prototype_software_for_the_e-transfer_application</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp5:prototype_software_for_the_e-transfer_application&amp;rev=1467320180&amp;do=diff</link>
+            <description>MILESTONE M5.2 / [Prototype software] (WP5.3)
+
+The post-detection streaming software is modelled after the well-known client/server architecture, albeit with a twist. Building on previous experiences gained in the FP6/EXPReS and FP7/NEXPReS projects an elaboration of this classical model was envisaged: the client program can coordinate not just transfers between itself and a remote server but also, transparently, between two remote servers. This allows for moving data between two remote storage …</description>
+        <category>open:wp5</category>
+            <pubDate>Thu, 30 Jun 2016 22:56:20 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp5:start</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp5:start&amp;rev=1467293439&amp;do=diff</link>
+            <description>Work Package 5 (CLEOPATRA)
+
+prototype software for the e-transfer application</description>
+        <category>open:wp5</category>
+            <pubDate>Thu, 30 Jun 2016 15:30:39 +0200</pubDate>
+        </item>
+    </channel>
+</rss>

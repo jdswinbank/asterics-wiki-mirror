@@ -1,0 +1,79 @@
+====== LOFAR and the VO Meeting ======
+
+[[start|Back to DADI page]]
+===== Date and location =====
+
+18 November 2016, Observatoire Astronomique de Strasbourg, 11 rue de l'Université
+
+The meeting will begin at **9:00**
+
+===== Objectives =====
+
+Discussion of the two topics identified as priorities by LOFAR with respect to the VO:
+
+  - Get a better understanding of the state of the art regarding the expression of **interferometric** data in the VO, visibilities in particular. The point is to examine how the VO standards, especially the new ones such as SIAP 2.0, could be relevant to LOFAR data model.
+  - Examine the possibility to express LOFAR data model using VO DM formalism.
+
+Discussion of HiPS visualisation is also of interest for LOFAR but will likely be potponed to another F2F or teleconference meeting.
+
+
+===== Useful links discussed during the meeting =====
+
+**Overview of IVOA Data Models**:
+
+[[http://wiki.ivoa.net/internal/IVOA/IvoaDataModel/Louys_Mireille_30876-finale.pptx|Mireille's talk on Data Models in the IVOA]] (ADASS 2016)
+
+**Observational dataset Core Component/Characterisation Data Model**:
+
+ObsCore current version: V1.0. Next version in final stage of standardization: [[http://www.ivoa.net/documents/ObsCore/20161004/index.html|ObsCore v1.1]]
+
+[[http://www.ivoa.net/Documents/cover/CharacterisationDM-20080325.html|Characterisation Data Model]] 
+
+**//TAP with ObsCore containing visibility//**:
+ 
+Service (CASDA): [[http://atoavo.atnf.csiro.au/tap/]]
+
+Access by TAPHANdle: [[http://saada.unistra.fr/taphandle?url=http%3A//atoavo.atnf.csiro.au/tap/]]
+
+**//TAP on planetary data//**:
+
+Service (Paris Observatory): [[http://voparis-tap.obspm.fr/__system__/tap/run/tap/]]
+
+Access by TAPHANdle: [[http://saada.unistra.fr/taphandle?url=http%3A//voparis-tap.obspm.fr/__system__/tap/run/tap/]] 
+
+
+**Provenance**:
+
+[[http://wiki.ivoa.net/twiki/bin/view/IVOA/InteropOct2016DM|Provenance discussion at the Trieste Interoperability meeting]]
+
+[[http://wiki.ivoa.net/internal/IVOA/InteropOct2016DM/Provenance-Status.pdf|Provenance status talk presented at this meeting]] (K. Riebe)
+
+{{:open:wp4:provenancedmnov2016.pdf|Current Provenance Document}} (16 November 2016)
+
+**Data Access Layer**
+
+{{{{:open:wp4:astericsesfri2015.pdf|General presentation at the First ESFRI Forum}} (F. Bonnarel, M. Molinaro, Dec. 2015)
+
+[[http://www.ivoa.net/documents/DataLink/20150617/index.html|DataLink 1.0]]
+
+[[http://www.ivoa.net/documents/UWS/20161024/index.html|UWS]], [[http://cds.u-strasbg.fr/resources/doku.php?id=uwslib|UWS library]]
+
+**Semantics**
+
+[[http://www.ivoa.net/documents/VOUnits/20140523/index.html|Units in the VO]]
+
+[[http://www.ivoa.net/Documents/cover/UCD-20050812.html|Unified Content Descriptors]] (quantities) - [[http://www.ivoa.net/documents/UCD1+/20150608/index.html|List of quantities]]
+
+===== Participants =====
+
+|  //**Name**//  |  //**Affiliation**//  |
+| Luciano Cerrigione | ASTRON |
+| Adriaan Renting | ASTRON |
+| Mike Sipior | ASTRON |
+| Francoise Genova | CDS |
+| Francois Bonnarel | CDS |
+| Mireille Louys | CDS/ICUBE |
+| Laurent Michel | OAS |
+| Sébastien Derriere | CDS |
+| Mark Allen | CDS |
+

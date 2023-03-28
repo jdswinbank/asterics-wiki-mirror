@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="FeedCreator 1.7.2-ppt DokuWiki" -->
+<?xml-stylesheet href="https://www.asterics2020.eu/dokuwiki/lib/exe/css.php?s=feed" type="text/css"?>
+<rss version="2.0">
+    <channel>
+        <title>ASTERICS Wiki pages open:wp4:wp4edpforum1</title>
+        <description></description>
+        <link>https://www.asterics2020.eu/dokuwiki/</link>
+        <lastBuildDate>Tue, 28 Mar 2023 17:01:04 +0200</lastBuildDate>
+        <generator>FeedCreator 1.7.2-ppt DokuWiki</generator>
+        <image>
+            <url>https://www.asterics2020.eu/dokuwiki/lib/tpl/dokuwiki/images/favicon.ico</url>
+            <title>ASTERICS Wiki pages</title>
+            <link>https://www.asterics2020.eu/dokuwiki/</link>
+        </image>
+        <item>
+            <title>open:wp4:wp4edpforum1:saada</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:wp4edpforum1:saada&amp;rev=1466524125&amp;do=diff</link>
+            <description>(up one level: ASTERICS European Data Provider Forum and Training Event 1)
+
+Saada transforms a set of heterogeneous FITS files or VOtables
+of various categories (images, tables, spectra, ...) into a powerful database deployed on the Web,
+which operates VO services (SSA, SCS, SIS, and TAP) as well. Exposed data can be linked to each other
+in order to provide a global view on complex data sets.</description>
+        <category>open:wp4:wp4edpforum1</category>
+            <pubDate>Tue, 21 Jun 2016 17:48:45 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:wp4edpforum1:vhm</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:wp4edpforum1:vhm&amp;rev=1466526767&amp;do=diff</link>
+            <description>(up one level: ASTERICS European Data Provider Forum and Training Event 1)
+
+VizieR  provides access to the most
+complete library of published astronomical catalogues and data table
+available on-line, organized in a self-documented database.
+
+HiPS is the hierarchical 
+tiling mechanism, which allows one to access, visualize, and browse
+seamlessly, image, catalogue, and cube data.</description>
+        <category>open:wp4:wp4edpforum1</category>
+            <pubDate>Tue, 21 Jun 2016 18:32:47 +0200</pubDate>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,86 @@
+=======Strasbourg Time Series Data Meeting======
+
+===5-6 December 2017, CDS Strasbourg===
+
+(Top level DADI page: [[open:wp4:start|WP4: Data Access, Discovery and Interoperability (DADI)]])
+----
+
+=====Goal=====
+At the end of this workshop we should have something that can be presented at the next IVOA. In terms of:
+  - Minimal requirements
+  - Concrete serialisation of data based on examples taken from:
+    - VizieR examples, small/large tables 
+    - GAPS data
+    - Gaia data
+    - iPTF data (which is the precursor of ZTF   e. , again precursor of LSST)
+    - XMM-Newton (for events)
+
+A summary document will be written and sent around to the participants for comments. This might be added to the IVOA wiki and sent around to the TDIG.  
+----
+
+=====Agenda=====
+
+^ **Tuesday** ^ DAL, models and serialisation  ^
+| 09h30 | Coffee  |
+| **10:00 - 12:00** | **Meeting**  |
+|  Ada | What is time Series? Minimal requirements for Time Series data discovery & access  |
+|  Baptiste | EPNCore, what is there and what can be used?  |
+| |  Discussion on metadata until agreement  |
+| 12:00 - 14:00 | Lunch  |
+| **14:00 - 16:00** | **Meeting**  |
+|  Jiri | status of his Note on Time Series Data. — practical examples of VOTables  |
+|  Mireille/Francois/Laurent | summary of revision / modifications proposed.  VOTable example  |
+|  François | examples of Votable  |
+| 16h00 | Coffee  |
+| **16:30-18:00** | Work on the serialisation of data  |
+| | All together or in small groups to make things work  | 
+|  Ada | PTF data (ZTF & LSST kind of data we will expect)  |
+|  Laurent | XMM-Newton data, very rich type of data (events, fluxes, hardness ratio,...) |
+|||
+^ **Wednesday** ^ practical examples, metadata and serialisation  ^
+| 09h30 | Coffee  |
+| **10:00 - 12:00** | **Meeting**  |
+|  Sebastian | Data from VizieR, data of big/small catalogues.  |
+|  Marco | Data from GAPS  |
+|  Jesus | Data from Gaia (apologies) -- Dave  |
+| | Work on the serialisation all together or in small groups to make things work  |
+| 12:00 - 14:00 | Lunch  |
+| **14:00 - 16:00** | Meeting  |
+| | Work on the serialisation all together or in small groups to make things work  |
+| 16:00 - 16:30 | coffee  |
+| 16:60 - 18:00 | Work on the serialisation all together or in small groups to make things work  |
+
+**Lunch at https://www.la-foret-noire.com/**
+
+----
+
+===== Notes and Minimal Requirements =====
+
+[[http://wiki.ivoa.net/internal/IVOA/IvoaVOEvent/Strasbourg-TimeSeriesData-Meeting-Notes.pdf|Summary notes]] for this meeting can be found on the IVOA Time Domain Interest Group wiki page at [[http://wiki.ivoa.net/internal/IVOA/IvoaVOEvent/Strasbourg-TimeSeriesData-Meeting-Notes.pdf|this link]].
+
+A [[http://wiki.ivoa.net/internal/IVOA/IvoaVOEvent/Strasbourg-TimeSeriesData-Meeting-MinimalRequirements.pdf|set of minimal requirements]] for Time Series data discovery and access can be found at  [[http://wiki.ivoa.net/internal/IVOA/IvoaVOEvent/Strasbourg-TimeSeriesData-Meeting-MinimalRequirements.pdf|this link]], again on the Time Domain IG IVOA wiki.
+
+A repository of sample datasets and serializations has been setup on the [[https://volute.g-vo.org/svn/trunk/projects/time-domain/time-series/|volute repository]].
+
+----
+
+=====Invited Participants=====
+| **name** | **attendance**  |
+| Thomas Boch | Wednesday  |
+| Francois Bonnarel | full  |
+| Baptiste Cecconi | Tuesday  |
+| Sebastien Derrière | full  |
+| Gilles Landais | Tuesday afternoon and Wednesday morning  |
+| Pierre Le Sidaner | Tuesday  |
+| Mireille Louys | Tuesday afternoon and Wednesday morning  |
+| Laurent Michel | full  |
+| Marco Molinaro | full  |
+| Dave Morris | full  |
+| Jiri Nadvornik | full  |
+| Ada Nebot | full  |
+| Francois-Xavier Pineau | full  |
+| Jesus Salgado | (apologies)  |
+
+----
+
+(Top level DADI page: [[open:wp4:start|WP4: Data Access, Discovery and Interoperability (DADI)]])

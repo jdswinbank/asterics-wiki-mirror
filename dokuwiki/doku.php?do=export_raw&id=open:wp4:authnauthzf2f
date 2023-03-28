@@ -1,0 +1,109 @@
+====== DADI/OBELICS A&A face-to-face Meeting ======
+
+==== INAF-OATs, Trieste, 29-30/01/2019 ====
+
+[back to [[start|ASTERICS DADI WP4]] main wiki page]
+
+----
+===== Goal =====
+ASTERICS, within the scope of WP4 (DADI) Task 4.3 and WP3 (OBELICS) Task 3.4.2, organized a face-to-face meeting on the following topics:
+  * Authentication&Authorisation
+  * Single Sign-On
+  * Group Authorisation/Group Management systems
+  * Workflow development
+  * their relation with the development/upgrade within IVOA standards
+
+The A&A meeting was a chance to have a set of experts and interested parties discussing various aspects of the authentication and authorization mechanisms with respect to data and service providing and client access and consuming of the latter in the domain of astronomy and its interoperable framework.
+
+The contributed presentations worked out usages specific of the single organizations as well as depicting more genral scenarios and touching critical points in the open standardization framework provided by the IVOA.
+
+The outcomes of the meeting included:
+   * networking different actors (data/service providers, VO experts, federated authentication experts, identity providers and managers, A&A consumers including both web based and programmatic UI developers)
+   * solving specific A&A description in the VO framework (e.g. for the TAP protocol)
+   * identifying pathways to improve credential delegation and its usage
+   * expressing advantages and drawbacks in hiding data and resources behind authentication layers
+   * evaluating the risks of having commercial resource vendors provide outsourcing for tasks that, untill now, most research infrastructures provide by themselves
+
+The meeting, even if short and dense, proved important for all the attendees and having dedicated discussion events like this continues to prove efficient with respect to lengthy remote discussions.
+
+[[aandanotes|Notes]] reporting the various meeting outcomes can be found [[aandanotes|here]]. 
+===== Registration =====
+Registration handling is done through the ASTRON provided indico platform. Here you can find the (sibling)[[https://indico.astron.nl/conferenceDisplay.py?confId=199|meeting page]] and the
+[[https://indico.astron.nl/confRegistrationFormDisplay.py/display?confId=199|registration form]].
+
+Fur further info contact: //marco (dot) molinaro (at) inaf (dot) it//.
+
+===== Schedule =====
+
+Final agenda, reflecting the actual schedule for talks and discussions held.
+
+^ Tuesday 29.01.2019 ^^^^
+| 10:00 | Get-together & have some coffee |||
+^  Introduction  ^^^^
+| 10:30 | Welcome & logistics |||
+| 10:45 | Participants round-the-table introductions |||
+| 11:00 | Meeting format description |||
+^ 11:15 ^ Session 1 ^^^
+| | Brian Major | Authentication & Authorization at the Canadian Astronomy Data Centre | {{open:wp4:authnauthzf2f:aaatcadc.pdf|PDF}} |
+| | Markus Demleitner | VOSI, A&A, and the real world | {{open:wp4:authnauthzf2f:vosi-reform.pdf|PDF}} |
+| 12:30 | **lunch** |||
+^ 13:30 ^ Session 2 ^^^
+| | Patrick Dowler | Authentication in Web Services and TAP-1.1 specific issues | {{open:wp4:authnauthzf2f:web-service-auth-jan2019.pdf|PDF}} |
+| | Mark Taylor | Authentication: A Client %%[G]UI%% Perspective | {{open:wp4:clientauth.pdf|PDF}} |
+| | Franco Tinarelli | %%RAP%% authenticator application demo | {{open:wp4:authnauthzf2f:tinarelli_notes_rap.pdf|PDF}} |
+| 15:30 | **break** |||
+^ 16:00 ^ Session 3 ^^^
+| General discussion (chair: Dave Morris) ||| [[aandanotes#day_1_open_discussion|notes]] |
+| | data behind authentication |||
+| | labeling data resources for authenticated access |||
+| | commercial cloud solutions and drawbacks |||
+| | authenticator solutions, certificates, delegation, proxy modules |||
+| 18:00 | //day 1 sessions closure// |||
+| (19:30) | **Working Dinner (Hostaria Malcanton)** | community & networking ||
+^ Wednesday 30.01.2019 ^^^^
+^ 09:00 ^ Session 4 ^^^
+| | Vincenzo Forchì | Data publishing at ESO: How to publish protected astronomical data via VO protocols? | {{open:wp4:authnauthzf2f:asterics201901_micol.pdf|PDF}} |
+| | Sara Bertocco | A possible model for SKA Regional Centers interoperability | {{open:wp4:authnauthzf2f:talk_SaraBertocco.pdf|PDF}} | 
+| | Peter Hague | Applications of STOA workflow management in Astronomy | {{open:wp4:authnauthzf2f:Stoa.pdf|PDF}} |
+| | Andrea Bignamini | Authentication and Authorization Management in Yabi | {{open:wp4:authnauthzf2f:Trieste_bignamini.pdf|PDF}} |
+| 10:30 | **break** |||
+^ 11:00 ^ Session 5 ^^^
+| | Matthew Viljoen | EGI AAI community solutions | {{open:wp4:authnauthzf2f:20190130_community_aai_with_check-in.pdf|PDF}} |
+| General discussion (chair: Morris/Molinaro) ||| [[aandanotes#day_2_morning_discussion|notes]] |
+| | TAP-1.1 Authenticated endpoints |||
+| | ADQL-2.1 (& DALI) REGION xtype |||
+| 12:30 | **lunch** |||
+^ 13:30 ^ Session 6 ^^^
+| General discussion (chair: Dave Morris) ||| [[aandanotes#day_2_afternoon_discussion|notes]] |
+| | Credential Delegation |||
+| | Centralised authentication solution |||
+| 15:00 | **break** |||
+^ 15:30 ^ Session 7 ^^^
+| | DataLink-1.1 revision start splinter || [[aandanotes#datalink_revision_splinter|notes]] |
+^ 16:30 ^ wrap-up & conclusion ^^^
+| 17:00 | //end of the meeting// |||
+===== Participants =====
+Participants list can be found [[https://indico.astron.nl/confRegistrantsDisplay.py/list?confId=199|here]].
+
+
+===== Venue - Logistics - Accomodation =====
+The meeting will be held at the INAF - Osservatorio Astronomico di Trieste:
+
+(Villa Bazzoni building)\\
+Via Riccardo Bazzoni, 2\\
+34124 Trieste (TS), Italy
+
+[[http://www.oats.inaf.it/index.php/en/177-observatory/430-how-to-get-bazzoni.html|Access Information]]
+
+To/From the Trieste Airport there are three possible means of transportation to reach Trieste:
+  * **NEW** by train. Check schedule (and price, but basic fare is 4.15€) on [[https://www.trenitalia.com/tcom-en|Trenitalia]]: *from* Trieste Airport *to* Trieste Centrale (or vice versa). Train platform is at the end of the overpass walkway when you exit the terminal. You can purchase the ticket online or at the vending machine at the terminal or at the platform.
+  * local **APT bus 51**, runs about every 30', 4.15€ one way. Bus stop is middle way of the overpass, tickets can be purchased at a vending machine on the right of the arrivals exit doors inside the airport building. **Pay attention**: check the destination to be Trieste, not Udine or other!
+  * [[http://www.science-bus.com/user/index.php?l=en|Science Bus]] shuttle service, about 25€ each way. The driver will wait you at the arrivals exit. You can book it by yourself, it can drop you at your hotel or preferred location in Trieste.
+  * [[https://www.goopti.com/en/|GoOpti]] shuttle service, price varies from 9€ up to 40€ depending on your choice of schedule and sharing.
+  * **taxi**, about 50€ each way
+
+Please arrange your own hotel accommodation. The Observatory is nearby Trieste city center, walking distance (uphill) from it. 
+
+A [[https://www.google.com/maps/d/edit?mid=zic38YRAZABk.kwv3da44vL8w&usp=sharing|MAP]] with some hotels and some logistics is available [[https://www.google.com/maps/d/edit?mid=zic38YRAZABk.kwv3da44vL8w&usp=sharing|HERE]] to have an idea of the local transport and accomodation locations.
+
+[back to [[start|ASTERICS DADI WP4]] main wiki page]

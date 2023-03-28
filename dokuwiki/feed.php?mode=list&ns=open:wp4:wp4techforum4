@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="FeedCreator 1.7.2-ppt DokuWiki" -->
+<?xml-stylesheet href="https://www.asterics2020.eu/dokuwiki/lib/exe/css.php?s=feed" type="text/css"?>
+<rss version="2.0">
+    <channel>
+        <title>ASTERICS Wiki pages open:wp4:wp4techforum4</title>
+        <description></description>
+        <link>https://www.asterics2020.eu/dokuwiki/</link>
+        <lastBuildDate>Tue, 28 Mar 2023 17:01:08 +0200</lastBuildDate>
+        <generator>FeedCreator 1.7.2-ppt DokuWiki</generator>
+        <image>
+            <url>https://www.asterics2020.eu/dokuwiki/lib/tpl/dokuwiki/images/favicon.ico</url>
+            <title>ASTERICS Wiki pages</title>
+            <link>https://www.asterics2020.eu/dokuwiki/</link>
+        </image>
+        <item>
+            <title>open:wp4:wp4techforum4:hackathon</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:wp4techforum4:hackathon&amp;rev=1527232720&amp;do=diff</link>
+            <description>TOPIC: IVOA Provenance  Mireille Louys (16 April, 16:00-17:30) 
+	*  Markus D. : how can we realize the simple thing : time series ---&gt; progenitor 
+
+need some description of an Activity : Extraction of a mag from an image etc .. 
+follow the Prov relations : wasDerivedFrom  or wasGeneratedby + Activity ID+ Used</description>
+        <category>open:wp4:wp4techforum4</category>
+            <pubDate>Fri, 25 May 2018 09:18:40 +0200</pubDate>
+        </item>
+    </channel>
+</rss>

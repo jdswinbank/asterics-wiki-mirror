@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="FeedCreator 1.7.2-ppt DokuWiki" -->
+<?xml-stylesheet href="https://www.asterics2020.eu/dokuwiki/lib/exe/css.php?s=feed" type="text/css"?>
+<rss version="2.0">
+    <channel>
+        <title>ASTERICS Wiki pages open:wp3</title>
+        <description></description>
+        <link>https://www.asterics2020.eu/dokuwiki/</link>
+        <lastBuildDate>Tue, 28 Mar 2023 16:54:32 +0200</lastBuildDate>
+        <generator>FeedCreator 1.7.2-ppt DokuWiki</generator>
+        <image>
+            <url>https://www.asterics2020.eu/dokuwiki/lib/tpl/dokuwiki/images/favicon.ico</url>
+            <title>ASTERICS Wiki pages</title>
+            <link>https://www.asterics2020.eu/dokuwiki/</link>
+        </image>
+        <item>
+            <title>open:wp3:d-ana_software_repository</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp3:d-ana_software_repository&amp;rev=1500383705&amp;do=diff</link>
+            <description>Introduction
+
+The ASTERICS/OBELICS/D-ANA task is developing software libraries for statistically robust analysis of PetaByte-scale datasets in astronomy. The primary outputs of this task are these software libraries which are all released as open source software. The primary purpose of this page is to act as the canonical  and long-term repository for released versions of these libraries so that they remain permanently available to the public.</description>
+        <category>open:wp3</category>
+            <pubDate>Tue, 18 Jul 2017 15:15:05 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp3:deliverables</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp3:deliverables&amp;rev=1465316497&amp;do=diff</link>
+            <description>List of standards and protocols
+
+	*  SAML2.0 (Security assertion markup language) 
+	*  OpenID (open standard and decentralized authentication protocol)
+	*  OAuth (open standard for authorization)
+	*  OAuth2 (open standard for authorization)
+	*  X.509 (standard for a public key infrastructure to manage digital certificates and public-key encryption)
+	*  XACML (eXtensible Access Control Markup Language)
+	*  OpenID-Connect (authentication layer on top of OAuth 2.0, authorization framework)
+	*  SCIM…</description>
+        <category>open:wp3</category>
+            <pubDate>Tue, 07 Jun 2016 18:21:37 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp3:jupyter-casa_repository</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp3:jupyter-casa_repository&amp;rev=1496320367&amp;do=diff</link>
+            <description>Introduction
+
+The size of astronomical datasets has increased dramatically over the years; terabyte sized datasets are no longer an exception. This trend will only accelerate; the SKA is expected to produce nearly 1 TB of archived data each day. This means that it will no longer be feasible for astronomers to download these huge datasets and perform the data reduction on their own machines, as is currently the practice. Instead the data reduction is likely to be done close to where the data is a…</description>
+        <category>open:wp3</category>
+            <pubDate>Thu, 01 Jun 2017 14:32:47 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp3:start</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp3:start&amp;rev=1496320498&amp;do=diff</link>
+            <description>Work Package 3 (OBELICS)
+
+OBELICS (OBservatory E-environments LInked by common ChallengeS) is enabling interoperability and software re-use for the data generation, integration and analysis of the ASTERICS ESFRI and pathfinder facilities. OBELICS is creating an open innovation environment for establishing open standards and software libraries for multi-wavelength/multi-messenger data. OBELICS is also developing common solutions for streaming data processing and extremely large databases, as well…</description>
+        <category>open:wp3</category>
+            <pubDate>Thu, 01 Jun 2017 14:34:58 +0200</pubDate>
+        </item>
+    </channel>
+</rss>

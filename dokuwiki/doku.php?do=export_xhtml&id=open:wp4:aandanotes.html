@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <title>open:wp4:aandanotes</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2019-03-07T08:00:59+0100"/>
+<meta name="keywords" content="open,wp4,aandanotes"/>
+<link rel="search" type="application/opensearchdescription+xml" href="lib/exe/opensearch.php" title="ASTERICS Wiki pages"/>
+<link rel="start" href="index.html"/>
+<link rel="contents" href="./doku.php%3Fid=open:wp4:aandanotes&amp;do=index.html" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent changes" href="feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current namespace" href="./feed.php%3Fmode=list&amp;ns=open:wp4"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="./doku.php%3Fdo=export_xhtml&amp;id=open:wp4:aandanotes.html"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="./doku.php%3Fdo=export_raw&amp;id=open:wp4:aandanotes"/>
+<link rel="canonical" href="./doku.php%3Fid=open:wp4:aandanotes.html"/>
+<link rel="stylesheet" type="text/css" href="lib/exe/css.php%3Ft=dokuwiki&amp;tseed=3e868cdb9e6faaec34cd57ca71666f47.css"/>
+<script type="text/javascript">/*<![CDATA[*/var NS='open:wp4';var JSINFO = {"id":"open:wp4:aandanotes","namespace":"open:wp4"};
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="lib/exe/js.php%3Ftseed=3e868cdb9e6faaec34cd57ca71666f47&amp;template=dokuwiki"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div id="dw__toc">
+<h3 class="toggle">Table of Contents</h3>
+<div>
+
+<ul class="toc">
+<li class="level1"><div class="li"><a href="./doku.php%3Fdo=export_xhtml&amp;id=open:wp4:aandanotes.html#dadi_obelics_a_a_face-to-face_meeting">DADI/OBELICS A&amp;A face-to-face Meeting</a></div>
+<ul class="toc">
+<li class="clear">
+<ul class="toc">
+<li class="level3"><div class="li"><a href="./doku.php%3Fdo=export_xhtml&amp;id=open:wp4:aandanotes.html#inaf-oats_trieste_29-30_01_2019">INAF-OATs, Trieste, 29-30/01/2019</a></div></li>
+</ul>
+</li>
+<li class="level2"><div class="li"><a href="./doku.php%3Fdo=export_xhtml&amp;id=open:wp4:aandanotes.html#general_report_from_contributions">General report from contributions</a></div></li>
+<li class="level2"><div class="li"><a href="./doku.php%3Fdo=export_xhtml&amp;id=open:wp4:aandanotes.html#day_1_open_discussion">Day 1 Open Discussion</a></div></li>
+<li class="level2"><div class="li"><a href="./doku.php%3Fdo=export_xhtml&amp;id=open:wp4:aandanotes.html#day_2_morning_discussion">Day 2 Morning Discussion</a></div></li>
+<li class="level2"><div class="li"><a href="./doku.php%3Fdo=export_xhtml&amp;id=open:wp4:aandanotes.html#day_2_afternoon_discussion">Day 2 Afternoon Discussion</a></div></li>
+<li class="level2"><div class="li"><a href="./doku.php%3Fdo=export_xhtml&amp;id=open:wp4:aandanotes.html#datalink_revision_splinter">Datalink revision splinter</a></div></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1" id="dadi_obelics_a_a_face-to-face_meeting">DADI/OBELICS A&amp;A face-to-face Meeting</h1>
+<div class="level1">
+
+</div>
+<!-- EDIT1 SECTION "DADI/OBELICS A&A face-to-face Meeting" [1-53] -->
+<h3 class="sectionedit2" id="inaf-oats_trieste_29-30_01_2019">INAF-OATs, Trieste, 29-30/01/2019</h3>
+<div class="level3">
+
+<p>
+[back to <a href="./doku.php%3Fid=open:wp4:authnauthzf2f.html" class="wikilink1" title="open:wp4:authnauthzf2f">main Meeting page</a>]
+</p>
+
+<p>
+[back to <a href="./doku.php%3Fid=open:wp4:start.html" class="wikilink1" title="open:wp4:start">ASTERICS DADI WP4</a> main wiki page]
+</p>
+<hr />
+
+</div>
+<!-- EDIT2 SECTION "INAF-OATs, Trieste, 29-30/01/2019" [54-205] -->
+<h2 class="sectionedit3" id="general_report_from_contributions">General report from contributions</h2>
+<div class="level2">
+
+<p>
+Here follows a general report from presentations and Q&amp;A time following them.
+</p>
+
+</div>
+
+<h4 id="brian_major_-_authentication_authorization_at_cadc">Brian Major - Authentication&amp;Authorization at CADC</h4>
+<div class="level4">
+
+<p>
+CADC services all have ReST <abbr title="Application Programming Interface">API</abbr> functionalities and use the authentication in a common way.
+Credential delegation isused to move among the services and the authorization is managed through ownership or group membership (role) assesment.
+Authentication protocols accepted are: anonymous access, user/pwd BasicAA, X.509 and cookies/tokens.
+Authentication grants the user with a larger set of resources and capabilities with respect to the anonymous one.
+Brian slides report a view of the number of accesses in one month, subdivided by authentication solution.
+On the client side CADC python libraries use user/pwd or .netrc stored credentials or proxy certificates. The CADC astroquery package use cookies/tokens solution.
+Proxy certificates are provided to the user at registration level using an internal CADC CA, but users can also provide their own certificates if they have one.
+On the server side, services are 100% Java.
+Identities are also managed on the server side and multiple identities for the same user are merged and linked toa unique identity/credential set (user asks for merging). Merging identities is helpful in providing full access to all the resources pertaining to a user.
+Authorization is handled through roles represented by groups. The are four predefined roles for the groups: owner, read, read-write and admin.
+Identities are stored in an LDAP database including attributes. The main userID and a proxy certifiate are created at user&#039;s registration phase.
+Future evolutin of the CADC infrastructure sees moving the authentication to a cloud solution (OpenStack Keystone) with replication of the LDAP information content. User access to virtual machines is foreseen and OAuth2/OpenID-connect will be added to the system.
+From the Q&amp;A time emerges that multiple authentication metods over publicly accessible data is meant to provide access to different kind of clients with different means of authentication. Also cookies manipulation (security concern) is not a problem because the cookie only has the identity or distinguisehd names to use with the A&amp;A services. Whether credentials translation services could be a solution the credential delegation solves this problem at CADC when cookies or tokens are not in place. In principle a user with a valid certificate doesn&#039;t need a CADC account to call CADC services, credential delegation filling in the various calls after the initial access. Clarification on OAuth (the protocol) and OpenID-connect (token service) was discussed/clarified.
+</p>
+
+</div>
+
+<h4 id="markus_demleitner_-_vosi_a_a_and_the_real_world">Markus Demleitner - VOSI, A&amp;A and the real world</h4>
+<div class="level4">
+
+<p>
+The talk reports a (IVOA) Registry view on VOSI capabilities, focusing also on its connection with the way resources requiring authentication should be reported and described there. The talk is connected to the TAP-1.1 authenticated endpoints issue, for which it tries to provide a “DALIInterface” exit strategy from current situation.
+Talk reports the relationship among:
+</p>
+
+<p>
+Resource : Capability : Interface : <abbr title="Uniform Resource Locator">URL</abbr>
+</p>
+
+<p>
+Interface is the place where authenication is dealt with.
+<abbr title="Uniform Resource Locator">URL</abbr> is the level where, e.g., mirror solution sould be in place.
+While currently (resources in registry) the relationships among the above are of the 1:1:1:1 type, which makes it easier for the current issues and transitions, the scenario seems now changing to an N:M:Q:P set of relations.
+The talk investigated the /capabilities and other endpoints currently available, including the /examples and the /sync-/async ones.
+The /capabilities is a 1:1 to the service, providing a list of the capabilities for that service. However uses that endpoint to expose a lot of stuff.
+The /tables endpoint however varies with Interface, which is fine being the authentication handled there.
+Not clear where /availabilty belongs to, but probably the best choice is to have it at <abbr title="Uniform Resource Locator">URL</abbr> level, where also mirroring solutions should go.
+The /examples are something directly related to a protocol, so, if a Capability depends on a standard-Interface, then the /examples varies with Capability.
+Finally, <abbr title="Uniform Resource Locator">URL</abbr> should be single per service, so to let people share base URLs properly and safely.
+In conclusion the talk explains why current VOSI specification for Capabilities is wrong, also considerig the fact that it works on top of a multi-level VOResource that makes it a complicate model.
+Despite this fact TAP specification actually represents a good way to do the work, so the idea is to try not to broke that specification (i.e. in the current minor revision).
+A problem is that TAPRegExt ab/used the ParamHTTP interface type, which is wrong being the TAP base <abbr title="Uniform Resource Locator">URL</abbr> not one fitting a parametric query (having sibling path parameters in first place), plus VOResource has never been chnged accordingly to the path followed in the real world implementations.
+The proposal coming out of the talk consist mainly in the introduction of a DALIInterface sanctioning the TAP Interface, the alternative seeing as an abuse of the “title” attribute to collect bundles of endpoints pertaining each other (this is what TOPCAT currenty implements based on the curent WD).
+So the plead is not to break TAP and work on the model instead.
+Of course there is a need for some changes with current specifiction if this exit strategy is adopted: VODataService needs a revision to introduce the DALIInterface, also VOSI and DALI need revisions, claimed to be minor, and DataLink and SIAP-2.0 require a revision too to handle registration solution change. Of course TAPRegExt needs to change and use DALIInterface.
+Q&amp;A time clarified impact on DataLink and SIAP-2.0 and the not clear view on /availability, but that depends also on its usage from the operations point of view. It was also considered that the solution may need some investigation for VOSpace and SODA.
+In the discussion followed a question was also arisen whether to show or not something that cannot be accessed but having authenticated.
+</p>
+
+</div>
+
+<h4 id="patrick_dowler_-_authentication_in_web_services_and_tap-11_specific_issues">Patrick Dowler - Authentication in Web Services and TAP-1.1 specific issues</h4>
+<div class="level4">
+
+<p>
+Overview of the active services at CADC and how they use VOSI /capabilities.
+In short, there is a mapping 1:1 on {resourceID:standardID:securityMethod} to <abbr title="Uniform Resource Locator">URL</abbr>.
+The presentation continued describng the vairous requirements and usage scenarios that make A&amp;A such a complex task to handle.
+Following, an overview of the three prototype solutions put in place in the last year or so to fulfill the TAP authentiated endpoints requirements:
+</p>
+<ol>
+<li class="level1"><div class="li"> one capability for each securityMethod</div>
+</li>
+<li class="level1"><div class="li"> definition of a separate standardID for sync/async</div>
+</li>
+<li class="level1"><div class="li"> definition of separate Interface(s) for sync/async</div>
+</li>
+</ol>
+
+<p>
+Number 3 is what was currently implemented at CADC (being the one defined before College Park interop) and meant a 1:1 mapping on {resourceID:standardID:interfaceType:securityMethod} to <abbr title="Uniform Resource Locator">URL</abbr>, thus adding one element in the schematic “registry” search for geting to the service.
+Given the solution 3 was ruled out in College Park, implementation fell back to solution 2.
+So the question is: where to go now? Usually service users ask: what <abbr title="Uniform Resource Locator">URL</abbr> to {file}? What <abbr title="Uniform Resource Locator">URL</abbr> to {service}. This give clearly the idea to try to use one <abbr title="Uniform Resource Locator">URL</abbr> only and access it whatever the authentication method you may use.
+This solution actually works, but excludes having a one-for-all that can handle the BAsicAA protocol because that protocol uses a different mechanism than the other. Even hacking an httpd for an unsolicited user/pwd authentication doesn&#039;t seem a palatable solution to this.
+Discussion followed on about the need for a unique interface, and the answer there is to lead to a unique <abbr title="Uniform Resource Locator">URL</abbr> response in registry search. BasicAA emargination is however potentially problematic
+for data providers (though it may depend on where it as applied, e.g. at file retrieval time).
+Using proxy IdP wouldn&#039;t solve the issue either, being a challenge/response scenario. Extra metadata would anyway be needed on the registry side to cope with providers alongside the protocol used for the authentication itself.
+The single interface solution requires an erratum to DALI to solve the “siblings to /capabilities” rule in finding the various endpoints out of a base <abbr title="Uniform Resource Locator">URL</abbr>.
+</p>
+
+</div>
+
+<h4 id="mark_taylor_-_authenticationa_client_g_ui_perspective">Mark Taylor - Authentication: A Client [G]UI Perspective</h4>
+<div class="level4">
+
+<p>
+The talk presented some general principles on designing a tool and taking into account the A&amp;A scenario. A tool needs to retrieve a bundle of endpoints to atach to and needs to be able to find a <abbr title="Uniform Resource Locator">URL</abbr> to start from directly.
+One issue is on how to prompt the user and let him make the right choice, e.g. the IdP (or domain) alongside the securityMethod protocol attached to the interface.
+Another one is that [G]UI tools cannot rely on the same WAIF solutions that can be used with browser based applications.
+One important principle stated is to take that we “Don’t make the (unauthenticating) many suffer to support the needs of the (authenticating) few”.
+The subsequent discussion touched on the way to report IdP/domain to user from service, the usage of translation services and the point on wheter kerberos or ssh private/public keys are considered in the current scenario.
+The risk of security phishing through application interfaces as not to be discarded, even if it is felt there is little that can be done about it but teaching the users.
+</p>
+
+</div>
+
+<h4 id="franco_tinarelli_-_rap_overview_demo">Franco Tinarelli - RAP overview &amp; demo</h4>
+<div class="level4">
+
+<p>
+A demo session led to the description of the RAP (Remote Authentication Portal) solution that has been prototyped for the SKA Regional Center pilot prototype. The service includes an identity merging solution and supports a set of protocols and IdP authentictions.
+More information can be found in the doc attached to the schedule.
+RAP wouldn&#039;t work outside a browser (tough the ECP optional extension to Shibboleth might).
+The metadata internally used in RAP may be useful to identify those useful to registry fill in.
+</p>
+
+</div>
+
+<h4 id="vincenzo_forchi_-_data_publishing_at_esohow_to_publish_protected_astronomical_data_via_vo_protocols">Vincenzo Forchì - Data publishing at ESO: How to publish protected astronomical data via VO protocols?</h4>
+<div class="level4">
+
+<p>
+ESO archives maintain both a browser based scienceportal and full programmatica access to its resources, tha latter is based on VO standard technologies.
+The base architecture works on 2 TAP services plus SSAP and DataLink solutions.
+Ongoing project for ESO archives involves privacy policies at various levels: private data downloads, data and metadata privileged access (called “special” data) and user authentication to allow TAP_UPLOAD persistent solution.
+For the “special” data authenication seems ok but authorisation looks like being more complicated, especially if one takes into account subquery mechanisms.
+Discussion on this last topics takes place considering row-level grants directly handled at RDBMS level or complete query parsing and changing. Dedicated “view” tables seem not a feasible solution considering the number of rows involved, even though the mapping to standardised ivo.obscore and *.TAP_SCHEMA could have helped n this case (relaxing the constraint on the first one?).
+Another point raised by the presentation is about the persistency for tables in the TAP_UPLOAD mechanism. The idea is not totally new (even if not dealt with in the current specification), CADC prototyped a modified /tables endpoint making it a PUT-able HTTP endpoint. Also ESAC has a solution for it (maybe some libraries directly) given persistent upload is in place for users of their TAP+ implementation.
+Finally a question has been asked on the expected deadline for TAP-1.1 authenticated endpoints solution needed to solve ESO use cases. The answer is that from the specification point of view it shouldn&#039;t take longer than Paris.
+More diffcult the task on the client side, where TOPCAT currently allows BasicAA and TLS-with-certificate. ESO is using pyvo and some small scripts, maybe it should thing of an ESO astroquery package.
+</p>
+
+</div>
+
+<h4 id="sara_bertocco_-_a_possible_model_for_ska_regional_centers_interoperability">Sara Bertocco - A possible model for SKA Regional Centers interoperability</h4>
+<div class="level4">
+
+<p>
+An overview of a test prototype architecture for an SKA Regional Center was presented, embedding the solution provided by the H2020 AENEAS projectand taking into account the GMS IVOA WD.
+SKA RCs will be a combination of data storage and computation facilities.
+In the prototype the main means to get to the user&#039;s data is by means of a proposal_id, the one used in planning observations.
+The use case for the prototype was shown, including how the interface solution from the GMS draft would fit in it. From the proposal_id the user is then authenticated, checked for authorization on the data s/he&#039;s requesting and redirected (email) to a (virtual) server machine for which user and password are provided and data are attached.
+One of the requirements for the prototype has been to give the ability to access datasets whose complexity sits in having the needed data resources for a user in datsets located over geographically distributed locations (i.e. more than one Regional Center).
+The foreseen evolution of this prototype will be in really standardasing the access to A&amp;A services and trying to show it works on a distributed solution having the IA2 (Trieste) and IRA (Bologna) locations for the actual datasets.
+Q&amp;A time discussed on how this prototype fits the (foreseen) AENEAS distributed environment scenario and requirements.
+Also, the solution of composable containerization with graphical interface through a web browser was reported, evene if the reported case (CADC for ALMA) is considerd a prototype one.
+</p>
+
+</div>
+
+<h4 id="peter_hague_-_stoa_-_script_tracking_for_observational_astronomy">Peter Hague - STOA - Script Tracking for Observational Astronomy</h4>
+<div class="level4">
+
+<p>
+STOA is a web application to help building up service out of workflows. The workflows are described using the Common Worklow Language (CWL). The requirements include keepig track of the provenance of the workflow and letting results be availablefor futher re-use.
+Workflow execution is preserved as row in a DB including status, the worktables are connected in a relational style.
+STOA manages 3 roles in worktable access: owner, collaborator, reader. The former is the computation initiator, the latter is a simple reader of the input/output. Collaborators can flag and comment the jobs. Worktables are searchable through VO Cone Search or downloadable in block.
+Future work will deal with authentication, needed to release part of the content as public, and with STOA description as a VO resource.
+</p>
+
+</div>
+
+<h4 id="andrea_bignamini_-_authentication_and_authorization_management_in_yabi">Andrea Bignamini - Authentication and Authorization Management in Yabi</h4>
+<div class="level4">
+
+<p>
+Overview of the Yabi workflow management web tool at IA2, with demo of its usage and description of the initial goal (GAPS project) of setting up the workflow system for the scientific users.
+Authorization in the workflow environment has to consider access to data, computational resources and tools to operate. Tabi does this using the backend, credentials and backend credentials architecture.
+A backend is something that runs a tools, provides file access and allow files filtering and it can use varioud protocols to provide these resources.
+A credential is the way (encrypted) that Yabi uses to attach user credential keys or other means.
+The backend credential is the link between the above.
+The resources (backends) available are in terms of atmoic tools, grouped in toolsets available to group of users or toolgroups to collect together tools by specific usage.
+It is foreseen to describe the workflows in CWL, possibly to share pipelines to geographically distributed Yabi instances.
+Work to be done includes accessing remote data resources, possibly remotely located and how to run on external public data Yabi or user provided tools.
+</p>
+
+</div>
+
+<h4 id="matthew_viljoen_-_egi_aai_community_solutions">Matthew Viljoen - EGI AAI community solutions</h4>
+<div class="level4">
+
+<p>
+Overview of the core features of the EGI service for AAI and the Check-in service.
+It allows for multiple credentials/protocols for the user and linking among them.
+Implements the AARC blueprint.
+Authorization (entitlement) information is a formatted URN based on AARC guidelines:
+urn:mace:egi.eu:group:&lt;group&gt;[:&lt;subgroup&gt;*][:role=&lt;role&gt;]#&lt;group-authority&gt;
+It will be integrated in the EOSC-Hub AAI solutions.
+Discussion touched the topic of programmatic access using this service and which, if any, other communities have looked into this to contact them for understanding the way they use it.
+A question was also raised with respect of anonymously accessing the resources. This is not prevented, however accounting is considered having nonetheless an important role.
+Being this an EU based effort, global connection to it depends on the funding/governance among the possible partners. EOSC governance itself is not yet in place.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "General report from contributions" [206-16842] -->
+<h2 class="sectionedit4" id="day_1_open_discussion">Day 1 Open Discussion</h2>
+<div class="level2">
+
+<p>
+First day open discussion report. This mainly touched the following topics:
+</p>
+<ul>
+<li class="level1"><div class="li"> data behind authentication</div>
+</li>
+<li class="level1"><div class="li"> filtering on private data and proprietary period considerations</div>
+</li>
+<li class="level1"><div class="li"> commercial cloud concerns</div>
+</li>
+<li class="level1"><div class="li"> interoperable authentication: metadata needs</div>
+</li>
+</ul>
+
+</div>
+
+<h4 id="data_behind_authentication">data behind authentication</h4>
+<div class="level4">
+
+<p>
+The discussion started from the question: what are the advantages and drawbacks of having data behind authentication?
+In terms of tooling and services CADC does not apply a distinction in the environment for public and private data. This is the reason that led to having VO standard based tooling behind of all this.
+However the IVOA ha generally been seen as the “public” data framework and one concern may still stay there in having authenticated services/resources because it could lead to no-release of data to the public without authenticating first.
+This is perfectly expressed by the statement (see Mark Taylor&#039;s presentation) that “many unautheticated shouldn&#039;t suffer from few authenticated ones”.
+</p>
+
+</div>
+
+<h4 id="filtering_on_private_data_and_proprietary_period_considerations">filtering on private data and proprietary period considerations</h4>
+<div class="level4">
+
+<p>
+The discussion continued on investigating on how one should label data resources for filtering based on authentication, whether it means allowing metadata to be in place and visible even if the actual data are private, what to do with tablesets and at what step authentication should step in.
+Along these line it was reported that DOI metadata must be public, while the actual data 
+behind can be private.
+As for the length of proprietary period, it is clear that it depends on cases: shorter for telescope observations usually have longer detention period for project related data and, in multi-messenger scenarios, the data segregation may be used to limit collaboration anf avoid potential competition while reaching the publication goal.
+</p>
+
+</div>
+
+<h4 id="commercial_cloud_concerns">commercial cloud concerns</h4>
+<div class="level4">
+
+<p>
+Next topic dealt with the implications of using commercial clouds for sceintific research.
+One point was about the costs of this solution, not always easy to evaluate, in particular when comparing to institutional services whose costs may be hidden or difficult to quantify.
+Another was about how many risks to interoperability this will lead to if commercial interfaces take the lead on community standard developed ones.
+What is called “vendor lock in” can happen at any step, like making it unfeasible to retrieve resources that were easy and cheap to load into the cloud itself.
+One thing to check for sure is how much open standards are in place and guaranteed within commercial clouds (e.g. Amazon uses PostgreSQL based DBaaS).
+</p>
+
+</div>
+
+<h4 id="interoperable_authenticationmetadata_needs">interoperable authentication: metadata needs</h4>
+<div class="level4">
+
+<p>
+As last topic of this section the attendees focused on trying to identify what metadata would be needed by the registry to allow client/server proper interoperable authentication.
+usually authenticators are human readbale interfaces.
+Discussion fell back into the solution in merging identities and credentials systems (e.g. certificates) and the idea of credentials translation services or proxy solutions.
+A proxy solution for interoperability would be having an organization committing in running a centralized access service to allow authentication.
+</p>
+
+</div>
+<!-- EDIT4 SECTION "Day 1 Open Discussion" [16843-20066] -->
+<h2 class="sectionedit5" id="day_2_morning_discussion">Day 2 Morning Discussion</h2>
+<div class="level2">
+
+<p>
+The second day morning discussion was devoted to two specific issues:
+</p>
+
+</div>
+
+<h4 id="tap-11_authenticated_endpoints">TAP-1.1 Authenticated Endpoints</h4>
+<div class="level4">
+
+<p>
+The discussion on the TAP-1.1 specification, directly related to its authenticated endpoints issue took start from the presentations of the morning of day 1.
+Reviewing mainly what was said there by the various stakeholders, it turned out that the agreeable solution would be staying on the ParamHTTP interface solution for TAP-1.1 and let the transaction to a better standard interface to the TAPRegExt recommendation revision (introducing the DALIInterface specification, to be written).
+The solution will require anyway an erratum to VOResource-1.1 to allow multiple securityMethod(s) and it will have some flow into the RegTAP-1.1 specification.
+A solution to allow anonymous authentication listed alongside other methods (or leaving it unspecified) was not found, it may need a change in SSO or some simple statements on best practices in the involved recommendations.
+</p>
+
+</div>
+
+<h4 id="adql_region_discussion">ADQL REGION Discussion</h4>
+<div class="level4">
+
+<p>
+This discussion was meant to recover comments and decision about the wording to be used in ADQL-2.1 about the REGION function in connection with an xtype=“region” in DALI (to fit into the DALI-1.2 revision).
+The discussion saw a review of the DALI-1.1-Next page that lists the basic requirements for new xtypes in DALI.
+Discussion focused mainly on the polymorphic and complex/disjoint shapes to be (or not) allowed to be described with the help of an xtype, given the primitive types and arrays cannot unambigously identify them.
+The ADQL related region (x)type falls in both the polymorphic and complex types, allowing union and intersection of analityic poligonals.
+The discussion touched many points and many connections also to other VO standards and, in particular, the real need for complex shapes when, for many discovery use cases, the tessellation solution may be a quicker choice.
+The discussion was not really conlusive on all the points and mainly saw an agreement in having in DALI-1.2 the region, shape and multiinterval xtypes and allow for a smooth path with this respect in ADQL-2.1.
+</p>
+
+</div>
+<!-- EDIT5 SECTION "Day 2 Morning Discussion" [20067-22223] -->
+<h2 class="sectionedit6" id="day_2_afternoon_discussion">Day 2 Afternoon Discussion</h2>
+<div class="level2">
+
+<p>
+The afternoon of the second day saw discussion upon:
+</p>
+
+</div>
+
+<h4 id="credential_delegation_general_discussion">Credential Delegation General Discussion</h4>
+<div class="level4">
+
+<p>
+The discussion in session 6 started with a panel overview on credential delegation, starting with questions like how the users can use their credentials to run the jobs, how to hide the users the complexity of moving their credentials around (like in the CADC proxy certificate solution), what do the users do need to know about their certificates and the CAs releasing them, what impact has this in their ability to use the certificates afterwards.
+It was again stated that a solution like the CADC one is what the users might find more confortable in having their research lives simplified. However the proxy certificates from CADC are not usable/interoperable outside the CADC environment.
+As an alternative to certificates OAuth tokens are largely gaining ground in authentication and authorization. They also can be re-used but it is consiedered unsafe because the longer they live, the higher tha chance that control on the token is lost. Thus, setting the scope of the token is a mandatory requirement (up to the level of single scoped tokens).
+Form the point of view of interoperability/delegation more work needs to be done on OAuth tokens and their delegation mechanism before having a clear view.
+There are however astrophysical research infrastructures investigating them (like LSST and STScI).
+On the general topic of credential delegation one concern is also about the delegation of credentials outside the institutional scope.
+Again the topic of programmatic access and federated or delegated authentication was arised, with a mention to the Shibboleth-ECP solution, that is, however, optional to SAML IdPs.
+Credentials linking/merging on the providers side is considered by most of the attendees the only way to be able to attach authorization properly to the resource-role relationship.
+</p>
+
+</div>
+<!-- EDIT6 SECTION "Day 2 Afternoon Discussion" [22224-24170] -->
+<h2 class="sectionedit7" id="datalink_revision_splinter">Datalink revision splinter</h2>
+<div class="level2">
+
+<p>
+The final part of the meeting hosted a splinter about starting a revision of the IVOA DataLink Recommendation.
+</p>
+
+<p>
+Pat Dowler (DataLink <abbr title="specification">spec</abbr> editor), Alberto Micol, Mark Taylor and François Bonnarel participated to this splinter. 
+</p>
+
+<p>
+FB proposed a revision of the <abbr title="specification">spec</abbr> by presenting a preliminary new draft. The content and rationale of the changes had already been presented in an IVOA note (<a href="http://www.ivoa.net/documents/Notes/RecentDALProtocolsFeedback/20180722/index.html" class="urlextern" title="http://www.ivoa.net/documents/Notes/RecentDALProtocolsFeedback/20180722/index.html"  rel="nofollow">Bonnarel: Recent DAL Protocols Feedback</a>) and a presentation at College Park interop meeting (<a href="https://wiki.ivoa.net/internal/IVOA/InterOpNov2018DAL/DataLink-next.pdf" class="urlextern" title="https://wiki.ivoa.net/internal/IVOA/InterOpNov2018DAL/DataLink-next.pdf"  rel="nofollow">Bonnarel: Towards DataLink-1.1</a>). The proposed changes in the text have been discussed during this Trieste splinter and a new version has been disseminated to the authors, the splinter participants and DAL chair/vice-chair on February the 5th.
+</p>
+<hr />
+
+<p>
+[back to <a href="./doku.php%3Fid=open:wp4:authnauthzf2f.html" class="wikilink1" title="open:wp4:authnauthzf2f">main Meeting page</a>]
+</p>
+
+<p>
+[back to <a href="./doku.php%3Fid=open:wp4:start.html" class="wikilink1" title="open:wp4:start">ASTERICS DADI WP4</a> main wiki page]
+</p>
+
+</div>
+<!-- EDIT7 SECTION "Datalink revision splinter" [24171-] --></div>
+</body>
+</html>

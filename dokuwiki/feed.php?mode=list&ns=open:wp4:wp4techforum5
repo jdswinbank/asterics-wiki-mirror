@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="FeedCreator 1.7.2-ppt DokuWiki" -->
+<?xml-stylesheet href="https://www.asterics2020.eu/dokuwiki/lib/exe/css.php?s=feed" type="text/css"?>
+<rss version="2.0">
+    <channel>
+        <title>ASTERICS Wiki pages open:wp4:wp4techforum5</title>
+        <description></description>
+        <link>https://www.asterics2020.eu/dokuwiki/</link>
+        <lastBuildDate>Tue, 28 Mar 2023 17:01:12 +0200</lastBuildDate>
+        <generator>FeedCreator 1.7.2-ppt DokuWiki</generator>
+        <image>
+            <url>https://www.asterics2020.eu/dokuwiki/lib/tpl/dokuwiki/images/favicon.ico</url>
+            <title>ASTERICS Wiki pages</title>
+            <link>https://www.asterics2020.eu/dokuwiki/</link>
+        </image>
+        <item>
+            <title>open:wp4:wp4techforum5:hackathon</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:wp4techforum5:hackathon&amp;rev=1551689514&amp;do=diff</link>
+            <description>Hack-a-thon Page
+
+Participants - please go ahead and develop these Hack-a-thon topics, and use this page to provide notes
+
+(If you need an ASTERICS wiki account, please email mark.allen@astro.unistra.fr)
+
+Tuesday 26 th at 4:30 PM
+
+I ) ObsCore and other VO standards in the context of EST and solar data</description>
+        <category>open:wp4:wp4techforum5</category>
+            <pubDate>Mon, 04 Mar 2019 09:51:54 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:wp4techforum5:multi-messenger</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:wp4techforum5:multi-messenger&amp;rev=1551345749&amp;do=diff</link>
+            <description>Project outline
+
+Multi-messenger astrophysics is receiving a lot of attention, especially following the first gravitational wave detections with LIGO and Virgo and their electromagnetic counterparts.
+
+New tools are needed to promote it and take advantage of the massive and extensive data production that are or will be provided by large facilitates and space missions.</description>
+        <category>open:wp4:wp4techforum5</category>
+            <pubDate>Thu, 28 Feb 2019 10:22:29 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:wp4techforum5:radiointhevo</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:wp4techforum5:radiointhevo&amp;rev=1552490471&amp;do=diff</link>
+            <description>14h Radioastronomy in the VO - State of the art overall view François Bonnarel [ Overview] Alessandra Zanichelli [The Italian radio data archive and the VO perspective]  Discussion  Coffee Break 15:30 16h Scientist and projects requirements Scientist point of view Katharina Lutz [An astronomer's thoughts on radio data and the VO] Scientist Yelena Stein [Point of view &amp; AENEAS slides]  Scientist Point of view Marco Iacobelli [VO radio interoperability data] Discussion 
+Participants : Mark Allen, …</description>
+        <category>open:wp4:wp4techforum5</category>
+            <pubDate>Wed, 13 Mar 2019 16:21:11 +0200</pubDate>
+        </item>
+    </channel>
+</rss>

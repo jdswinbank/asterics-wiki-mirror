@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <title>open:wp4:wp4techforum4:hackathon</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2018-05-25T09:18:40+0200"/>
+<meta name="keywords" content="open,wp4,wp4techforum4,hackathon"/>
+<link rel="search" type="application/opensearchdescription+xml" href="lib/exe/opensearch.php" title="ASTERICS Wiki pages"/>
+<link rel="start" href="index.html"/>
+<link rel="contents" href="./doku.php%3Fid=open:wp4:wp4techforum4:hackathon&amp;do=index.html" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent changes" href="feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current namespace" href="./feed.php%3Fmode=list&amp;ns=open:wp4:wp4techforum4"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="./doku.php%3Fdo=export_xhtml&amp;id=open:wp4:wp4techforum4:hackathon.html"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="./doku.php%3Fdo=export_raw&amp;id=open:wp4:wp4techforum4:hackathon"/>
+<link rel="canonical" href="./doku.php%3Fid=open:wp4:wp4techforum4:hackathon.html"/>
+<link rel="stylesheet" type="text/css" href="lib/exe/css.php%3Ft=dokuwiki&amp;tseed=3e868cdb9e6faaec34cd57ca71666f47.css"/>
+<script type="text/javascript">/*<![CDATA[*/var NS='open:wp4:wp4techforum4';var JSINFO = {"id":"open:wp4:wp4techforum4:hackathon","namespace":"open:wp4:wp4techforum4"};
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="lib/exe/js.php%3Ftseed=3e868cdb9e6faaec34cd57ca71666f47&amp;template=dokuwiki"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1" id="hack-a-thon_sessions">Hack-a-thon Sessions</h1>
+<div class="level1">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <strong>TOPIC: IVOA Provenance</strong> </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Mireille Louys (16 April, 16:00-17:30) </td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [37-111] --><ul>
+<li class="level1"><div class="li"> <strong>Markus D.</strong> : how can we realize the simple thing : time series —&gt; progenitor </div>
+</li>
+</ul>
+
+<p>
+need some description of an Activity : Extraction of a mag from an image etc .. 
+follow the Prov relations : wasDerivedFrom  or wasGeneratedby + Activity ID+ Used 
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Carlos&#039;s use-case</strong> : Provenance from points in a SED or light curve </div>
+</li>
+</ul>
+
+<p>
+linking points in a data set to other dataproducts : extracted image, extracted spectrum, etc. 
+Is it simple to solve? 
+ -without the prov DM: 
+datalink + progenitor link if it exists
+datalink + preview if we want to illustrate only the point via an image 
+ -with provenance info  : select the wasDerived relation in Prov : it will provide you with a progenitor if present. 
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>François</strong> : linking the prov info from Obscore : a prov column which contains a link to a Prov document in one PROV format (PROV-N, or PROV-JSON) </div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <strong>IVOA PROV Data model design</strong> :</div>
+</li>
+</ul>
+
+<p>
+A suggestion to handle ActivityDescription by Ole <a href="lib/exe/detail.php%3Fid=open:wp4:wp4techforum4:hackathon&amp;media=open:wp4:wp4techforum4:prov-templates.png.html" class="media" title="open:wp4:wp4techforum4:prov-templates.png"><img src="lib/exe/fetch.php%3Fmedia=open:wp4:wp4techforum4:prov-templates.png" class="media" title="figure" alt="figure" /></a>
+</p>
+
+<p>
+PROV-N document <a href="https://provenance.ecs.soton.ac.uk/store/documents/118181/" class="urlextern" title="https://provenance.ecs.soton.ac.uk/store/documents/118181/"  rel="nofollow">https://provenance.ecs.soton.ac.uk/store/documents/118181/</a>
+</p>
+
+<p>
+Example of Ole:
+</p>
+<ul>
+<li class="level1"><div class="li"> Top graph: representation of an activity executed on real data  </div>
+</li>
+<li class="level1"><div class="li"> Below graph : Define a template for a an ActivityDescription here “musesci_post” with known roles, with context dependent names, for instance here in the muse:namespace    </div>
+</li>
+</ul>
+
+<p>
+a Bundle class (<abbr title="World Wide Web Consortium">W3C</abbr> compatible) for expressing ActivityDescription 
+- solves the pb of roles 
+A realisation of an Activity:
+</p>
+<ul>
+<li class="level1"><div class="li"> uses the activity template</div>
+</li>
+<li class="level1"><div class="li"> uses entities with used roles and generated roles defined in the bundle for description </div>
+</li>
+</ul>
+
+<p>
+Musesci_postT1A :  Activity Instance
+has relation “Used” with role= “voprov:description”  with instance Musesci_post:Bundle
+</p>
+
+<p>
+All other “used” relation should instantiate a role defined in the related Bundle with domain specific namespace, here “muse:”
+Bundle is a <abbr title="World Wide Web Consortium">W3C</abbr> class derived from an Entity.
+This should be also possible in a VOTable serialisation 
+</p>
+
+<p>
+<strong> Comment François </strong> : 
+</p>
+
+<p>
+check that this can be coded into the VOTABLE serialsition as well. 
+</p>
+
+<p>
+<strong> Suggestion Michèle </strong> :
+</p>
+
+<p>
+apply this template solution to a Pollux activity example, using 2 chained activity templates.
+</p>
+
+<p>
+<strong> Comment Mireille</strong>:
+</p>
+
+<p>
++ by this construction we can gather in just one construct the description part of an Activity , together with the roles ( formally defined as attributes of UsedDescription)
++ the roles at execution can be validated agains the activity template . 
+</p>
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <strong>TOPIC: Use of TAP-Autocomplete</strong> </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Stelios Voutsinas, Marco Molinaro (16 April, 16:00-17:30) </td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [2574-2674] -->
+<p>
+Discussion with Marco Molinaro about the potential use of the TAP-Autocomplete library at INAF (Trieste). Topics included a description of the available modes of usage, and what would be required at Trieste for potential installation and use of it. Carlos Rodrigo Blanco also expressed interest, and proposed the idea of having the library as a browser add on, which would work on any TAP <abbr title="Graphical User Interface">GUI</abbr>.
+</p>
+
+<p>
+Inclusion at INAF would probably work better if the TAP-Autocomplete library is used inside a page that can be served in the same location of the TAP base_url. Since INAF in Trieste is starting using Gregory Mantelet&#039;s TAPlib that already sets up that pseudo-frontpage for its TAP instances and also considering that TAP-Autocomplete uses Gregory&#039;s adql.js library, then it looks more useful to have the efforts merged.
+</p>
+
+<p>
+Collaboration on this will go on among Stelios, Marco (and Sonia), contacting Gregory and possibly using the votable.js from Andre Schaaff.
+</p>
+
+<p>
+After TAP-autocomplete discussion, with Dave Morris joining in, some discussion took place about the Firethorn application and its potential usage to deploy a global TAP service on top of existing datacollection-limited TAP instances at a data center.
+</p>
+<div class="table sectionedit4"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <strong>TOPIC: Datalink, SIAV2, SOda feedback</strong> </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> François Bonnarel (16 April, 17:30-18:30 </td>
+	</tr>
+</table></div>
+<!-- EDIT4 TABLE [3886-3977] -->
+<p>
+The Hack-a-Thon discussion about this topic were presented in a talk during the morning session of Day 2: <a href="lib/exe/fetch.php%3Fmedia=open:wp4:multi-d-dal-feedback.pdf" class="media mediafile mf_pdf" title="open:wp4:multi-d-dal-feedback.pdf (4.8 MB)">multi-d-dal-feedback.pdf</a> (François Bonnarel/ Marco Molinaro)
+</p>
+<ul>
+<li class="level1"><div class="li"> DataLink discovery outside ObsTAP/SIAV2 context : Resource descriptor, ucd, LINK element and Access GROUP discussed </div>
+</li>
+<li class="level1"><div class="li"> DataLink semantics list extension</div>
+</li>
+<li class="level1"><div class="li"> DataLink for local resources</div>
+</li>
+<li class="level1"><div class="li"> Resource Descriptors processing difficulties</div>
+</li>
+<li class="level1"><div class="li"> SIAV2/SIAV1 services combination</div>
+</li>
+<li class="level1"><div class="li"> SIAV2 for virtual data missing</div>
+</li>
+<li class="level1"><div class="li"> SIAV2 request for list of available collections, instruments, facilities</div>
+</li>
+<li class="level1"><div class="li"> SODA lack of implementations. importance of semantics and description for SODA lines in DataLink. </div>
+</li>
+</ul>
+<div class="table sectionedit5"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <strong>TOPIC IVOA Time Series/Time Domain</strong> </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Dave Morris (17 April, 14:00-15:30 </td>
+	</tr>
+</table></div>
+<!-- EDIT5 TABLE [4654-4735] -->
+<p>
+The effort is led by TDIG WG with inputs from DAL, DM. Application is getting in.
+</p>
+
+<p>
+Strong involvment of ASTERICS partners.
+</p>
+
+<p>
+Discovery metadata, TimeFrame details and Time representation reached a consensus
+</p>
+
+<p>
+Data Modeling of TimeSeries is designed as extension of CubeDM. Work by MCD and ML. convergence reachable.
+</p>
+
+<p>
+Serialization and representations: several attempts with several methods (VO-DML and utypes) on the same sample dataset have been tested. VizieR has developed a prototype implementing these various proposals
+Hopefully progresses will be made in VIctoria interop for convergence.
+</p>
+
+<p>
+Discussion in the hack a thon was also focused on how applications (TopCAT, SPLAT, TimeSeries) can ingest that.
+Edimburg group has the intention of developping a TimeSeries specific tool to ingest that and process these data.
+</p>
+<div class="table sectionedit6"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <strong>TOPIC: Informal discussion about DataLink requirements in TOPCAT</strong> </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Mark Taylor </td>
+	</tr>
+</table></div>
+<!-- EDIT6 TABLE [5561-5651] -->
+<p>
+Mark T and Markus D, Mark T and Carlos - useful requirements input from data providers
+</p>
+<div class="table sectionedit7"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <strong>TOPIC: Informal discussion about modular, message-driven resource publishing solution</strong> </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Marco Molinaro </td>
+	</tr>
+</table></div>
+<!-- EDIT7 TABLE [5740-5852] -->
+<p>
+Marco M and Markus D discussed about the reasons to put a modular solution in place, connected risks and potential benefits. Manageability increased costs versus portability and distributed developing effort  were considered.
+</p>
+
+</div>
+</div>
+</body>
+</html>

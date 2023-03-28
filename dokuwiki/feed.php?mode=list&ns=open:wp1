@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="FeedCreator 1.7.2-ppt DokuWiki" -->
+<?xml-stylesheet href="https://www.asterics2020.eu/dokuwiki/lib/exe/css.php?s=feed" type="text/css"?>
+<rss version="2.0">
+    <channel>
+        <title>ASTERICS Wiki pages open:wp1</title>
+        <description></description>
+        <link>https://www.asterics2020.eu/dokuwiki/</link>
+        <lastBuildDate>Tue, 28 Mar 2023 16:54:32 +0200</lastBuildDate>
+        <generator>FeedCreator 1.7.2-ppt DokuWiki</generator>
+        <image>
+            <url>https://www.asterics2020.eu/dokuwiki/lib/tpl/dokuwiki/images/favicon.ico</url>
+            <title>ASTERICS Wiki pages</title>
+            <link>https://www.asterics2020.eu/dokuwiki/</link>
+        </image>
+        <item>
+            <title>open:wp1:deliverables</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp1:deliverables&amp;rev=1520235339&amp;do=diff</link>
+            <description>You can find the list of deliverables on:&lt;https://www.asterics2020.eu/documents&gt;</description>
+        <category>open:wp1</category>
+            <pubDate>Mon, 05 Mar 2018 08:35:39 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp1:reports</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp1:reports&amp;rev=1450198611&amp;do=diff</link>
+            <description>place for the project reports at month 18, 36 and 48.</description>
+        <category>open:wp1</category>
+            <pubDate>Tue, 15 Dec 2015 17:56:51 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp1:start</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp1:start&amp;rev=1476185181&amp;do=diff</link>
+            <description>The ASTERICS Management Support Team (AMST) deals with the governance and day-to-day management of the project, and is part of the following ASTERICS governance structure.</description>
+        <category>open:wp1</category>
+            <pubDate>Tue, 11 Oct 2016 13:26:21 +0200</pubDate>
+        </item>
+    </channel>
+</rss>

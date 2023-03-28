@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="FeedCreator 1.7.2-ppt DokuWiki" -->
+<?xml-stylesheet href="https://www.asterics2020.eu/dokuwiki/lib/exe/css.php?s=feed" type="text/css"?>
+<rss version="2.0">
+    <channel>
+        <title>ASTERICS Wiki pages open:gen</title>
+        <description></description>
+        <link>https://www.asterics2020.eu/dokuwiki/</link>
+        <lastBuildDate>Tue, 28 Mar 2023 16:54:31 +0200</lastBuildDate>
+        <generator>FeedCreator 1.7.2-ppt DokuWiki</generator>
+        <image>
+            <url>https://www.asterics2020.eu/dokuwiki/lib/tpl/dokuwiki/images/favicon.ico</url>
+            <title>ASTERICS Wiki pages</title>
+            <link>https://www.asterics2020.eu/dokuwiki/</link>
+        </image>
+        <item>
+            <title>open:gen:start</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:gen:start&amp;rev=1499771209&amp;do=diff</link>
+            <description>The Astronomy ESFRI and Research Infrastructure Cluster, ASTERICS, is a €15 million Research Infrastructure funded by the European Commission's Horizon 2020 framework. ASTERICS aims to address the cross-cutting synergies and common challenges shared by the various Astronomy ESFRI facilities (SKA, CTA, KM3NeT &amp; E-ELT). It brings together for the first time, the astronomy, astrophysics and particle astrophysics communities, in addition to other related research infrastructures.</description>
+        <category>open:gen</category>
+            <pubDate>Tue, 11 Jul 2017 13:06:49 +0200</pubDate>
+        </item>
+    </channel>
+</rss>

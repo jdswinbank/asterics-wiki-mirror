@@ -1,0 +1,65 @@
+**Exo-Planetary Systems Data Model Meeting**
+
+//**INAF-OAPd, Padova, 20-21/09/2018**//
+
+====== Meeting Report ======
+
+[back to [[open:wp4:wp4exodm|Exo-Planetary Systems Data Model]] meeting page]
+
+===== Overview =====
+
+On Thursday the 20th and Friday the 21st at the INAF - Astronomical Observatory of Padova, a meeting was held to start a modeling effort for data originating from exoplanetary research; both observational and numerical simulation scenarios were taken into considedration.
+
+The participants were representative of the VO technical area, of the exoplanets observation field (from the GAPS project) and of the exoplanets atmosphere simulation field (from the ARTECS projets). Even if they don't cover the full domain of exoplanetary science, they were a good representative of the field. Moreover other contacts were taken, with other colleagues who followed this effort but weren't available to attend the meeting at the scheduled days.
+
+The meeting, after a round table introduction of the participants and an introduction on the goal of the meeting itself, was organized roughly in two parts: talks and speeches by the various participants to show their own use cases and requirements, followed by the actual brainstorming and sketch of the model components and their connection with existing efforts and specifications.
+
+The contributions to the first part are both reported here and attached to the schedule in the [[open:wp4:wp4exodm|main meeting page]].
+
+===== Introductions =====
+
+The introductory talk (Molinaro) to the meeting presented the steps that led, in the last couple of years, to the idea of building a data model for exoplanetary data. The record went from the initial use case of the GAPS time series, as a test for discovery and access of time series datasets in the VO, to the acknowledgement that the time axis is only one part of the requirements when dealing with exoplanets.
+
+After this introduction, two more talks followed to introduce the concepts of data modeling and their VO declination. The ObsCore was used as an example (Louys) for the modeling process up to its connections to the access protocols. Similarly the Time Series data modeling (ongoing) effort was presented (Bonnarel) as an example. Both talks outlined the way different data models can cooperate to create a useful set of annotations for datasets, both in terms of vocabulary terms to be used in the discovery scenario and in dataset representation.
+
+Then presentations and notes were provided by the scientific attendees.
+
+The GAPS Time Series experience (Benatti) was presented both in retrospective for radail velocity time series from optical spectroscopy and the ongoing efforts to join together the optical and near infrared information. Also it was pointed out that the continuation of this long term program will see the study of exoplanets atmospheres. The way information is dealt within the project shows a clear use case also for provenance and the phase information for the time axis looks crucial in observations follow up.
+
+A project that tries to merge three main catalogues of exoplanets has been shown (Alei). The difficulties emerging when combining the exoplanets.eu, the exoplanets.org and the NASA exoplanets catalogues were reported, from the curational point of view (that of course differs from catalogue to catalogue) but also in terms of accessibility, column annotation and bibliographic referencing for the various measurements reported. The reported effort clearly shown where a common metadata set and vocabularies could ease the effort in consuming different catalogues presenting the same objects.
+
+Simulation of planetary atmosphere to characterize exoplanets habitability was presented (Maris) through the ARTECS project. The presentation showed the effort to use VO technologies to publish the simulations and the way this led to identifying the main concepts/blocks in the (exo-)planetary systems description. The internal metadata model used in ARTECS showed clear attachments to concepts available from SimDM, DataSet Metadata Model and, possibly the newly started Source DM effort. Nonetheless it highlighted also other components that are not yet available in the VO scenario. The link with observational data should be the extinction spectra in transiting exoplanets.
+
+Then a quite exhaustive report on the studies to characterize exoplanets through RV spectra and photometry was reported (Damasso). The talk reported not only the single system characterization but also the oncoming needs related to performing systems/exoplanets comparison and, in the future, combined statistics. The difficulty in characterizing exoplanets was shown to come also from the fact that the observational data mixes stellar and planets information, that RV data, but also photometry, are not easily retrievable, sometimes leaving only ADS information as the starting point (which is, again, a point in interoperability of the data resources in this field). Time constrained searched to have simultaneous data on a system, stellar activity indexes, provenance information on the recipe used to get RV points, references for measured and reported values were other requirements listed.
+
+The complexity in the observations of exoplanets atmosphere through spectroscopy was then reported (Nascimbeni). The details needed to characterize this kind of datasets may be too fine to be taken directly into account in the basics of the model which was the goal of the meeting. Another point stressed was the identification (in the datasets) of upper/lower limits and confidence intervals of the reported measures, because they are really a valuable information for filtering the results.
+Also a couple of other use cases in exoplanetary systems datasets/records discovery were reported. One about the way to model system parameters that refer to multiple objects/planets, like the resonance of orbital periods. Anther was a discovery use case based upon the planetary system architecture, expressed in terms like "find systems having a Jupyter and a Super Earth in an inner orbit".
+
+
+===== Modelization =====
+
+After the various presentations and speeches the discussion and modelization effort started.
+
+Picking up the basic categorization shown by the ARTECS simulation a few concepts were directly identified as belonging to existing efforts: simulation/experiment concepts and input/output parameters and data objects (SimDM), dataset metadata including access references and similar details (Dataset metadata), the stellar host(s) characterized as sources (Source DM?).
+
+However basic components like the planets - including bulk composition and atmospheric descriptions -, and the orbiting details - both for planets around star(s), stellar multiple components, satellites - are clearly missing from the VO scenario and were investigated upon.
+
+Images (steps {{:open:wp4:wp4exodm:modeling1.jpg?linkonly|1}}, {{:open:wp4:wp4exodm:modeling2.jpg?linkonly|2}} and {{:open:wp4:wp4exodm:modeling3.jpg?linkonly|3}}) report some stages of the conceptual modeling effort while discussion went on.
+
+In the end, the nodal point of the modelization turned out to be how the orbital elements (an orbit component) were to be represented. That's because they were initially thought to be sub-components to planets, but actually referring to a two body system. Also, as already said above, orbits are referred to planets orbiting around stellar hosts, satellites orbiting around planets (and there are already researches on exo-moons), stars revolving around each other.
+
+This led to a modelization (see {{:open:wp4:wp4exodm:modeling2.jpg?linkonly|image 2}}) where generic "objects" are represented with orbit seen as a component that is attached to the relationship between two of them. This would solve the various orbiting scenarios, sub-typing the various real-world objects from a general one, including, possibly, stellar binary systems.
+
+Some specific cases ({{:open:wp4:wp4exodm:modeling3.jpg?linkonly|drawing 3}}) were then discussed to see whether the above modelization allows implementation of real world solutions, like a binary star with a planet orbiting only one of the stellar components or both of them.
+
+===== Conclusions =====
+
+Trying to start a VO modeling effort for exoplanetary datasets was a good solution to put together the various scientific goals currently ongoing. Even if the attendees don't cover the global community, the basic knowledge and expertise in exoplanes observation and simulation was available around the meeting table.
+
+The meeting was proficuous under two main aspects: identifying the basic concepts at stake, picking uo what not-attending stakeholders are to be contacted and pushed to join the effort (e.g. Simbad managers, DM WG & SS IG at IVOA).
+
+Next steps include a reporting talk to be given at next IVOA Interop (College Park) and a poster at subsequent ADASS XXVII, both in November 2018.
+
+Among other points and actions to be taken, there's the need to fill up the attributes that identify the object sub-types (what's a planets with respect to a star, a satellite, a brown-dwarf, a gourp of trojans; what attributes do I need to describe an orbit, the atmosphere of a planet, ...), the connections to find with Source DM to have the stellar components characterization be able to be pointed from this modeling effort, some discussion on time resolution with respect to orbital completeness and resolution momentums.
+
+[back to [[open:wp4:wp4exodm|Exo-Planetary Systems Data Model]] meeting page]

@@ -1,0 +1,103 @@
+===== Program =====
+
+It is important to have installed beforehand in your laptops the VO-tools to be used in the School, namely:
+
+     * [[http://aladin.unistra.fr/java/Aladin4Asterics.jar|ALADIN]] (Download the Aladin4Asterics.jar file and execute it from a terminal using "**java -Xmx2048m -jar Aladin4Asterics.jar**") 
+     * [[http://www.star.bris.ac.uk/~mbt/topcat/topcat-full.jar|TOPCAT]] (Download the topcat-full.jar file and execute it from a terminal using "**java -jar topcat-full.jar**")
+     * [[http://svo2.cab.inta-csic.es/theory/vosa/|VOSA]] (Web server. You don't need to install anything)
+     * [[http://www.star.bris.ac.uk/~mbt/stilts/stilts.jar|STILTS]] (Download the stilts.jar file and execute it from a terminal using "**java -jar stilts.jar**")
+
+
+===== Program =====
+
+**Day 1. Tuesday 15 November**
+
+   * 09:00 Registration
+
+   * 09:30 - 10:15 Introductory talks
+      * 09:30 - 09:35 - Welcome (Ada Nebot)
+      * 09:35 - 09:50 - {{:open:wp4:school2:asterics-dadi-school-strasbourg-20161115.pdf|The ASTERICS project}} (Rob van der Meer)
+      * 09:50 - 10:15 - {{:open:wp4:school2:introvo_school2016.pdf|Introduction to the VO and the school}} (Ada Nebot)
+
+   * 10:15 - 10:45 Coffee break
+
+   * 10:45 - 12:30 Tutorial #1 (1h45m).
+      * Title: {{:open:wp4:school2:cds-tutorial-1.pdf|The CDS tutorial}} 
+      * VO-tools: Simbad, Vizier, Aladin
+      * Tutor: S. Derriere + J. Sorce (group 1) / C. Bot + F.-X. Pineau (group 2)  
+
+   * 12:30 - 14:00 LUNCH
+
+   * 14:00 - 15:45 Tutorial #2 (1h45m) 
+      * Title: {{:open:wp4:school2:browndwarfs-tutorial-2.pdf|Discovery of Brown Dwarfs mining the 2MASS and SDSS databases}} 
+      * See also: [[http://cds.unistra.fr/tutorials/CDS-tutorial/stilts.script|stilts.script]]
+      * VO-tools: Aladin, Topcat
+      * Tutor: F. Jiménez + M. Molinaro (group 1) / E. Solano + M. Ramella (group 2)  
+
+   * 15:45 - 16:15 Coffee break
+
+   * 16:15 - 18:00 Tutorial #3 (1h45m) 
+       * Title: {{:open:wp4:school2:vosa-tutorial-3.pdf|Determination of stellar physical parameters using VOSA }} 
+       * See also: [[http://cds.unistra.fr/tutorials/CDS-tutorial/vosa_usecase_final.txt|vosa_usecase_final.txt]][[http://cds.unistra.fr/tutorials/CDS-tutorial/vosa_usecase_paper_final.txt|vosa_usecase_paper_final.txt]]
+       * VO-tools: VOSA
+       * Tutor: F. Jiménez-Esteban + M. Molinaro (group 1) / E. Solano + M. Ramella (group 2) 
+
+**Day 2. Wednesday 16 November**
+
+   * 09:00 - 10:45 Tutorial #4 (group 1) / Tutorial #5 (group 2) (1h45m)
+      * Tutorial #4 
+         * Title: {{:open:wp4:school2:highenergy-tutorial-4.pdf|Multi-instrument, multi-wavelength study of high energy sources with the virtual Observatory. }}               
+         * VO-tools: Aladin, Topcat, Simbad
+         * Tutor: A. Nebot + V. Kulikovskiy + D. Baines (group 1) / 
+      * Tutorial #5 
+         * Title: {{:open:wp4:school2:toptcatstilts-tutorial-5.pdf|Exploring Gaia data with TOPCAT and STILTS }}
+         * See also: {{:open:wp4:school2:topcatstilts_slides.pdf|introductory slides}}, [[http://andromeda.star.bristol.ac.uk/~mbt/gaia/tutorial.html|supporting materials]]
+         * VO-tools: TOPCAT, STILTS
+         * Tutor: M. Taylor +  F-X Pineau (group 2)   
+
+   * 10:45 - 11:15 Coffee break
+
+   * 11:15 - 13:00 Tutorial #5 (group 1) / Tutorial #4 (group 2) 
+      * Tutorial #5 
+         * Tutor: M. Taylor +  F-X Pineau (group 1)   
+      * Tutorial #4 
+         * Tutor: J. Lefaucheur + C. Bot + J Sorce (group 2)   
+
+   * 13:00 - 14:30 LUNCH
+
+   * 14:30 - 15:45 Tutorial #6 (group 1) / Tutorial #6 (group 2) (2h)
+     * Title: Accessing and cross matching of big data sets with ADQL [[http://docs.g-vo.org/adql/html/]]
+     * VO-tools: Topcat, ADQL, TAP
+     * Tutor: M. Demleitner + G. Mantelet (group 1) / H. Heinl + M. Taylor (group 2)
+
+   * 15:45 - 16:15 Coffee break
+
+   * 16:15 - 17:00 Tutorial #6 (group 1) / Tutorial #6 (group 2) (cont.)
+
+   * 17:00 - 17:30 Tutorial #7 (group 1 and 2)
+      * Title: {{:open:wp4:school2:gravitationalwaves-tutorial-7.pdf|Handling gravitational-wave sky maps for EM-followUP observations}}
+      * VO-tools: Aladin beta version + Topcat 
+      * Tutor:  E. Chassande-Motin + D. Baines (group 1) /G. Greco + A. Nebot (group 2)
+
+   * 17:30 - 18:15 Treasure hunt
+
+   * 18:15 - 18:30 Organization of participants projects
+
+   * 20:00 - Social school dinner at Restaurant Au Pont Saint Martin (see [[https://www.google.com/maps/d/viewer?mid=1JsvQkH0sqwVIMRFP7DU__r8fIsM&ll=48.58248858817438%2C7.769183726989695&z=13" width="640" height="480"|map]]), rue des Moulins.
+
+**Day 3. Thursday 17 November** 
+
+Please fill in the [[https://indico.in2p3.fr/event/13358/evaluation/evaluate|feedback form]] before lunch
+
+   * 09:00 - 10:45 Participants projects ({{:open:wp4:school2:students-tutors.pdf|tutor-student assignment)}}
+
+   * 10:45 - 11:15 Coffee break
+
+   * 11:15 - 13:00 Participants projects
+
+   * 13:00 - 14:30 LUNCH
+
+   * 14:30 - 15:45 Projects presentations
+
+   * 15:45 - 16:15 Feedback and closing 
+

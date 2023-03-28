@@ -1,0 +1,66 @@
+====== Exo-Planetary Systems Data Model Meeting ======
+
+==== INAF-OAPd, Padova, 20-21/09/2018 ====
+
+[back to [[start|ASTERICS DADI WP4]] main wiki page]
+
+----
+===== Goal =====
+Starting from the experience aimed at deploying through the VO the Time Series for exoplanets (see, e.g., the [[wp4gapsinaf|GAPS Time Series face-to-face]]) first hints that a model to describe and annotate (exo-)planetary systems might be needed to allow for proper dataset discovery and metadata annotation. The solution of a common model for this specific area of interest was later enhanced by exoplanetary atmosphere numerical simulations and exoplanets catalogue and their visual client applications.
+
+Thus the idea of this meeting was launched to start gathering the first block for the above model and to try to identify interests in the community to improve and adopt it.
+
+Fur further info contact: //marco (dot) molinaro (at) inaf (dot) it//.
+===== Schedule =====
+
+^ Thursday 20.09 ^^^^
+| 09:30 | Get-together & Welcome |||
+| 10:00 | Participants round-the-table Introduction |||
+| 10:15 | Introduction |{{:open:wp4:wp4exodm:molinaro_exodm_meetingintro.pdf|pdf}}| Marco  |
+| 10:30 | VO Data Modelling intro: ObsCore |{{:open:wp4:wp4exodm:datadiscoverywithObsCore_PlanetarydatameetingPadovav2.pdf|pdf}}| Mireille |
+| 11:00 | **break** |||
+| 11:30 | VO Time Series Data Model intro |{{:open:wp4:wp4exodm:timeseriesdatamodel.pdf|pdf}}| François |
+| 12:30 | Time Series: the GAPS experience |{{:open:wp4:wp4exodm:benatti_gaps_ts.pdf|pdf}}| Serena |
+| 13:00 | **lunch** |||
+| 14:00 | Merging exoplanets catalogues |{{:open:wp4:wp4exodm:catalog_vo_report_alei.pdf|pdf}}| Eleonora |
+| 14:30 | ARTECS - Trieste Exoclimates Archives |{{:open:wp4:wp4exodm:artecs_maris.pdf|pdf}}| Michele |
+| 15:30 | **break** |||
+| 16:00 | Exoplanets characterization requirements |{{:open:wp4:wp4exodm:damasso_notes.pdf|notes}}| Mario |
+| 16:15 | Exoplanets atmosphere observables || Valerio |
+| 16:30 | Brainstorming on model requirements and use cases || all |
+| 18:00 | //day 1 close// |||
+| 19:30 | **Working Dinner (Isola di Caprera)** | community & networking ||
+^ Friday 21.09 ^^^^
+| 09:00 | Uses Cases and Model Components |[[open:wp4:wp4exodm_report|meeting report]]| all |
+| 11:00 | **break** |||
+| 11:30 | Wrap-up & Summary |||
+| 12:30 | Visit to the Specola tower |||
+| 13:00 | //end of the meeting// |||
+
+===== Participants =====
+
+The meeting has been organized with a goal to identify use cases and building blocks to start working on a specific data model; thus participation has been on an invited basis.
+
+^ Name ^ Affiliation ^
+|Marco Molinaro | INAF-OATs |
+|Serena Benatti | INAF-OAPd |
+|Andrea Bignamini | INAF-OATs |
+|François Bonnarel | CDS, Observatoire de Strasbourg |
+|Mireille Louys | CDS, Observatoire de Strasbourg |
+|Michele Maris | INAF-OATs |
+|Mario Damasso | INAF-OATo |
+|Valerio Nascimbeni | INAF-OAPd |
+|Eleonora Alei | INAF-OAPd |
+
+===== Meeting Report =====
+
+The meeting highlighted use cases and requirements from the exoplanets scientific community. It also showed that the modelling effort may both re-use existing models (like the Simulations DM or DataSet Metadata Model), require new components specific to the data in use and provide requirements for ongoing modelling efforts (mainly the Source DM). Time Series considerations were also taken into account, but those were, for the most part, already discussed in a previous meeting.
+
+A more detailed report of the meeting can be found [[open:wp4:wp4exodm_report|here]].
+
+----
+
+===== Logistics =====
+The meeting will take place at the INAF-Astronomical Observatory of Padova. Directions to reach the place can be found [[http://www.oapd.inaf.it/index.php/en/inaf-oapd-sites/inaf-oapd-sites-2.html|here]].
+
+If you need further local information or details please contact //serena (dot) benatti (at) inaf (dot) it//.

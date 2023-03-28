@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="FeedCreator 1.7.2-ppt DokuWiki" -->
+<?xml-stylesheet href="https://www.asterics2020.eu/dokuwiki/lib/exe/css.php?s=feed" type="text/css"?>
+<rss version="2.0">
+    <channel>
+        <title>ASTERICS Wiki pages open:wp4:school3</title>
+        <description></description>
+        <link>https://www.asterics2020.eu/dokuwiki/</link>
+        <lastBuildDate>Tue, 28 Mar 2023 17:01:07 +0200</lastBuildDate>
+        <generator>FeedCreator 1.7.2-ppt DokuWiki</generator>
+        <image>
+            <url>https://www.asterics2020.eu/dokuwiki/lib/tpl/dokuwiki/images/favicon.ico</url>
+            <title>ASTERICS Wiki pages</title>
+            <link>https://www.asterics2020.eu/dokuwiki/</link>
+        </image>
+        <item>
+            <title>open:wp4:school3:program</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:school3:program&amp;rev=1514968023&amp;do=diff</link>
+            <description>Program
+
+It is important to have installed beforehand in your laptops the VO-tools to be used in the School, namely:
+
+	*  ALADIN (Download the Aladin.jar file and execute it from a terminal using “java -Xmx2048m -jar Aladin.jar”). Official version: v9.033b 
+		*  ALADINV10 (Download the Aladinv10.jar file and execute it from a terminal using “java -Xmx2048m -jar Aladinv10.jar”). Aladin V10 Avant Premiere 
+		*  TOPCAT (Download the topcat-full.jar file and execute it from a terminal using “java -j…</description>
+        <category>open:wp4:school3</category>
+            <pubDate>Wed, 03 Jan 2018 09:27:03 +0200</pubDate>
+        </item>
+    </channel>
+</rss>

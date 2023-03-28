@@ -1,0 +1,101 @@
+**ASTERICS DADI [[open:wp4:wp4techforum1|Technology Forum 1]] Hack-a-thon page**
+
+Traditionally Tech Forum meetings have included a free-form session designed to allow participants - be they software engineers or scientists - to meet and discuss technical and scientific details related to VO work they are currently undertaking. These sessions became known as the "Hack-a-thon" - the clue to their purpose being in the name. Hack-a-thons proved extremely popular and successful and we plan to continue them in the current project; hopefully with the wider remit they will be even more successful.
+
+A white board or log will be available for people to note down areas they wish to discuss and the session itself will provide place and opportunity for informal meetings. 
+
+**This page to be used to record outcomes and conclusions.**
+
+**Topics**
+
+----
+
+  * Inclusion of the IVOA Registry into EUDAT B2FIND. A prototype is available http://b2find.eudat.eu/group/ivoa
+     * status and discussion with interested colleagues, in particular ESAC
+     * other information (domain specific, etc.) to include 
+
+  André Schaaff, Christophe Arviset
+
+----
+
+  * Provenance discussion (...): 
+     * Provenance for complex data sets exposing their progenitors : CTA Example
+     * Provenance for other use-cases : code attached to data 
+     * other use-cases ? 
+ **please register here** , just to let us now how big the room should be to accomodate this small group
+  François Bonnarel, Mireille Louys, Catherine Boisson, Mathieu Servillat, Paul Sladen, 
+Notes :
+  * Reasons for developping provenance 
+    * provide credit for data producers and then get more producers involved 
+    * integrity checking 
+    * example PGP signature
+  *CTA pipe line context 	
+    * an overview of DL data products
+    * various segregations criteria are applied from DL2 to DL3
+    * telescope congiguration : how many active telescope for one DL4 or DL3 
+    * reprocessing
+    * aid to debugging 
+to do : 
+  * explore more the Agent concept (a person, a service at one particular data center)
+    * need to sort out the pipeline information to expose to the final user from the archive pipeline description  
+
+
+----
+
+
+  * MOC and PgSphere
+    * Demonstration of CDS' MocServer
+      * 15k of MOCs, 0.45 GB
+      * matching of user-supplied MOC to all 15k MOCs: few ms
+      * implemented in Java
+      * all queries via HTTP
+    * Maybe indexing of MOCs (as objects of their own right) not necessary in view of the above speed
+    * further discussions about indexing
+    * pointers to existing Java / C code that approximates polygons as MOCs (and vice versa) exchanged
+    * MOC to be put into Pgsphere as sort of "BLOB" data type, just akin to Spolygon (PostgreSQL max size for TOAST data types: 1 GB)  	
+
+  Pierre Fernique, Markus Nullmeier, Gilles Landais, François-Xavier Pineau, Jesús Salgado, ...
+  
+
+----
+
+  * Moving the code to the data - discussion of ideas
+     * Use cases - why
+     * Use cases - what
+     * Technicals - how
+     * Standards - ?
+
+  Dave Morris, André Schaaff, Marco Molinaro, Thomas Boch
+  
+Discussion on how to describe as VO resources computational resources like VM, middleware environments, libraries and applications (in an Everything as a Service scenario). Use cases started from an INAF/CADC collaboration, LSST and GAIA use cases.
+
+Tasks towards such a goal require: a survey of the most used code languages and cloud technologies; a check on whether exist already description models for such resources to be re-used inside a registry system for discovery; a resource extension for computational resources; a protocol to access those resources programmatically.
+
+Main IVOA WG interested seems to be GWS, with connections to DAL, Apps and Registry.
+
+A slightly richer report on this hackathon can be found in {{open:wp4:code2data.pdf|this attachment}}.
+
+----
+
+   * Afternoon: SimDAL
+
+  Carlos Rodrigo, Marco Molinaro, François Bonnarel
+
+Discussion about time slots and presentations to be reserved for SimDAL in the Sydney interop DAL sessions.
+Given the few Theory IG participants in Sydney it could be that only a review talk for SimDAL will be provided.
+
+----
+
+   * TAP example
+     * Can someone work with me (Mark Taylor) to come up with a short but compelling example of how to use TOPCAT's TAP client to do something scientifically useful?  I understand the technology but I don't have enough astronomy background to prepare a good example.
+     * Result: Ada showed me the basis for an example and will mail me a summary later
+
+  Mark Taylor, Ada Nebot, Catherine Boisson
+
+----
+
+  * DOIs for astronomical data: will be discussed during the IVOA Data Curation & Preservation IG meeting in Sydney. Topic of interest for many groups and agencies. Also DataCite meeting before the Paris RDA Plenary on 21 September 2015 [[https://www.eventbrite.com/e/persistent-identifiers-enabling-services-for-data-intensive-research-tickets-17500184523|]]
+
+  Francoise Genova
+
+  

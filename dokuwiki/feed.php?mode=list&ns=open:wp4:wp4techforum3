@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="FeedCreator 1.7.2-ppt DokuWiki" -->
+<?xml-stylesheet href="https://www.asterics2020.eu/dokuwiki/lib/exe/css.php?s=feed" type="text/css"?>
+<rss version="2.0">
+    <channel>
+        <title>ASTERICS Wiki pages open:wp4:wp4techforum3</title>
+        <description></description>
+        <link>https://www.asterics2020.eu/dokuwiki/</link>
+        <lastBuildDate>Tue, 28 Mar 2023 17:01:06 +0200</lastBuildDate>
+        <generator>FeedCreator 1.7.2-ppt DokuWiki</generator>
+        <image>
+            <url>https://www.asterics2020.eu/dokuwiki/lib/tpl/dokuwiki/images/favicon.ico</url>
+            <title>ASTERICS Wiki pages</title>
+            <link>https://www.asterics2020.eu/dokuwiki/</link>
+        </image>
+        <item>
+            <title>open:wp4:wp4techforum3:hackathon</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:wp4techforum3:hackathon&amp;rev=1492075438&amp;do=diff</link>
+            <description>Participants - please go ahead and develop these Hack-a-thon topics, and use this page to provide notes
+ TOPIC: X509 certificates  BERTOCCO, Sara, DEMLEITNER, Markus TOPIC: DataLink  Fernique, Demleitner, Chaitra, Taylor ? TOPIC: Docker  BERTOCCO, Sara - Docker vs. Virtual Machines and other means for direct VO tool installation. Status, perspectives and ideas. VOSpace to VOSpace copy: use case utility discussion.  MORRIS, Dave - 1) Using Docker - sharing experiences, problems and solutions. 2) …</description>
+        <category>open:wp4:wp4techforum3</category>
+            <pubDate>Thu, 13 Apr 2017 11:23:58 +0200</pubDate>
+        </item>
+    </channel>
+</rss>

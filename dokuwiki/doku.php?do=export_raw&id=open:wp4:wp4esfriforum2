@@ -1,0 +1,146 @@
+====== ASTERICS DADI ESFRI Forum & Training Event 2 ======
+
+The ASTERICS/DADI ESFRI Forum and Training events aim at bringing together staff from ESFRI facilities and VO developers to continue active participation in the development of the VO framework and to train ESFRI technical staff on the VO technical environment. 
+The goal of the ESFRI Forum & Training Event #2 is 
+  * to provide updates on the status of the projects, of DADI and the VO, respectively; 
+  * to verify the status of VO acceptance within the projects after 2 years from the ESFRI Forum & Training Event #1;
+  * to get feedback on the developments made and planned 
+  * to evaluate what can be done by ASTERICS and DADI until the end of the project (April 2019). 
+
+(Top level DADI page: [[open:wp4:start|WP4: Data Access, Discovery and Interoperability (DADI)]])
+
+==== Registration ====
+
+Participation in the meeting is open to the members of the ASTERICS project. The representatives of the ESFRI and precursor projects will invite relevant people from their  collaborations to participate in the meeting and contribute to it. DADI members may invite experts from non-ASTERICS institutions when appropriate. The Organising Committee may select additional contributions and will be responsible to finalise the agenda of the meeting. 
+
+To register, simply:
+  * add yourself to the table at bottom
+  * send us an email with your details (see table at bottom) [marco (dot) molinaro (at) inaf (dot) it]
+
+==== Dates ====
+13 & 14 December, 2017 - ESFRI Forum
+
+12 December, 2017 - Introductory session on the VO for newcomers
+
+==== Location ====
+INAF - Osservatorio Astronomico di Trieste
+
+(Villa Bazzoni building)\\
+Via Riccardo Bazzoni, 2\\
+34124 Trieste (TS), Italy
+
+[[http://www.oats.inaf.it/index.php/en/177-observatory/430-how-to-get-bazzoni.html|Access Information]]
+
+To/From the Trieste Airport there are three possible means of transportation to reach Trieste:
+  * local **APT bus 51**, runs about every 30', 4.05€ one way. You can find it on the right when exiting the airport  (50 meters away), tickets can be purchased at a vending machine on the right of the arrivals exit doors inside the airport building. **Pay attention**: check the destination to be Trieste, not Udine!
+  * [[http://www.science-bus.com/user/index.php?l=en|Science Bus]] shuttle service, about 25€ each way. The driver will wait you at the arrivals exit. You can book it by yourself, it can drop you at your hotel or preferred location in Trieste.
+  * [[https://www.goopti.com/en/|GoOpti]] shuttle service, price varies from 9€ up to 40€ depending on your choice of schedule and sharing.
+  * **taxi**, about 50€ each way
+
+==== Hotels & Logistics ====
+Please arrange your own hotel accommodation. The Observatory is nearby Trieste city center, walking distance (uphill) from it. 
+
+A [[https://www.google.com/maps/d/edit?mid=zic38YRAZABk.kwv3da44vL8w&usp=sharing|MAP]] with some hotels and some logistics is available [[https://www.google.com/maps/d/edit?mid=zic38YRAZABk.kwv3da44vL8w&usp=sharing|HERE]] to have an idea of the local transport and accomodation locations.
+
+==== Agenda ====
+
+| //Time// | //Title//  | //Speaker// | //Materials// |
+^  Day 0 - Tuesday December 12  ^^^^
+| 15:00-18:00 | VO primer for newcomers | | |
+| | Use case  | Hendrik Heinl  | |
+| | Introducing the IVOA  | Françoise Genova  | {{:open:wp4:esfriforum2_ivoa_genova.pdf|pdf}} |
+|  (16:00)  | coffee break | | |
+| | Use case traverse with WG insight  | Hendrik/Markus/Marco  | |
+^  Day 1 - Wednesday December 13  ^^^^
+| 09:00-09:15 | Welcome, Logistics, Objectives of the meeting | Marco Molinaro  | |
+| 09:15-10:00 | FAIR principles and the VO, DADI status | Françoise Genova  | {{:open:wp4:esfriforum2_introduction_genova.pdf|pdf}} |
+| 10:00-11:00 | **Contributions by the ESFRI projects and precursors** |||
+|  10' | EST project overview  | Ilaria Ermolli  | {{open:wp4:wp4esfri2:est_ie_13122017.pdf|pdf}} |
+|  20' | EST community related to solar VO and DH  | Nazaret Bello-González  | {{open:wp4:wp4esfri2:solar_data_dissemination_nbg.pdf|pdf}} |
+|  30' | SKA DADI requirements | Rosie Bolton  | {{open:wp4:wp4esfri2:ska_update_and_dadi.pptx|pptx}} |
+| 11:00-11:30 | **coffee break** |||
+| 11:30-13:00 | **Contributions by the ESFRI projects and precursors** |||
+|  15' | First ASTRON/LOFAR steps towards the VO standards  | Marco Iacobelli  | {{:open:wp4:MI.pdf|pdf}} |
+|  30' | CTA DADI status  | Mathieu Servillat  | {{open:wp4:wp4esfri2:2017-12-13_asterics_servillat.pdf|pdf}} |
+|  20' | The Dawn of Multi-Messenger Astronomy  | Giuseppe Greco  | {{https://docs.google.com/presentation/d/1rHMr_La82g-P6SdbYYB9TEEq1XiCPyKGEdspSUqc-Eg/edit#slide=id.p|GDoc}} / {{open:wp4:wp4esfri2:the_dawn_of_multi-messenger_astronomy.pdf|pdf}} |
+|  20' | LIGO/Virgo open science  | Agata Trovato  | {{open:wp4:trovato_2017_12_13.pptx|pptx}}|
+| 13:00-14:00 | **lunch break** |||
+| 14:00-15:00 | **Contributions by the ESFRI projects and precursors** |||
+|  20' | VO-protocol-based access to the ESO Science Archive Facility  | Alberto Micol  | {{open:wp4:wp4esfri2:IVOASantiago_Micol.pdf|pdf}} |
+|  20' | The ESO Science Archive: towards the La Silla Paranal Armazones Observatory  | Martino Romaniello  | {{open:wp4:wp4esfri2:romaniello_eso_esfri2.pdf|pdf}} |
+|  20' | LSST:UK Data Access Centre  | Andy Lawrence  |{{:open:wp4:Lawrence-Trieste-LSSTUK.pdf|pdf}} |
+| 15:00-15:20 | Status of the Cleopatra Work Package  | Arpad SZomoru  | {{open:wp4:wp4esfri2:cleopatra_arpad_trieste17.pptx|pptx}} |
+| 15:20-16:00 | **Contributions by DADI partners** |||
+|  25' | Summary of DADI contribution to IVOA TimeDomain effort  | François Bonnarel  | {{open:wp4:wp4esfri2:dadi2ivoa2ts.pdf|pdf}} |
+|  15' | VOEvent status report  | Dave Morris  | {{open:wp4:wp4esfri2:20171213-voevent_morris.pdf|pdf}} |
+| 16:00-16:30 | **coffee break** |||
+| 16:30-18:30 | **Contributions by DADI partners** |||
+|  20' | ASTERICS: suggestions for the project's end period  | Hendrik Heinl  | {{open:wp4:wp4esfri2:heinl_esfri2.pdf|pdf}} |
+|  25' | Provenance: status  | Mireille Louys  | {{open:wp4:wp4esfri2:astericscurrentstatusprovenancedm2017.pdf|pdf}} |
+|  15' | PURX  | Markus Demleitner  | {{open:wp4:purx.pdf|notes}} |
+|  25' | AladinV10/AladinLite functionalities for ESFRI projects and others  | François Bonnarel  | {{open:wp4:wp4esfri2:aladinesfriprojects.pdf|pdf}}|
+|  20' | A VOSpace deployment: interoperability and integration in big infrastructures  | Sara Bertocco | {{open:wp4:wp4esfri2:talk_SaraBertocco.pdf|pdf}} |
+| ||||
+|  20:00  | **Working Dinner** (Newtorking towards dedicated meetings for ESFRIs) - Hostaria Malcanton  |||
+| ||||
+^  Day 2 - Thursday December 14  ^^^^
+| 09:00-10:00 | 1st day report and general discussion | | |
+| 10:00-11:00 | **splinter sessions** |||
+| | Radio Data discovery | | {{open:wp4:wp4esfri2:radiointerferometrydatainthevo.pdf|notes}} |
+| | Tutorials Overview for RIs Workshops | | |
+| 11:00-11:30 | **coffee break** |||
+| 11:30-13:00 | **splinter sessions** | | |
+| | Radio topic - continued | | |
+| | Vizier overview to the benefit of GW & al. | |{{:open:wp4:summary.pdf|notes}} |
+| 13:00-14:00 | **lunch break** |||
+| 14:00-15:00 | Wrap-up and actions | | |
+|  (15:00)  | Additional Hands-on / splinter time slot | | |
+| | Time Domain | | {{open:wp4:wp4esfri2:tsminutestrieste2017.odt|odt}} |
+==== Organisation ====
+
+**Organising Committee:** Mark Allen, Catherine Boisson, Rosie Bolton, Eric Chassande-Mottin, Paschal Coyle, Ilaria Ermolli, Françoise Genova, Rob van der Meer, Marco Molinaro, Fabio Pasian, Carlos Rodrigo, Martino Romaniello. 
+
+**Local Organising Committee:** Marco Molinaro, Fabio Pasian
+
+**Contact:** marco (dot) molinaro (at) inaf (dot) it | fabio (dot) pasian (at) inaf (dot) it
+
+==== Participants ====
+
+Please, tell us what days you plan to stay at the venue and if you plan to attend the working dinner (include also dietary requests directly) and the newcomers session on the 12th.
+
+| **Name** | **Surname** | **Affiliation** | **12** | **13** | **14** | **Working Dinner** |
+| Fabio | Pasian | INAF-OATs |  Y  |  Y  |  Y  |  Y  |
+| Marco | Molinaro | INAF-OATs |  Y  |  Y  |  Y  |  Y  |
+| Markus | Nullmeier | UHEI |  Y  |  Y  |  Y  |  Y (veg)  |
+| Dave | Morris | Edinburgh |  Y  |  Y  |  Y  |  Y  |
+| Francoise | Genova | CDS |  Y  |  Y  |  Y  |  Y  |
+| Markus | Demleitner | UHEI |  Y  |  Y  |  Y  |  Y (veg)  |
+| Arpad | Szomoru | JIVE |  Y  |  Y  |  N  |  Y  |
+| Agata | Trovato | CNRS-APC |  Y  |  Y  |  Y  |  Y  |
+| Marco | Iacobelli | ASTRON-RO |  Y  |  Y  |  Y  |  Y  |
+| Hendrik | Heinl | UHEI |  Y  |  Y  |  Y  |  Y (veg)  |
+| Ilaria | Ermolli | INAF-OAR & EST |  Y  |  Y  |  Y  |  Y  |
+| Sara | Bertocco | INAF-OATs |  Y  |  Y  |  Y  |  Y  |
+| Martino | Romaniello | ESO |  N  |  Y  |  Y  |  Y  |
+| François | Bonnarel | CDS,ObAs |  N  |  Y  |  Y  |  Y  |
+| Mireille | Louys | CDS,ICube |  N  |  Y  |  Y  |  Y  |
+| Giuseppe | Greco | UniUrbino,INFN |  N  |  Y  |  Y  |  Y  |
+| Riccardo | Smareglia | INAF-OATs |  N  |  Y  |  Y  |  N  |
+| Mathieu | Servillat | LUTH-OBSPM |  N  |  Y  |  Y  |  Y  |
+| Carlos | Rodrigo | CSIC-INTA |  N  |  Y  |  Y  |  Y  |
+| Andy | Lawrence | Edinburgh |  N  |  Y  |  Y  |  Y  |
+| Thomas | Hederer | KIS |  Y  |  Y  |  Y  |  Y  |
+| Kolja | Glogowski | KIS |  Y  |  Y  |  Y  |  Y (veg)  |
+| Nazaret | Bello-González | KIS & EST |  Y  |  Y  |  Y  |  Y  |
+| Rob | van der Meer | ASTRON, NL |  Y  |  Y  |  N  |  Y  |
+| Alberto | Micol | ESO |  N  |  Y  |  Y  |  Y  |
+| Cristina | Knapic | INAF-OATs |  N  |  Y  |  Y  |  N  |
+| Rosie | Bolton | SKA |  remote connection  |||| 
+| Mark | Allen | CDS |  remote connection  ||||
+| Ada | Nebot | CDS |  remote connection  ||||
+| |||||||
+|  29 participants  |||||||
+
+----
+
+[[open:wp4:start|WP4: Data Access and Data Interoperability]]

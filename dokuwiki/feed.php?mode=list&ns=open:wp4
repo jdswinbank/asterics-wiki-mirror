@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="FeedCreator 1.7.2-ppt DokuWiki" -->
+<?xml-stylesheet href="https://www.asterics2020.eu/dokuwiki/lib/exe/css.php?s=feed" type="text/css"?>
+<rss version="2.0">
+    <channel>
+        <title>ASTERICS Wiki pages open:wp4</title>
+        <description></description>
+        <link>https://www.asterics2020.eu/dokuwiki/</link>
+        <lastBuildDate>Tue, 28 Mar 2023 16:54:32 +0200</lastBuildDate>
+        <generator>FeedCreator 1.7.2-ppt DokuWiki</generator>
+        <image>
+            <url>https://www.asterics2020.eu/dokuwiki/lib/tpl/dokuwiki/images/favicon.ico</url>
+            <title>ASTERICS Wiki pages</title>
+            <link>https://www.asterics2020.eu/dokuwiki/</link>
+        </image>
+        <item>
+            <title>open:wp4:aandanotes</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:aandanotes&amp;rev=1551942059&amp;do=diff</link>
+            <description>INAF-OATs, Trieste, 29-30/01/2019
+
+[back to main Meeting page]
+
+[back to ASTERICS DADI WP4 main wiki page]
+
+----------
+
+General report from contributions
+
+Here follows a general report from presentations and Q&amp;A time following them.
+
+Brian Major - Authentication&amp;Authorization at CADC
+
+CADC services all have ReST API functionalities and use the authentication in a common way.
+Credential delegation isused to move among the services and the authorization is managed through ownership or group member…</description>
+        <category>open:wp4</category>
+            <pubDate>Thu, 07 Mar 2019 08:00:59 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:authnauthzf2f</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:authnauthzf2f&amp;rev=1551265073&amp;do=diff</link>
+            <description>INAF-OATs, Trieste, 29-30/01/2019
+
+[back to ASTERICS DADI WP4 main wiki page]
+
+----------
+
+Goal
+
+ASTERICS, within the scope of WP4 (DADI) Task 4.3 and WP3 (OBELICS) Task 3.4.2, organized a face-to-face meeting on the following topics:
+
+	*  Authentication&amp;Authorisation
+	*  Single Sign-On
+	*  Group Authorisation/Group Management systems
+	*  Workflow development
+	*  their relation with the development/upgrade within IVOA standards</description>
+        <category>open:wp4</category>
+            <pubDate>Wed, 27 Feb 2019 11:57:53 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:dadiproductrepository</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:dadiproductrepository&amp;rev=1556890562&amp;do=diff</link>
+            <description>Back to DADI home page
+
+Introduction
+
+The Data Access, Discovery and Interoperability (DADI) Work Package of the ASTERICS project maintains a repository of its “products”, with a first delivery at the project mid-term (April 2017, D4.8). The repository will then be regularly maintained with a final delivery at the end of the project. DADI has three strands of work:</description>
+        <category>open:wp4</category>
+            <pubDate>Fri, 03 May 2019 15:36:02 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:hackathon_page</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:hackathon_page&amp;rev=1449755225&amp;do=diff</link>
+            <description>ASTERICS DADI Technology Forum 1 Hack-a-thon page
+
+Traditionally Tech Forum meetings have included a free-form session designed to allow participants - be they software engineers or scientists - to meet and discuss technical and scientific details related to VO work they are currently undertaking. These sessions became known as the “Hack-a-thon” - the clue to their purpose being in the name. Hack-a-thons proved extremely popular and successful and we plan to continue them in the current project;…</description>
+        <category>open:wp4</category>
+            <pubDate>Thu, 10 Dec 2015 14:47:05 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:here</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:here&amp;rev=1499269052&amp;do=diff</link>
+            <description>Program
+
+It is important to have installed beforehand in your laptops the VO-tools to be used in the School, namely:
+
+	*  ALADIN (Download the AladinBeta.jar file and execute it from a terminal using “java -Xmx2048m -jar AladinBeta.jar”) 
+		*  TOPCAT (Download the topcat-full.jar file and execute it from a terminal using “java -jar topcat-full.jar”)
+		*  VOSA (Web server. You don't need to install anything)
+		*  STILTS (Download the stilts.jar file and execute it from a terminal using “java -jar…</description>
+        <category>open:wp4</category>
+            <pubDate>Wed, 05 Jul 2017 17:37:32 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:pictures</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:pictures&amp;rev=1452008805&amp;do=diff</link>
+            <description></description>
+        <category>open:wp4</category>
+            <pubDate>Tue, 05 Jan 2016 16:46:45 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:saada</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:saada&amp;rev=1461856423&amp;do=diff</link>
+            <description></description>
+        <category>open:wp4</category>
+            <pubDate>Thu, 28 Apr 2016 17:13:43 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:school1</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:school1&amp;rev=1505723792&amp;do=diff</link>
+            <description>----------
+
+----------
+
+
+
+More photos at: &lt;https://www.smugmug.com/gallery/n-wwjzCD/i-CgWms5X&gt;
+
+The ASTERICS project is organising an international Virtual Observatory school at the Centro de Astrobiología, Madrid, Spain.
+
+The Virtual Observatory (VO) is opening up new ways of exploiting the huge amount of data provided by the ever-growing number of ground-based and space facilities, as well as by computer simulations. The goal of the school is twofold:</description>
+        <category>open:wp4</category>
+            <pubDate>Mon, 18 Sep 2017 10:36:32 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:school2</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:school2&amp;rev=1487942446&amp;do=diff</link>
+            <description>15-17 November, Strasbourg (France)
+
+
+
+The ASTERICS project is organising its second international Virtual Observatory school at the Observatoire Astronomique de Strasbourg, Strasbourg, France. You can have a look at the First ASTERICS School. 
+
+The Virtual Observatory (VO) is opening up new ways of exploiting the huge amount of data provided by the ever-growing number of ground-based and space facilities, as well as by computer simulations. The goal of the school is twofold:</description>
+        <category>open:wp4</category>
+            <pubDate>Fri, 24 Feb 2017 14:20:46 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:school3</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:school3&amp;rev=1510830029&amp;do=diff</link>
+            <description>----------
+
+----------
+
+The ASTERICS project is organising an international Virtual Observatory school at the Centro de Astrobiología, Madrid, Spain.
+
+The Virtual Observatory (VO) is opening up new ways of exploiting the huge amount of data provided by the ever-growing number of ground-based and space facilities, as well as by computer simulations. The goal of the school is twofold:</description>
+        <category>open:wp4</category>
+            <pubDate>Thu, 16 Nov 2017 12:00:29 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:school4</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:school4&amp;rev=1542797693&amp;do=diff</link>
+            <description>Image by Philippe Vonflie
+
+----------
+
+
+Image by Pierre Alain-Duc
+
+----------
+
+ 20-22 November 2018, Strasbourg (France) 
+
+The ASTERICS project is organising its fourth
+international Virtual Observatory school at the
+Observatoire Astronomique de Strasbourg,
+Strasbourg, France.</description>
+        <category>open:wp4</category>
+            <pubDate>Wed, 21 Nov 2018 11:54:53 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:start</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:start&amp;rev=1557564070&amp;do=diff</link>
+            <description>----------
+
+Objectives
+
+Make the ESFRI and pathfinder project data available for discovery and usage by the whole astronomical community, interoperable in a homogeneous international framework, and accessible with a set of common tools. More specifically:</description>
+        <category>open:wp4</category>
+            <pubDate>Sat, 11 May 2019 10:41:10 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:timeseriesdatameeting</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:timeseriesdatameeting&amp;rev=1515593742&amp;do=diff</link>
+            <description>5-6 December 2017, CDS Strasbourg
+
+(Top level DADI page: WP4: Data Access, Discovery and Interoperability (DADI))
+
+----------
+
+Goal
+
+At the end of this workshop we should have something that can be presented at the next IVOA. In terms of:
+
+	*  Minimal requirements
+	*  Concrete serialisation of data based on examples taken from:
+		*  VizieR examples, small/large tables 
+		*  GAPS data
+		*  Gaia data
+		*  iPTF data (which is the precursor of ZTF   e. , again precursor of LSST)
+		*  XMM-Newton (for…</description>
+        <category>open:wp4</category>
+            <pubDate>Wed, 10 Jan 2018 15:15:42 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:wp4edpforum1</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:wp4edpforum1&amp;rev=1466541328&amp;do=diff</link>
+            <description>(Top level DADI page: WP4: Data Access, Discovery and Interoperability)
+
+Dates
+
+15 &amp; 16 June, 2016;
+tutorial day on 17 June, 2016
+
+Conference web site
+
+European Data Provider Forum and Training Event 1
+
+Hands-on sessions' pages
+
+List of hands-on sessions</description>
+        <category>open:wp4</category>
+            <pubDate>Tue, 21 Jun 2016 22:35:28 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:wp4esfriforum1</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:wp4esfriforum1&amp;rev=1462052771&amp;do=diff</link>
+            <description>ESFRI Forum and Training event aims at gathering ESFRI facility staff and VO developers together to continue active participation in the development of the VO framework and train ESFRI technical staff in VO technical environment.
+
+(Top level DADI page: WP4: Data Access, Discovery and Interoperability (DADI))</description>
+        <category>open:wp4</category>
+            <pubDate>Sat, 30 Apr 2016 23:46:11 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:wp4esfriforum2</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:wp4esfriforum2&amp;rev=1517298071&amp;do=diff</link>
+            <description>The ASTERICS/DADI ESFRI Forum and Training events aim at bringing together staff from ESFRI facilities and VO developers to continue active participation in the development of the VO framework and to train ESFRI technical staff on the VO technical environment. 
+The goal of the ESFRI Forum &amp; Training Event #2 is</description>
+        <category>open:wp4</category>
+            <pubDate>Tue, 30 Jan 2018 08:41:11 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:wp4exodm</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:wp4exodm&amp;rev=1538982864&amp;do=diff</link>
+            <description>INAF-OAPd, Padova, 20-21/09/2018
+
+[back to ASTERICS DADI WP4 main wiki page]
+
+----------
+
+Goal
+
+Starting from the experience aimed at deploying through the VO the Time Series for exoplanets (see, e.g., the GAPS Time Series face-to-face) first hints that a model to describe and annotate (exo-)planetary systems might be needed to allow for proper dataset discovery and metadata annotation. The solution of a common model for this specific area of interest was later enhanced by exoplanetary atmospher…</description>
+        <category>open:wp4</category>
+            <pubDate>Mon, 08 Oct 2018 09:14:24 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:wp4exodm_report</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:wp4exodm_report&amp;rev=1538552322&amp;do=diff</link>
+            <description>Exo-Planetary Systems Data Model Meeting
+
+INAF-OAPd, Padova, 20-21/09/2018
+
+[back to Exo-Planetary Systems Data Model meeting page]
+
+Overview
+
+On Thursday the 20th and Friday the 21st at the INAF - Astronomical Observatory of Padova, a meeting was held to start a modeling effort for data originating from exoplanetary research; both observational and numerical simulation scenarios were taken into considedration.</description>
+        <category>open:wp4</category>
+            <pubDate>Wed, 03 Oct 2018 09:38:42 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:wp4gapsinaf</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:wp4gapsinaf&amp;rev=1498463648&amp;do=diff</link>
+            <description>INAF-OAPd, Padova, 22/06/2017
+
+[back to ASTERICS DADI WP4 main wiki page]
+
+----------
+
+Participants
+ Name  Affiliation Marco Molinaro  INAF-OATsAndrea Bignamini  INAF-OATsSerena Benatti  INAF-OAPdRiccardo Claudi  INAF-OAPd
+----------
+
+Meeting Report
+
+A face-to-face meeting has been held at INAF-OAPd (Padova, Italy) on Thursday the 22th of June 2017 to discuss the use cases and possible prototyping of a service to deploy dataset consisting of time series of radial velocity produced by the GAPS pr…</description>
+        <category>open:wp4</category>
+            <pubDate>Mon, 26 Jun 2017 09:54:08 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:wp4gwstrasbourg2016</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:wp4gwstrasbourg2016&amp;rev=1464796447&amp;do=diff</link>
+            <description>Two-day informal meeting where VO developers can understand the issues and needs of GW people and where GW people can learn about the VO and get technical support for on-going or future development of VO tools.
+
+(Top level DADI page: WP4: Data Access, Discovery and Interoperability (DADI))</description>
+        <category>open:wp4</category>
+            <pubDate>Wed, 01 Jun 2016 17:54:07 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:wp4lofarstrasbourg2016</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:wp4lofarstrasbourg2016&amp;rev=1479481656&amp;do=diff</link>
+            <description>Back to DADI page
+
+Date and location
+
+18 November 2016, Observatoire Astronomique de Strasbourg, 11 rue de l'Université
+
+The meeting will begin at 9:00
+
+Objectives
+
+Discussion of the two topics identified as priorities by LOFAR with respect to the VO:</description>
+        <category>open:wp4</category>
+            <pubDate>Fri, 18 Nov 2016 16:07:36 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:wp4task1</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:wp4task1&amp;rev=1519716619&amp;do=diff</link>
+            <description>(Top level DADI page: WP4: Data Access, Discovery and Interoperability)
+
+Support to astronomy ESFRI facilities, their pathfinders and other infrastructures of pan-European interest
+for implementation of their data in the VO framework.
+
+Activities
+
+	*  Networking and training
+			*  Annual Forum and Training event to network, share lessons learnt, discuss requirements and provide training on how to implement data in the VO: Years 1 &amp; 3: “ESFRI Forum and Training event”, Years 2 &amp; 4: “European Data…</description>
+        <category>open:wp4</category>
+            <pubDate>Tue, 27 Feb 2018 08:30:19 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:wp4task2</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:wp4task2&amp;rev=1472644136&amp;do=diff</link>
+            <description>Support to the astronomical community
+
+Activities
+
+	*  Provision of training (European, regional and national schools)
+			*  One European School / year
+			*  Provision of on-line science tutorials
+
+	*  Collaboration with science projects to enable them to use the data framework
+	*  Gathering scientific requirements and feedback</description>
+        <category>open:wp4</category>
+            <pubDate>Wed, 31 Aug 2016 13:48:56 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:wp4task3</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:wp4task3&amp;rev=1472644060&amp;do=diff</link>
+            <description>Updates of the VO framework from feedback and requirements
+
+Activities
+
+	*  Identification of priorities based on ESFRI, pathfinder and scientific needs
+			*  Identification of priorities by AEB
+			*  Initial priorities: multi-dimensional data (including polarisation), time domain, provenance, adopt VO tools to new observables</description>
+        <category>open:wp4</category>
+            <pubDate>Wed, 31 Aug 2016 13:47:40 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:wp4techforum1</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:wp4techforum1&amp;rev=1462052718&amp;do=diff</link>
+            <description>The Forums enable technology discussion involving the framework developers and ESFRI project staff, to develop technical collaboration and exchange good practice - establishing a European strategy for IVOA and RDA activities
+
+(Top level DADI page: WP4: Data Access, Discovery and Interoperability (DADI))</description>
+        <category>open:wp4</category>
+            <pubDate>Sat, 30 Apr 2016 23:45:18 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:wp4techforum2</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:wp4techforum2&amp;rev=1482221511&amp;do=diff</link>
+            <description>The Forums enable technology discussion involving the framework developers and ESFRI project staff, to develop technical collaboration and exchange good practice - establishing a European strategy for IVOA and RDA activities
+
+(Top level DADI page: WP4: Data Access, Discovery and Interoperability (DADI))</description>
+        <category>open:wp4</category>
+            <pubDate>Tue, 20 Dec 2016 09:11:51 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:wp4techforum3</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:wp4techforum3&amp;rev=1490341848&amp;do=diff</link>
+            <description>The Forums enable technology discussion involving the framework developers and ESFRI project staff, to develop technical collaboration and exchange good practice - establishing a European strategy for IVOA and RDA activities
+
+Program Organisers: Mark Allen, Keith Noddle, Françoise Genova</description>
+        <category>open:wp4</category>
+            <pubDate>Fri, 24 Mar 2017 08:50:48 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:wp4techforum4</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:wp4techforum4&amp;rev=1549808299&amp;do=diff</link>
+            <description>The Forums enable technology discussion involving the framework developers and ESFRI project staff, to develop technical collaboration and exchange good practice - establishing a European strategy for IVOA and RDA activities
+
+Program Organisers: Keith Noddle, Mark Allen, Françoise Genova</description>
+        <category>open:wp4</category>
+            <pubDate>Sun, 10 Feb 2019 15:18:19 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:wp4techforum5</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:wp4techforum5&amp;rev=1559313207&amp;do=diff</link>
+            <description>The Forum is organised as a meeting of the DADI Work Package partners, and it will be the final Forum of the Work Package
+
+The Forums enable technology discussion involving the framework developers and ESFRI project staff, to develop technical collaboration and exchange good practice - establishing a European strategy for IVOA and RDA activities</description>
+        <category>open:wp4</category>
+            <pubDate>Fri, 31 May 2019 16:33:27 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:wp4wp5timedomain</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:wp4wp5timedomain&amp;rev=1490180195&amp;do=diff</link>
+            <description>A meeting gathering DADI and CLEOPATRA staff is organised to discuss topics of common interest in the time domain. The time domain is one of the initial DADI priorities, and DADI is involved in particular in gathering requirements for the evolution of the VOEvent IVOA standard. One of CLEOPATRA tasks is to “develop methods for relaying alerts, which will signal transient event detections between the facilities and enable joint observing programmes. The focus will not just be on interchange forma…</description>
+        <category>open:wp4</category>
+            <pubDate>Wed, 22 Mar 2017 11:56:35 +0200</pubDate>
+        </item>
+    </channel>
+</rss>

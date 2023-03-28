@@ -1,0 +1,52 @@
+====== GAPS Time Series face-to-face Meeting ======
+
+==== INAF-OAPd, Padova, 22/06/2017 ====
+
+[back to [[start|ASTERICS DADI WP4]] main wiki page]
+
+----
+
+==== Participants =====
+^ Name ^ Affiliation ^
+|Marco Molinaro | INAF-OATs|
+|Andrea Bignamini | INAF-OATs|
+|Serena Benatti | INAF-OAPd|
+|Riccardo Claudi | INAF-OAPd|
+
+----
+
+===== Meeting Report =====
+A face-to-face meeting has been held at INAF-OAPd (Padova, Italy) on Thursday the 22th of June 2017 to discuss the use cases and possible prototyping of a service to deploy dataset consisting of time series of radial velocity produced by the [[http://www.oact.inaf.it/exoit/EXO-IT/Projects/Entries/2011/12/27_GAPS.html|GAPS]] project when studying stellar systems for discovery of exoplanets.
+
+Meeting started with an overview of the current time domain priorities at IVOA and then focused on
+
+ - discovery use cases derived from the GAPS experience
+ - GAPS Time Series dataset description to enable VO accessibility
+ - steps to perform to produce a prototype service out of current public datasets
+
+The discovery use cases were discussed with respect to ObsCore metadata content, to check whether existing fields were enough to enable them or whether new metadata content is necessary in discovering and filtering the datasets.
+
+The discussed use cases mainly focused on stellar systems radial velocity time series, however also a use case for photometry time series was considered, since it's used in combination to RVs in exoplanets discovery assessment.
+
+Besides dataset discovery some discussion went on for solutions to link radial velocity time series point with the spectra that originate them, probably using Datalink solutions (similar linking step could be done for photometry points and originating images).
+
+GAPS Time series dataset format was only touched to understand current practices and possible issues when mapping them to VOTable, especially to allow linking solutions to single time series points.
+
+Out of the overall discussion it emerged that the goal for a prototype service for GAPS Time Series will probably sit on top of an ObsCore table deployed through a TAP service to demonstrate the discovery phase, and letting the data access and consuming part to a later stage.
+
+Dataset usage would see, e.g., producing periodograms out of the available series (thus periodograms are not seen as directly provided datasets, but a later stage in analysis).
+
+Moreover dataset access and time series consuming for exoplanets in the VO seems bound to finding a suitable set of applications to deal with them. Currently GAPS teams use internally developed tools.
+
+Finally, it was decided that the discussed use cases and the prototyping efforts will be brought as a contribution to the next ADASS XXVII and attached IVOA Interoperability Meeting in Santiago, end of October, current year.
+
+----
+
+===== Use cases and metadata =====
+The use cases discussed and their implementation details will be shown at ADASS and Interop, however here follow a few bullets of the main points touched.
+
+  * RV observable should be ok with current obscore table metadata (possibily a UCD change/addition)
+  * there exist definitely metadata needed for discovery use cases that are missing, like
+    * stellar activity indexes and in general, parameters of the stelllar system's host star
+    * discovery method (could be a small controlled vocabulary)
+    * planet(s)'s parameters: since more planets orbit around a single host this poses a question on how to store these variable length array values in a metadata flat view (depends a lot on the DB backend actually)

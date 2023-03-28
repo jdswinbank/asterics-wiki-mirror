@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="FeedCreator 1.7.2-ppt DokuWiki" -->
+<?xml-stylesheet href="https://www.asterics2020.eu/dokuwiki/lib/exe/css.php?s=feed" type="text/css"?>
+<rss version="2.0">
+    <channel>
+        <title>ASTERICS Wiki pages open:wp4:school2</title>
+        <description></description>
+        <link>https://www.asterics2020.eu/dokuwiki/</link>
+        <lastBuildDate>Tue, 28 Mar 2023 17:01:05 +0200</lastBuildDate>
+        <generator>FeedCreator 1.7.2-ppt DokuWiki</generator>
+        <image>
+            <url>https://www.asterics2020.eu/dokuwiki/lib/tpl/dokuwiki/images/favicon.ico</url>
+            <title>ASTERICS Wiki pages</title>
+            <link>https://www.asterics2020.eu/dokuwiki/</link>
+        </image>
+        <item>
+            <title>open:wp4:school2:participants</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:school2:participants&amp;rev=1487942656&amp;do=diff</link>
+            <description>Tutors:
+
+	*  Dr. ALLEN, Mark			
+	*  Dr. BAINES, Deborah		
+	*  Dr. BOT, Caroline		
+	*  Mr. CHASSANDE-MOTTIN, Eric		
+	*  Dr. DEMLEITNER, Markus		
+	*  Dr. DERRIERE, Sébastien		
+	*  Mr. GRECO, Giuseppe   		
+	*  Mr. GRÉGORY, MANTELET		
+	*  Mr. HEINL, Hendrik	 		
+	*  Dr. JIMÉNEZ-ESTEBAN, Fran	
+	*  Dr. KULIKOVSKIY, Vladimir	
+	*  Dr. LEFAUCHEUR, Julien		
+	*  Mr. MOLINARO, Marco			
+	*  Dr. NEBOT, Ada			
+	*  Dr. PINEAU, François-Xavier	
+	*  Dr. RAMELLA, Massimo		
+	*  Dr. SOLANO, Enrique		
+	*  Dr. SORCE, J…</description>
+        <category>open:wp4:school2</category>
+            <pubDate>Fri, 24 Feb 2017 14:24:16 +0200</pubDate>
+        </item>
+        <item>
+            <title>open:wp4:school2:program</title>
+            <link>https://www.asterics2020.eu/dokuwiki/doku.php?id=open:wp4:school2:program&amp;rev=1479473159&amp;do=diff</link>
+            <description>Program
+
+It is important to have installed beforehand in your laptops the VO-tools to be used in the School, namely:
+
+	*  ALADIN (Download the Aladin4Asterics.jar file and execute it from a terminal using “java -Xmx2048m -jar Aladin4Asterics.jar”) 
+		*  TOPCAT (Download the topcat-full.jar file and execute it from a terminal using “java -jar topcat-full.jar”)
+		*  VOSA (Web server. You don't need to install anything)
+		*  STILTS (Download the stilts.jar file and execute it from a terminal using …</description>
+        <category>open:wp4:school2</category>
+            <pubDate>Fri, 18 Nov 2016 13:45:59 +0200</pubDate>
+        </item>
+    </channel>
+</rss>

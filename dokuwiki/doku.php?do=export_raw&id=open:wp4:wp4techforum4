@@ -1,0 +1,105 @@
+====== ASTERICS DADI Technology Forum 4 ======
+
+The Forums enable technology discussion involving the framework developers and ESFRI project staff, to develop technical collaboration and exchange good practice - establishing a European strategy for IVOA and RDA activities
+
+**Program Organisers: Keith Noddle, Mark Allen, Françoise Genova**
+
+(Top level DADI page: [[open:wp4:start|WP4: Data Access, Discovery and Interoperability (DADI)]])
+
+==== Registration ====
+[[https://indico.astron.nl/conferenceDisplay.py?confId=154|Registration is now closed]]
+
+==== Meeting Dates ====
+Meeting: 16th/17th April 2018, Edinburgh
+
+==== Location ====
+Pollock Halls, 18 Holyrood Park Rd, Edinburgh EH16 5AY
+
+The meeting will be held in the Nelson Room within St Leonard's Hall with two further breakout rooms (Cowan Room & Bonnar Room) availabe throughout the meeting.
+
+[[http://www.edinburghfirst.co.uk/venues/st-leonards-hall|Venue Information]] [[https://www.google.com/maps/place/St+Leonard's+Hall/@55.940009,-3.170071,17z/data=!4m7!3m6!1s0x0:0x74614fa600a8ae4e!5m1!1s2018-04-05!8m2!3d55.940091!4d-3.1713021?hl=en-GB|Map]] [[http://www.edinburghfirst.co.uk/getting-here/|Getting here]]
+
+Catering will be provided both days and a conference dinner will be offered during the evening of 16th (see below).
+
+==== Internet ====
+St Leonard's Hall has Eduroam throughout.
+
+==== Hotels ====
+Please arrange your own hotel accommodation. Some examples can be found [[https://www.visitscotland.com/destinations-maps/edinburgh/accommodation/|here]] or use one of the many hotel booking websites.
+
+==== Dinner ====
+A working dinner will be organised Monday evening. Please indicate your attendance and dietary requirements on the registration form.
+
+==== Participants ====
+
+  * Mark Allen 
+  * François Bonnarel 
+  * Markus Demleitner 
+  * Françoise Genova 
+  * Peter Hague
+  * Chaitra Koragappa
+  * Andy Lawrence 
+  * Mireille Louys 
+  * Bob Mann 
+  * Marco Molinaro 
+  * Dave Morris 
+  * Keith Noddle
+  * Margarida Castro Neves
+  * Markus Nullmeier 
+  * Carlos Rodrigo Blanco
+  * Michèle Sanguillon
+  * Ole Streicher
+  * Mark Taylor 
+  * Stelios Voutsinas 
+  * Roy Williams 
+
+
+==== Agenda ====
+
+This is a //'working meeting'// so the agenda will be adapted based on the contributions of the participants. Please submit proposals for presentations and topics for the Hack-a-thon sessions in the registration form. Hack-a-thon topics will also be developed on the spot during the meeting.
+
+----
+
+| **Mon April 16** |||
+| 09:30 | Arrivals & coffee ||
+| 10:00 | Welcome | Andy |
+| 10:10 | {{open:wp4:dadistatus_techforum4_genova.pdf|ASTERICS DADI status}}  / {{open:wp4:allen_tech_forum_16april2018.pdf|Connection with IVOA}} | Françoise / Mark A |
+| 10:45 | Break ||
+| 11:15 | {{open:wp4:wp4techforum4:pgsphere_techforum4_nullmeier.pdf|Latest pgSphere developments}} | Markus N |
+| 11:45 | {{open:wp4:adql-impl.pdf|Implementing ADQL 2.1}} | Markus D |
+| 12:10 | {{open:wp4:wp4techforum4:20180415-ADQL-01.pdf|ADQL 2.1 progress report & what's next}} | Dave |
+| 12:35 | {{open:wp4:astericscurrentstatusprovenancedm2018-16april_louys.pdf|IVOA provenance metadata : Data Model and services}} | Mireille |
+| 13:00 | Lunch ||
+| 14:00 | {{open:wp4:stc-registry.pdf|Enabling STC-based discovery in the Registry}} | Markus D |
+| 14:25 | {{open:wp4:wp4techforum4:20180415-science-platforms-01.pdf|Describing Science Platform Services}} | Dave |
+| 14:45 | {{open:wp4:voutsinas-firethorn-py.pdf|Firethorn Python client}} / {{open:wp4:voutsinas-tap-autocomplete.pdf|Auto-complete library}} | Stelios |
+| 15:05 | {{open:wp4:wp4techforum4:20180415-01-docker.pdf|Use of Docker and Docker Compose}} | Dave |
+| 15:30 | Break ||
+| 16:00 | [[open:wp4:wp4techforum4:hackathon|Hack-a-thon Session One]] ||
+| 17:30 | End of Day One ||
+ 
+| **Tues April 17** |||
+| 09:30 | {{open:wp4:wp4techforum4:mmolinaro_tf4_edinburgh.pdf|Publishing tools and auth&auth}} | Marco |
+| 09:45 | {{open:wp4:ts_daditechforum2018.pdf|IVOA Time Series / Time Domain}} | François |
+| 10:00 | {{open:wp4:wp4techforum4:20180415-01-time-series.pdf|Time series}} and {{open:wp4:wp4techforum4:20180415-01-voevent.pdf|VOEvent}}, progress report | Dave |
+| 10:25 | {{open:wp4:multi-d-dal-feedback.pdf|Datalink, SIAV2, SODA Feedback after a few years of implementation}} | François / Marco |
+| 10:45 | Break ||
+| 11:15 | {{open:wp4:dlink-edimburgo.pdf|Datalink}} | Carlos |
+| 11:40 | {{open:wp4:wp4techforum4:dlactiv.pdf|Datalink in TOPCAT and STILTS}} | Mark T |
+| 12:05 | {{open:wp4:chaitra_edinburg.pdf|New features in Aladin for DAL servers: ADQL Join and SODA Asynchronous}} | Chaitra |
+| 12:30 | {{open:wp4:phague.pdf|Workflow management system for interferometry data}} | Peter |
+| 13:00 | Lunch ||
+| 14:00 | [[open:wp4:wp4techforum4:hackathon|Hack-a-thon Session Two]] ||
+| 15:30 | Break ||
+| 16:00 | Hack-a-thon Reports ||
+| 16:30 | Meeting Wrap-up | Francoise |
+| 16:40 | Meeting close ||
+
+|20:00| Dinner [[http://www.edinburghbombaybicycle.co.uk/|Bombay Bicycle Club]] table booked for 12 people|
+
+----
+==== Hack-a-thon Sessions ====
+
+A page for developing hack-a-thon topics and recording the notes is available here. Please go ahead and edit this page to add extra information or email details to Keith or Dave.
+
+[[open:wp4:wp4techforum4:hackathon|Hack-a-thon Page]]

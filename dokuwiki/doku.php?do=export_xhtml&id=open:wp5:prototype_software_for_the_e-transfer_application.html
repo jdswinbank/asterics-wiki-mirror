@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <title>open:wp5:prototype_software_for_the_e-transfer_application</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2016-06-30T22:56:20+0200"/>
+<meta name="keywords" content="open,wp5,prototype_software_for_the_e-transfer_application"/>
+<link rel="search" type="application/opensearchdescription+xml" href="lib/exe/opensearch.php" title="ASTERICS Wiki pages"/>
+<link rel="start" href="index.html"/>
+<link rel="contents" href="./doku.php%3Fid=open:wp5:prototype_software_for_the_e-transfer_application&amp;do=index.html" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent changes" href="feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current namespace" href="./feed.php%3Fmode=list&amp;ns=open:wp5"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="./doku.php%3Fdo=export_xhtml&amp;id=open:wp5:prototype_software_for_the_e-transfer_application.html"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="./doku.php%3Fdo=export_raw&amp;id=open:wp5:prototype_software_for_the_e-transfer_application"/>
+<link rel="canonical" href="./doku.php%3Fid=open:wp5:prototype_software_for_the_e-transfer_application.html"/>
+<link rel="stylesheet" type="text/css" href="lib/exe/css.php%3Ft=dokuwiki&amp;tseed=3e868cdb9e6faaec34cd57ca71666f47.css"/>
+<script type="text/javascript">/*<![CDATA[*/var NS='open:wp5';var JSINFO = {"id":"open:wp5:prototype_software_for_the_e-transfer_application","namespace":"open:wp5"};
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="lib/exe/js.php%3Ftseed=3e868cdb9e6faaec34cd57ca71666f47&amp;template=dokuwiki"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1" id="cleopatra_software_repository">CLEOPATRA Software Repository</h1>
+<div class="level1">
+
+<p>
+MILESTONE M5.2 / <a href="lib/exe/fetch.php%3Fmedia=open:wp5:etransfer-0.1.tar.gz" class="media mediafile mf_gz" title="open:wp5:etransfer-0.1.tar.gz (140.6 KB)">Prototype software</a> (WP5.3)
+</p>
+
+<p>
+The post-detection streaming software is modelled after the well-known client/server architecture, albeit with a twist. Building on previous experiences gained in the FP6/EXPReS and FP7/NEXPReS projects an elaboration of this classical model was envisaged: the client program can coordinate not just transfers between itself and a remote server but also, transparently, between two remote servers. This allows for moving data between two remote storage facilities, as viewed from the client&#039;s computer. The added benefits of this architecture are:
+</p>
+<ol>
+<li class="level1"><div class="li"> the initiating user does not need access to the storage server, just enough privilege to instruct the server running there to initiate the transfer</div>
+</li>
+<li class="level1"><div class="li"> data can be moved between two remote facilities directly, without the data passing through the client&#039;s hardware, i.e. enabling the use of a fat pipe between facilities directly rather than going through the client&#039;s slow link.</div>
+</li>
+</ol>
+
+<p>
+The software presented in this milestone implements a fully working prototype according to the sketched architecture. Other features that are already investigated and exploited are:
+</p>
+<ol>
+<li class="level1"><div class="li"> multithreaded design</div>
+</li>
+<li class="level1"><div class="li"> full separation of command- and data path; they may even be different protocols</div>
+</li>
+<li class="level1"><div class="li"> access-control list ready; the <abbr title="Access Control List">ACL</abbr> is not filled from a server configuration but limits access to ”/tmp/*”. The <abbr title="Access Control List">ACL</abbr> *is* consulted on each file/directory access though</div>
+</li>
+<li class="level1"><div class="li"> infrastructure for user authentication is scheduled but not implemented yet as it does not affect the architecture of the software</div>
+</li>
+<li class="level1"><div class="li"> files can be “pushed” from the source to the destination or “pulled” from the source by the destination; this allows easy transfers into a client&#039;s machine w/o having to run a server and may also be useful in case one of the remote servers is firewalled for incoming connections</div>
+</li>
+<li class="level1"><div class="li"> the server is written to be able to handle multiple file transfers at the same time as well as multiple network streams for the same file; the client does not exploit this yet though</div>
+</li>
+</ol>
+
+<p>
+The fact that it is a working prototype shows that file transfers can be made to work in the envisaged scheme.
+As such it is expected that translating the tool from the &#039;slow&#039; interpreted Python language to high-performance compiled C++ is feasible.
+</p>
+
+</div>
+</div>
+</body>
+</html>
